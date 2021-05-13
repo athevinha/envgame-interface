@@ -7,6 +7,7 @@ import content1 from "./images/content1.jpg";
 import content2 from "./images/content2.jpg";
 import content3 from "./images/content3.jpg";
 import ReactStoreIndicator from "react-score-indicator";
+import { Link, Route, Switch } from "react-router-dom";
 import Footer from "./footer.component";
 import Chart from "./chart.component";
 export default class Template extends Component {
@@ -14,7 +15,7 @@ export default class Template extends Component {
     return (
       <div>
         {/* Navigation */}
-        <header id="header" className="header black">
+        <header id="header" className="header">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -23,12 +24,13 @@ export default class Template extends Component {
                   <p className="p-large p-name">
                     Nền tảng thiết kế game tăng tỷ lệ cây trồng cho môi trường
                   </p>
-                  <a
+
+                  <Link
                     className="btn btn-success secondary playButton"
-                    href="#your-link"
+                    to={"/Games"}
                   >
                     <i className="fa fa-gamepad"></i> Chơi game ngay
-                  </a>
+                  </Link>
                 </div>{" "}
                 {/* end of text-container */}
               </div>{" "}
@@ -44,7 +46,7 @@ export default class Template extends Component {
             <div className="row">
               <div className="col-lg-5">
                 <div className="text-container">
-                  <h2 className="content">Thực trạng</h2>
+                  <h2 className="content text-uppercase">Thực trạng</h2>
                   <hr />
                   <ul className="list-unstyled li-space-lg">
                     <li className="media">
@@ -102,7 +104,9 @@ export default class Template extends Component {
               {/* end of col */}
               <div className="col-lg-5">
                 <div className="text-container">
-                  <h2 id="title-2">Rừng là lá phổi của trái đất</h2>
+                  <h2 id="title-2" className="text-uppercase">
+                    Rừng là lá phổi của trái đất
+                  </h2>
                   <hr />
                   <ul className="list-unstyled li-space-lg">
                     <li className="media">
@@ -164,7 +168,7 @@ export default class Template extends Component {
                 MINI GAME Đang là xu hướng thế giới để thu hút được nhiều khách
                 hàng
               </p>
-              <h3>Thời Gian</h3>
+              <h3 className="text-uppercase">Thời Gian</h3>
               <hr />
               <p>
                 Mini game sẽ thu hút được rất nhiều người biết tới website,
@@ -213,7 +217,7 @@ export default class Template extends Component {
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-                <h1 className="contact">Thông tin liên hệ</h1>
+                <h1 className="contact text-uppercase">Thông tin liên hệ</h1>
                 <div className="social-container">
                   <span className="fa-stack">
                     <a href="https://www.facebook.com/nguyen.thevinh.5496/">
@@ -265,7 +269,7 @@ export default class Template extends Component {
               </div>
               <div className="col-lg-6">
                 <p className="p-small statement">
-                  Copyright © <a href="#your-link">Your name</a>
+                  Copyright © <a href="#your-link">envgame</a>
                 </p>
               </div>
             </div>

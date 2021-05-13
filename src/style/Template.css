@@ -80,17 +80,19 @@ h6 {
 }
 .p-name {
   font-size: 2rem;
-  color: white;
+  color: white !important;
   font-weight: 550;
 }
 .h-name {
-  color: wheat;
+  color: white !important;
 }
+
 .playButton {
   transition: 0.2s;
   font-size: 2.5em !important;
   text-decoration: none;
   border-radius: 30px;
+  border: 0.2rem black solid;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
@@ -100,7 +102,8 @@ h6 {
 }
 .playButton:hover {
   font-size: 3rem !important;
-  color: rgb(48, 16, 3);
+  color: wheat;
+  border: 0.4rem black solid;
 }
 .p-small {
   font-size: 0.875rem;
@@ -603,10 +606,16 @@ nav:hover {
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-
   text-align: center;
 }
-
+.black {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+}
+.container {
+}
 .header .text-container {
   margin-bottom: 4rem;
   text-align: center;
@@ -1662,6 +1671,7 @@ Edit in JSFiddle Result JavaScript HTML CSS #evaluation {
 .form-control {
   color: #a1a1a1;
 }
+
 .ct-header--smaller {
   text-align: left;
   font: 700 38px Helvetica;
@@ -1856,6 +1866,7 @@ form .selectize-control.single .dropdown-active {
   cursor: pointer;
   overflow: hidden;
 }
-.contact {
+.contact,
+p {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }

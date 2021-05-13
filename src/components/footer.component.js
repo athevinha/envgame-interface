@@ -19,15 +19,10 @@ export default class Footer extends Component {
               novalidate="novalidate"
             >
               <h2 class="text-uppercase ct-header ct-header--smaller ct-header--underline">
-                We are ready for your next project
+                Liên hệ với nhóm để được giúp đỡ
               </h2>
               <hr />
-              <p id="eval-anchor">
-                Thanks again for looking over our website and considering us for
-                help with your project. Please take a moment and fill out as
-                much of the form below as you can, and someone will quickly
-                respond to your inquiry.
-              </p>
+
               <div class="row">
                 <div class="col-md-8">
                   <div class="form-group">
