@@ -86,6 +86,9 @@ h6 {
 .h-name {
   color: white !important;
 }
+h-name .center {
+  text-align: center !important;
+}
 
 .playButton {
   transition: 0.2s;

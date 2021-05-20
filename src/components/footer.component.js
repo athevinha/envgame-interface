@@ -18,7 +18,7 @@ export default class Footer extends Component {
               data-h5-instanceid="0"
               novalidate="novalidate"
             >
-              <h2 class="text-uppercase ct-header ct-header--smaller ct-header--underline">
+              <h2 class="center text-uppercase ct-header ct-header--smaller ct-header--underline">
                 Liên hệ với nhóm để được giúp đỡ
               </h2>
               <hr />
