@@ -8,8 +8,8 @@ import content2 from "./images/content2.jpg";
 import content3 from "./images/content3.jpg";
 import ReactStoreIndicator from "react-score-indicator";
 import { Link, Route, Switch } from "react-router-dom";
-import Footer from "./footer.component";
-import Chart from "./chart.component";
+import Footer from "./Footer.component";
+import Chart from "./Chart.component";
 export default class Template extends Component {
   render() {
     return (

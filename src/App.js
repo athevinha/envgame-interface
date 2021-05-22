@@ -4,6 +4,10 @@ import { Link, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Template from "./components/Template.component";
 import Games from "./components/Games.component";
+import CreateGame from "./components/Admin/Create-game.admin";
+import ReadGame from "./components/Admin/Read-game.admin";
+import UpdateGame from "./components/Admin/Update-game.admin";
+import DeleteGame from "./components/Admin/Delete-game.admin";
 import logoImg from "./components/images/favicon.png";
 class App extends Component {
   render() {
@@ -44,6 +48,26 @@ class App extends Component {
         <Switch>
           <Route exact path={["/", "/Home"]} render={(pr) => <Template />} />
           <Route exact path="/Games" render={(pr) => <Games />} />
+          <Route
+            exact
+            path="/Games/Admin/conchuot123/Create"
+            render={(pr) => <CreateGame />}
+          />
+          <Route
+            exact
+            path="/Games/Admin/conchuot123/Read"
+            render={(pr) => <ReadGame />}
+          />
+          <Route
+            exact
+            path="/Games/Admin/conchuot123/Update"
+            render={(pr) => <UpdateGame />}
+          />
+          <Route
+            exact
+            path="/Games/Admin/conchuot123/Delete"
+            render={(pr) => <DeleteGame />}
+          />
         </Switch>
       </div>
     );

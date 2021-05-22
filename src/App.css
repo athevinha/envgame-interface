@@ -1,0 +1,14 @@
+.form {
+  position: relative;
+  top: 8rem;
+}
+.formCreate {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 5rem !important;
+  font-size: 2rem !important;
+}
+.enter {
+  position: relative;
+  height: 7.5rem;
+}
