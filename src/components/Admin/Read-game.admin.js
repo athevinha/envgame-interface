@@ -16,7 +16,8 @@ export default class ReadGame extends Component {
   render() {
     return (
       <div>
-        <table>
+        <div className="enter"></div>
+        <table className="table">
           <thead>
             <tr>
               <th scope="col">_id</th>
@@ -28,11 +29,11 @@ export default class ReadGame extends Component {
           <tbody>
             {this.state.games.map((game, id) => {
               return (
-                <tr>
-                  <th>1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
+                <tr key={id}>
+                  <th>{game._id}</th>
+                  <td>{game.title}</td>
+                  <td>{game.description}</td>
+                  <td>{game.url.length >= 15 ? game.url.length : game.url}</td>
                 </tr>
               );
             })}

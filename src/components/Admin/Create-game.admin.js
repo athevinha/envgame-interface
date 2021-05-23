@@ -56,7 +56,7 @@ export default class CreateGame extends Component {
           />
           <input
             name="url"
-            value={this.setState.url}
+            value={this.state.url}
             placeholder="Url..."
             onChange={this.onCreateGame}
             className="form-control formCreate"

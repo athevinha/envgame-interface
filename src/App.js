@@ -2,7 +2,7 @@ import "./App.css";
 import React, { Component } from "react";
 import { Link, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Template from "./components/Template.component";
+import Template from "./components/Template/Template.component";
 import Games from "./components/Games.component";
 import CreateGame from "./components/Admin/Create-game.admin";
 import ReadGame from "./components/Admin/Read-game.admin";

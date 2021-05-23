@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import Iframe from "react-iframe";
-import "../style/Template.css";
+import "../../style/Template.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
-import content1 from "./images/content1.jpg";
-import content2 from "./images/content2.jpg";
-import content3 from "./images/content3.jpg";
+import content1 from "../images/content1.jpg";
+import content2 from "../images/content2.jpg";
+import content3 from "../images/content3.jpg";
 import ReactStoreIndicator from "react-score-indicator";
 import { Link, Route, Switch } from "react-router-dom";
 import Footer from "./Footer.component";

@@ -1,0 +1,33 @@
+.grid-container {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  background-color: rgb(197, 197, 197);
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+  text-align: center;
+  border-radius: 1rem;
+}
+.grid-item-image {
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 30vh;
+  width: 30vh;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+.grid-item-txt {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+.play-button {
+  font-size: small;
+  text-transform: unset !important;
+}
