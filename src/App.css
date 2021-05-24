@@ -10,7 +10,7 @@
 }
 .enter {
   position: relative;
-  height: 7.5rem;
+  height: 7rem;
 }
 .form-update {
   position: fixed;
@@ -47,4 +47,9 @@
 .display {
   display: inherit;
   visibility: visible;
+}
+.myClassname {
+  position: fixed;
+  width: 100%;
+  height: 92vh;
 }

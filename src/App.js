@@ -9,7 +9,19 @@ import ReadGame from "./components/Admin/Read-game.admin";
 import UpdateGame from "./components/Admin/Update-game.admin";
 import DeleteGame from "./components/Admin/Delete-game.admin";
 import logoImg from "./components/images/favicon.png";
+import GameService from "./service/game.service";
+import Iframe from "react-iframe";
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      games: [],
+    };
+    GameService.getAll().then((res) => {
+      console.log(res.data);
+      this.setState({ games: res.data });
+    });
+  }
   render() {
     return (
       <div className="App">
@@ -68,6 +80,26 @@ class App extends Component {
             path="/Games/Admin/conchuot123/Delete"
             render={(pr) => <DeleteGame />}
           />
+          {this.state.games.map((game, id) => {
+            return (
+              <Route
+                exact
+                path={`/Games/${game.title}`}
+                render={(pr) => (
+                  <div className="background-iframe">
+                    <div className="enter"></div>
+                    <Iframe
+                      url={game.iframe}
+                      id="myId"
+                      className="myClassname"
+                      display="initial"
+                      position="relative"
+                    />
+                  </div>
+                )}
+              />
+            );
+          })}
         </Switch>
       </div>
     );

@@ -47,6 +47,7 @@ export default class DeleteGame extends Component {
               <th scope="col">Title</th>
               <th scope="col">Description</th>
               <th scope="col">Url</th>
+              <th scope="col">Iframe</th>
               <th scope="col">Function</th>
             </tr>
           </thead>
@@ -58,6 +59,11 @@ export default class DeleteGame extends Component {
                   <td>{game.title}</td>
                   <td>{game.description}</td>
                   <td>{game.url.length >= 15 ? game.url.length : game.url}</td>
+                  <td>
+                    {game.iframe.length >= 15
+                      ? game.iframe.length
+                      : game.iframe}
+                  </td>
                   <td>
                     <button
                       className="btn btn-danger"

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import GameService from "../../service/game.service";
 import "../../App.css";
+import { Link, Route, Switch } from "react-router-dom";
 export default class CreateGame extends Component {
   constructor(props) {
     super(props);
@@ -9,6 +10,7 @@ export default class CreateGame extends Component {
       title: "",
       description: "",
       url: "",
+      iframe: "",
     };
   }
   onCreateGame = (e) => {
@@ -25,6 +27,7 @@ export default class CreateGame extends Component {
           title: "",
           description: "",
           url: "",
+          iframe: "",
         });
       })
       .catch((error) => {
@@ -58,6 +61,13 @@ export default class CreateGame extends Component {
             name="url"
             value={this.state.url}
             placeholder="Url..."
+            onChange={this.onCreateGame}
+            className="form-control formCreate"
+          />
+          <input
+            name="iframe"
+            value={this.state.iframe}
+            placeholder="Iframe..."
             onChange={this.onCreateGame}
             className="form-control formCreate"
           />

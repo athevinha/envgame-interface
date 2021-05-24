@@ -13,6 +13,7 @@ export default class UpdateGame extends Component {
       newTitle: "",
       newDescription: "",
       newUrl: "",
+      newIframe: "",
       _id: "",
     };
     GameService.getAll().then((res) => {
@@ -36,6 +37,7 @@ export default class UpdateGame extends Component {
       newTitle: this.state.newTitle,
       newDescription: this.state.newDescription,
       newUrl: this.state.newUrl,
+      newIframe: this.state.newIframe,
     };
     gameService.update(_id, newData).then((req, res) => {
       toast.info("Cập nhật thành công ", {
@@ -56,9 +58,11 @@ export default class UpdateGame extends Component {
             title: req.data.title,
             description: req.data.description,
             url: req.data.url,
+            iframe: req.data.iframe,
           };
         }
       });
+      console.log(updateGames);
       this.setState({ games: updateGames });
     });
     //===================
@@ -67,6 +71,7 @@ export default class UpdateGame extends Component {
       newTitle: "",
       newDescription: "",
       newUrl: "",
+      newIframe: "",
     });
   };
   onUpdateGame = (e) => {
@@ -105,6 +110,13 @@ export default class UpdateGame extends Component {
               className="form-control inputUpdate"
             />
             <input
+              name="newIframe"
+              value={this.state.newIframe}
+              placeholder="Iframe..."
+              onChange={this.onUpdateGame}
+              className="form-control inputUpdate"
+            />
+            <input
               className="btn btn-block btn-info"
               type="submit"
               value="update"
@@ -125,6 +137,7 @@ export default class UpdateGame extends Component {
               <th scope="col">Title</th>
               <th scope="col">Description</th>
               <th scope="col">Url</th>
+              <th scope="col">Iframe</th>
               <th scope="col">Function</th>
             </tr>
           </thead>
@@ -139,6 +152,11 @@ export default class UpdateGame extends Component {
                     {game.url && game.url.length >= 15
                       ? game.url.length
                       : game.url}
+                  </td>
+                  <td>
+                    {game.iframe.length >= 15
+                      ? game.iframe.length
+                      : game.iframe}
                   </td>
                   <td>
                     <button

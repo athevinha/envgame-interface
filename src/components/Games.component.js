@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import GameService from "../service/game.service";
 import "../style/Games.css";
+import { Link, Route, Switch } from "react-router-dom";
 export default class Games extends Component {
   constructor(props) {
     super(props);
@@ -32,9 +33,12 @@ export default class Games extends Component {
                     <p>{game.description} plays</p>
                   </div>
                   <div className=" col-sm-6">
-                    <button className="btn-info btn play-button">
+                    <Link
+                      className="btn-info btn play-button"
+                      to={`/Games/${game.title}`}
+                    >
                       Play Now
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>

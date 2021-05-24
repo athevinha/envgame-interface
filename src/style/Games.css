@@ -1,7 +1,7 @@
 .grid-container {
   display: grid;
-  grid-column-gap: 50px;
-  grid-row-gap: 50px;
+  grid-column-gap: 1.8rem;
+  grid-row-gap: 1.8rem;
   grid-template-columns: auto auto auto auto;
   padding: 10px;
   background-color: rgb(197, 197, 197);
@@ -11,7 +11,9 @@
     grid-template-columns: auto !important;
   }
 }
-
+.row {
+  width: 100%;
+}
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 30px;
@@ -36,4 +38,5 @@
   font-size: small;
   text-transform: unset !important;
   margin-top: 1.2rem;
+  text-decoration: none;
 }
