@@ -11,6 +11,8 @@ import DeleteGame from "./components/Admin/Delete-game.admin";
 import logoImg from "./components/images/favicon.png";
 import GameService from "./service/game.service";
 import Iframe from "react-iframe";
+import Login from "./components/Login/login";
+import Logup from "./components/Logup/logup";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -53,6 +55,11 @@ class App extends Component {
                     Chơi game
                   </Link>
                 </li>
+                <li className="nav-item">
+                  <Link className="nav-link page-scroll" to={"/Login"}>
+                    Đăng nhập
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -80,6 +87,8 @@ class App extends Component {
             path="/Games/Admin/conchuot123/Delete"
             render={(pr) => <DeleteGame />}
           />
+          <Route exact path="/Logup" render={(pr) => <Logup />} />
+          <Route exact path="/Login" render={(pr) => <Login />} />
           {this.state.games.map((game, id) => {
             return (
               <Route
