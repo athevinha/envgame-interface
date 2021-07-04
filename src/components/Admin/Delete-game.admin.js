@@ -5,6 +5,7 @@ import GameService from "../../service/game.service";
 import "../../App.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import home_route from "../http_route/http-common";
 export default class DeleteGame extends Component {
   constructor(props) {
     super(props);
@@ -16,9 +17,15 @@ export default class DeleteGame extends Component {
       this.setState({ games: res.data });
     });
   }
+  componentDidMount() {
+    let home_link = home_route.home_link().baseURL;
+    if (localStorage.tooken != "U51Ff7qkyIids536my2RtQWQ0zl60OGHjybteQQd") {
+      window.location = home_link;
+    }
+  }
   Delete = (_id) => {
     GameService.delete(_id).then((res) => {
-      toast.error("Xóa game thành công ", {
+      toast.error(res.data, {
         position: "top-right",
         autoClose: 1200,
         hideProgressBar: false,
@@ -27,7 +34,6 @@ export default class DeleteGame extends Component {
         draggable: true,
         progress: undefined,
       });
-      console.log(res);
     });
     this.setState({
       games: this.state.games.filter((game) => game._id !== _id),

@@ -1,14 +1,14 @@
 import Chart from "react-apexcharts";
 import React, { Component } from "react";
-export default class Charts extends Component {
+export default class UserPageGraph extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       series: [
         {
-          name: "Doanh thu",
-          data: [100, 80, 120, 200, 50, 500, 300, 100, 300],
+          name: "Số tiền trồng cây của bạn",
+          data: this.props.earned_money,
         },
         // {
         //   name: "Doanh thu đầu tư vào cây xanh",
@@ -33,7 +33,7 @@ export default class Charts extends Component {
         stroke: {
           show: true,
           width: 2,
-          colors: ["transparent"],
+          colors: ["black"],
         },
         xaxis: {
           categories: [
@@ -46,11 +46,13 @@ export default class Charts extends Component {
             "Aug",
             "Sep",
             "Oct",
+            "Nov",
+            "Dec",
           ],
         },
         yaxis: {
           title: {
-            text: "$ (thousands)",
+            text: "VNĐ (thousand)",
           },
         },
         fill: {
@@ -59,7 +61,7 @@ export default class Charts extends Component {
         tooltip: {
           y: {
             formatter: function (val) {
-              return "$ " + val + " thousands";
+              return val * 1000 + " VNĐ";
             },
           },
         },

@@ -6,8 +6,15 @@ import "../../App.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 export default class Logup extends Component {
+  random_x2y = (x, y) => {
+    return Math.floor(Math.random() * y) + x;
+  };
   constructor(props) {
     super(props);
+    let earned_money = [];
+    for (let i = 0; i < 12; i++) {
+      earned_money[i] = this.random_x2y(100, 1000);
+    }
     this.state = {
       username: "",
       gmail: "",
@@ -16,7 +23,7 @@ export default class Logup extends Component {
       type: 1,
       avatar: "",
       time_playgame: 0,
-      earned_money: [], // money make for month
+      earned_money: earned_money, // money make for month
       played_games: [], // list game played
       interests: [], // list hobby
       tooken: "",

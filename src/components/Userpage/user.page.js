@@ -4,6 +4,7 @@ import "font-awesome/css/font-awesome.min.css";
 import "./user.page.css";
 
 import "react-toastify/dist/ReactToastify.css";
+import UserPageGraph from "./user.page.graph";
 export default class UserPage extends Component {
   constructor(props) {
     super(props);
@@ -34,8 +35,10 @@ export default class UserPage extends Component {
                 <b>Access_tooken:</b> <spam>{user.tooken}</spam>
               </p>
               <p>
-                <b>Type_user:</b>{" "}
-                <spam>{user.type == 1 ? "USER" : "ADMIN"}</spam>
+                <b>Type:</b> <spam>{user.type == 1 ? "USER" : "ADMIN"}</spam>
+              </p>
+              <p>
+                <b>Image:</b> <spam>{user.avatar}</spam>
               </p>
             </div>
             <div className="col-sm-4 text_left">
@@ -50,14 +53,43 @@ export default class UserPage extends Component {
               </p>
             </div>
           </div>
-          {/* <hr className="black_hr block_hr" /> */}
+          <hr className="black_hr block_hr" />
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-6 text_left">
+                <p>
+                  <b>Game đã chơi:</b>{" "}
+                  {this.CheckArrNone(user.played_games) == 0
+                    ? user.played_games.map((game, id) => {
+                        return (
+                          <div>
+                            <p>{game.name}</p>: <p>{game.time}</p>{" "}
+                          </div>
+                        );
+                      })
+                    : "Bạn chưa chơi game nào"}
+                </p>
+              </div>
+              <div className="col-sm-6 text_left">
+                <p>
+                  <b>Game đã thích:</b>{" "}
+                  {this.CheckArrNone(user.interests) == 0
+                    ? user.interests.map((game, id) => {
+                        return <spam>{game}</spam>;
+                      })
+                    : "Bạn chưa thích game nào"}
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr className="black_hr block_hr" />
           <p>
-            <b>Played_game:</b>{" "}
-            {this.CheckArrNone(user.earned_money) == 0
-              ? user.earned_money.map((e, id) => {
-                  return <p>{e}</p>;
-                })
-              : "None"}
+            <b>Số tiền trồng cây:</b>{" "}
+            {this.CheckArrNone(user.earned_money) == 0 ? (
+              <UserPageGraph earned_money={user.earned_money}></UserPageGraph>
+            ) : (
+              "None"
+            )}
           </p>
         </div>
       </div>

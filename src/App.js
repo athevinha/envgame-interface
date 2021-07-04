@@ -157,22 +157,18 @@ class App extends Component {
           />
           <Route
             exact
-            path="/Games/Admin/conchuot123/Create"
+            path="/Admin/Games/Create"
             render={(pr) => <CreateGame />}
           />
+          <Route exact path="/Admin/Games/Read" render={(pr) => <ReadGame />} />
           <Route
             exact
-            path="/Games/Admin/conchuot123/Read"
-            render={(pr) => <ReadGame />}
-          />
-          <Route
-            exact
-            path="/Games/Admin/conchuot123/Update"
+            path="/Admin/Games/Update"
             render={(pr) => <UpdateGame />}
           />
           <Route
             exact
-            path="/Games/Admin/conchuot123/Delete"
+            path="/Admin/Games/Delete"
             render={(pr) => <DeleteGame />}
           />
           <Route exact path="/Logup" render={(pr) => <Logup />} />
@@ -201,8 +197,9 @@ class App extends Component {
             console.log(user);
             return (
               <Route
-                path={`/users/${user._id}`}
-                render={(pr) => <UserPage user={user}></UserPage>}
+                exact
+                path={`/Users/${user._id}`}
+                render={(pr) => <UserPage user={user} />}
               />
             );
           })}

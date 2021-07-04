@@ -2,13 +2,18 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import GameService from "../../service/game.service";
 import "../../App.css";
+import { ToastContainer, toast } from "react-toastify";
 import { Link, Route, Switch } from "react-router-dom";
+import home_route from "../http_route/http-common";
 export default class CreateGame extends Component {
+  random_x2y = (x, y) => {
+    return Math.floor(Math.random() * y) + x;
+  };
   constructor(props) {
     super(props);
     this.state = {
       title: "",
-      description: "",
+      description: this.random_x2y(2000, 5000).toString(),
       url: "",
       iframe: "",
     };
@@ -18,16 +23,30 @@ export default class CreateGame extends Component {
       [e.target.name]: e.target.value,
     });
   };
+  componentDidMount() {
+    let home_link = home_route.home_link().baseURL;
+    if (localStorage.tooken != "U51Ff7qkyIids536my2RtQWQ0zl60OGHjybteQQd") {
+      window.location = home_link;
+    }
+  }
   CreateGame = (e) => {
     e.preventDefault();
-    console.log(this.state);
     GameService.create(this.state)
       .then((req, res) => {
         this.setState({
           title: "",
-          description: "",
+          description: this.random_x2y(2000, 5000).toString(),
           url: "",
           iframe: "",
+        });
+        toast.info("Thêm game thành công ", {
+          position: "top-right",
+          autoClose: 1200,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
         });
       })
       .catch((error) => {
@@ -42,6 +61,9 @@ export default class CreateGame extends Component {
   render() {
     return (
       <div>
+        <ToastContainer />
+        {/* Same as */}
+        <ToastContainer />
         <form onSubmit={this.CreateGame} className="form">
           <input
             onChange={this.onCreateGame}

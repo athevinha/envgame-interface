@@ -5,6 +5,7 @@ import "../../App.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import gameService from "../../service/game.service";
+import home_route from "../http_route/http-common";
 export default class UpdateGame extends Component {
   constructor(props) {
     super(props);
@@ -22,6 +23,16 @@ export default class UpdateGame extends Component {
     });
     this.updateForm = React.createRef();
   }
+  componentDidMount() {
+    let home_link = home_route.home_link().baseURL;
+    if (localStorage.tooken != "U51Ff7qkyIids536my2RtQWQ0zl60OGHjybteQQd") {
+      window.location = home_link;
+    }
+  }
+  Space2Under = (txt) => {
+    let new_txt = txt.split(" ").join("_");
+    return new_txt;
+  };
   Update = (_id) => {
     this.updateForm.current.className = "update-admin display";
     this.setState({ _id: _id });
@@ -36,7 +47,8 @@ export default class UpdateGame extends Component {
     let newData = {
       newTitle: this.state.newTitle,
       newDescription: this.state.newDescription,
-      newUrl: this.state.newUrl,
+      newUrl:
+        "/assets/img_games/" + this.Space2Under(this.state.newTitle) + ".png",
       newIframe: this.state.newIframe,
     };
     gameService.update(_id, newData).then((req, res) => {
@@ -57,7 +69,8 @@ export default class UpdateGame extends Component {
             _id: _id,
             title: req.data.title,
             description: req.data.description,
-            url: req.data.url,
+            url:
+              "/assets/img_games/" + this.Space2Under(req.data.title) + ".png",
             iframe: req.data.iframe,
           };
         }
@@ -149,7 +162,7 @@ export default class UpdateGame extends Component {
                   <td>{game.title}</td>
                   <td>{game.description}</td>
                   <td>
-                    {game.url && game.url.length >= 15
+                    {game.url && game.url.length >= 50
                       ? game.url.length
                       : game.url}
                   </td>

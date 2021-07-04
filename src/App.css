@@ -82,7 +82,7 @@
   transition: 0.4s;
   border-radius: 25px;
   height: 75%;
-  width: 18%;
+  width: 20%;
   top: 10rem;
   /* left: 1%; */
   background-color: rgb(220, 217, 217);
@@ -111,7 +111,7 @@
   color: palegreen;
 }
 .hide_side {
-  left: -19%;
+  left: -21%;
 }
 .show_side {
   left: 1%;

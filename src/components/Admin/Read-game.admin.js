@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import GameService from "../../service/game.service";
 import "../../App.css";
+import home_route from "../http_route/http-common";
 export default class ReadGame extends Component {
   constructor(props) {
     super(props);
@@ -11,6 +12,12 @@ export default class ReadGame extends Component {
     GameService.getAll().then((req) => {
       this.setState({ games: req.data });
     });
+  }
+  componentDidMount() {
+    let home_link = home_route.home_link().baseURL;
+    if (localStorage.tooken != "U51Ff7qkyIids536my2RtQWQ0zl60OGHjybteQQd") {
+      window.location = home_link;
+    }
   }
   render() {
     return (
