@@ -8,9 +8,8 @@ export default class ReadGame extends Component {
     this.state = {
       games: [],
     };
-    GameService.getAll().then((res) => {
-      console.log(res.data);
-      this.setState({ games: res.data });
+    GameService.getAll().then((req) => {
+      this.setState({ games: req.data });
     });
   }
   render() {

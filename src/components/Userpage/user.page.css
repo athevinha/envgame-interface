@@ -1,0 +1,11 @@
+.text_left {
+  text-align: left;
+  margin-top: 1rem;
+}
+.text_center {
+  text-align: left;
+  margin-top: 1rem;
+}
+.border_right_black {
+  border-right: 1px black soli;
+}

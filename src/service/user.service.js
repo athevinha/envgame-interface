@@ -1,7 +1,7 @@
 import http from "../http-common";
 class GameService {
   getAll() {
-    return http.get("/games/read");
+    return http.get("/users/read");
   }
 
   get(id) {

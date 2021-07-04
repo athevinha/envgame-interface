@@ -605,7 +605,7 @@ nav:hover {
 .header {
   padding-top: 7rem;
   padding-bottom: 7rem;
-  background-image: url("../components/images/article-details-large.jpg");
+  background-image: url("../components/Template/images/article-details-large.jpg");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */

@@ -1,22 +1,82 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
-import GameService from "../../service/game.service";
+import UserService from "../../service/user.service";
 import "../../App.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Link, Route, Switch } from "react-router-dom";
+import userService from "../../service/user.service";
+import home_route from "../http_route/http-common";
 export default class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: "",
+      gmail: "",
       password: "",
+      users: [],
     };
+    userService.getAll().then((req, res) => {
+      console.log(req.data);
+      this.setState({ users: req.data });
+    });
   }
+  componentDidMount() {
+    if (localStorage.getItem("tooken") != null) {
+      window.location = home_route.home_link().baseURL;
+    }
+  }
+  onLogin = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value,
+    });
+  };
+  Login = (e) => {
+    e.preventDefault();
+    let not_one = 0;
+    this.state.users.map((user, id) => {
+      console.log(user);
+      if (
+        user.gmail == this.state.gmail &&
+        user.password == this.state.password
+      ) {
+        toast.info("Đăng nhập thành công!", {
+          position: "top-right",
+          autoClose: 1500,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+        localStorage.setItem("tooken", user.tooken);
+        let home = home_route.home_link().baseURL;
+        setTimeout(() => {
+          window.location = home;
+        }, 1500);
+      } else {
+        not_one++;
+        console.log(not_one);
+        if (not_one == this.state.users.length) {
+          toast.error("Đăng nhập thất bại, gmail hoặc mật khẩu không đúng!", {
+            position: "top-right",
+            autoClose: 1500,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+        }
+      }
+    });
+  };
   render() {
     return (
       <div>
+        <ToastContainer />
+        {/* Same as */}
+        <ToastContainer />
         <div className="enter"></div>
         <body
           class="img js-fullheight"
@@ -25,20 +85,21 @@ export default class Login extends Component {
           <section class="ftco-section">
             <div class="container">
               <div class="row justify-content-center">
-                <div class="col-md-6 text-center mb-5">
-                  <h2 class="heading-section">Login #10</h2>
-                </div>
+                <p class="heading-section">Đăng nhập </p>
+                <hr />
               </div>
               <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-6">
                   <div class="login-wrap p-0">
-                    <h3 class="mb-4 text-center">Have an account?</h3>
-                    <form action="#" class="signin-form">
+                    <form action="#" class="signin-form" onSubmit={this.Login}>
                       <div class="form-group">
                         <input
                           type="text"
                           class="form-control"
-                          placeholder="Username"
+                          placeholder="Gmail..."
+                          name="gmail"
+                          value={this.state.gmail}
+                          onChange={this.onLogin}
                           required
                         />
                       </div>
@@ -46,14 +107,13 @@ export default class Login extends Component {
                         <input
                           id="password-field"
                           type="password"
+                          name="password"
+                          value={this.state.password}
+                          onChange={this.onLogin}
                           class="form-control"
-                          placeholder="Password"
+                          placeholder="Password..."
                           required
                         />
-                        <span
-                          toggle="#password-field"
-                          class="fa fa-fw fa-eye field-icon toggle-password"
-                        ></span>
                       </div>
                       <div class="form-group">
                         <button

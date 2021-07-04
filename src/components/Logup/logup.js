@@ -5,7 +5,6 @@ import UserService from "../../service/user.service";
 import "../../App.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import gameService from "../../service/game.service";
 export default class Logup extends Component {
   constructor(props) {
     super(props);
@@ -47,6 +46,7 @@ export default class Logup extends Component {
     e.preventDefault();
     let finalUser = this.state;
     finalUser.tooken = this.GenerateTooken();
+    console.log(finalUser);
     UserService.create(finalUser).then((req, res) => {
       toast.success("Đăng ký thành công!", {
         position: "top-right",
@@ -82,6 +82,7 @@ export default class Logup extends Component {
             <div class="container">
               <div class="row justify-content-center">
                 <p class="heading-section">Đăng ký</p>
+                <hr />
               </div>
               <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-6">
@@ -129,7 +130,6 @@ export default class Logup extends Component {
                           onChange={this.onLogup}
                           class="form-control"
                           placeholder="Link your image..."
-                          required
                         />
                       </div>
                       <div class="form-group">
@@ -140,7 +140,6 @@ export default class Logup extends Component {
                           onChange={this.onLogup}
                           class="form-control"
                           placeholder="Description..."
-                          required
                         />
                       </div>
                       <div class="form-group">
