@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import GameService from "../../service/game.service";
+import UserService from "../../service/user.service";
 import "../../style/Games.css";
 import { Link, Route, Switch } from "react-router-dom";
 export default class Games extends Component {
@@ -8,6 +9,8 @@ export default class Games extends Component {
     super(props);
     this.state = {
       games: [],
+      STime: 0,
+      ETime: 0,
     };
     GameService.getAll().then((res) => {
       console.log(res.data);
@@ -19,7 +22,19 @@ export default class Games extends Component {
     if (localStorage.getItem("tooken") == null) {
       this.updateForm.current.className = "update-admin display";
     }
+    this.setState({ STime: new Date().getTime() });
   }
+  Get_Played_Game = (game) => {
+    console.log(game);
+    let user = this.props.user;
+    let time = new Date();
+    time = time.toString();
+    user.played_games.push({ title: game.title, time: time });
+    UserService.update(user._id, user).then((req, res) => {
+      console.log(req.data);
+      // this.setState({ users: req.data });
+    });
+  };
   render() {
     return (
       <div>
@@ -56,6 +71,7 @@ export default class Games extends Component {
                     <Link
                       className="btn-info btn play-button"
                       to={`/Games/${game.title}`}
+                      onClick={() => this.Get_Played_Game(game)}
                     >
                       Chơi ngay
                     </Link>

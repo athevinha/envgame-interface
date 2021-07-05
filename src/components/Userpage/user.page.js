@@ -4,14 +4,23 @@ import "font-awesome/css/font-awesome.min.css";
 import "./user.page.css";
 
 import "react-toastify/dist/ReactToastify.css";
+import home_route from "../http_route/http-common";
 import UserPageGraph from "./user.page.graph";
+import UserPageGraphTime from "./user.page.graph_time";
 export default class UserPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
       user: {},
     };
-    console.log(this.props);
+  }
+  componentDidMount() {
+    if (
+      localStorage.tooken != this.props.user.tooken &&
+      localStorage.tooken != "U51Ff7qkyIids536my2RtQWQ0zl60OGHjybteQQd"
+    ) {
+      window.location = home_route.home_link().baseURL;
+    }
   }
   CheckArrNone = (Arr) => {
     if (Arr.length == 0) {
@@ -23,7 +32,7 @@ export default class UserPage extends Component {
   render() {
     const user = this.props.user;
     return (
-      <div>
+      <div className="darker_blue light_blue">
         <div className="enter"></div>
 
         <div className="container">
@@ -53,35 +62,52 @@ export default class UserPage extends Component {
               </p>
             </div>
           </div>
+        </div>
+        <div className="container">
           <hr className="black_hr block_hr" />
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-6 text_left">
-                <p>
-                  <b>Game đã chơi:</b>{" "}
-                  {this.CheckArrNone(user.played_games) == 0
-                    ? user.played_games.map((game, id) => {
+          <div className="row">
+            <div className="col-sm-6 text_left">
+              <p>
+                <b>Lịch sử chơi:</b>{" "}
+                {this.CheckArrNone(user.played_games) == 0
+                  ? user.played_games.map((game, id) => {
+                      if (id % 2 == 0)
                         return (
                           <div>
-                            <p>{game.name}</p>: <p>{game.time}</p>{" "}
+                            <spam>
+                              <b>{game.title}:</b> {game.time}
+                            </spam>{" "}
                           </div>
                         );
-                      })
-                    : "Bạn chưa chơi game nào"}
-                </p>
-              </div>
-              <div className="col-sm-6 text_left">
-                <p>
-                  <b>Game đã thích:</b>{" "}
-                  {this.CheckArrNone(user.interests) == 0
-                    ? user.interests.map((game, id) => {
-                        return <spam>{game}</spam>;
-                      })
-                    : "Bạn chưa thích game nào"}
-                </p>
-              </div>
+                    })
+                  : "Bạn chưa chơi game nào"}
+              </p>
+            </div>
+            <div className="col-sm-6 text_left">
+              <p>
+                <b>---------------</b>{" "}
+                {this.CheckArrNone(user.played_games) == 0
+                  ? user.played_games.map((game, id) => {
+                      if (id % 2 != 0)
+                        return (
+                          <div>
+                            <spam>
+                              <b>{game.title}:</b> {game.time}
+                            </spam>{" "}
+                          </div>
+                        );
+                    })
+                  : "Bạn chưa chơi game nào"}
+              </p>
             </div>
           </div>
+        </div>
+        <div className="container">
+          <hr className="black_hr block_hr" />
+          <p>
+            <b>Thời gian chơi game:</b>{" "}
+            <UserPageGraphTime time_gaming={user.time_gaming} />
+          </p>
           <hr className="black_hr block_hr" />
           <p>
             <b>Số tiền trồng cây:</b>{" "}

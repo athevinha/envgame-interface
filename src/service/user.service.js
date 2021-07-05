@@ -12,7 +12,7 @@ class GameService {
     return http.post("/users/create", data);
   }
   update(id, data) {
-    return http.put(`/games/update/${id}`, data);
+    return http.put(`/users/update/${id}`, data);
   }
 
   delete(id) {

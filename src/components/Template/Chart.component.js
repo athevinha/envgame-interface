@@ -1,6 +1,9 @@
 import Chart from "react-apexcharts";
 import React, { Component } from "react";
 export default class Charts extends Component {
+  random_x2y = (x, y) => {
+    return Math.floor(Math.random() * y) + x;
+  };
   constructor(props) {
     super(props);
 
@@ -8,11 +11,31 @@ export default class Charts extends Component {
       series: [
         {
           name: "Doanh thu",
-          data: [100, 80, 120, 200, 50, 500, 300, 100, 300],
+          data: [
+            this.random_x2y(400, 700),
+            this.random_x2y(400, 700),
+            this.random_x2y(400, 700),
+            this.random_x2y(400, 700),
+            this.random_x2y(400, 700),
+            this.random_x2y(400, 700),
+            this.random_x2y(400, 700),
+            this.random_x2y(400, 700),
+            this.random_x2y(400, 700),
+          ],
         },
         {
           name: "Doanh thu đầu tư vào cây xanh",
-          data: [80, 64, 96, 160, 40, 400, 240, 80, 240],
+          data: [
+            (this.random_x2y(100, 480) * 80) / 100,
+            (this.random_x2y(100, 480) * 80) / 100,
+            (this.random_x2y(100, 480) * 80) / 100,
+            (this.random_x2y(100, 480) * 80) / 100,
+            (this.random_x2y(100, 480) * 80) / 100,
+            (this.random_x2y(100, 480) * 80) / 100,
+            (this.random_x2y(100, 480) * 80) / 100,
+            (this.random_x2y(100, 480) * 80) / 100,
+            (this.random_x2y(100, 480) * 80) / 100,
+          ],
         },
       ],
       options: {
@@ -33,7 +56,7 @@ export default class Charts extends Component {
         stroke: {
           show: true,
           width: 2,
-          colors: ["transparent"],
+          colors: ["black"],
         },
         xaxis: {
           categories: [
@@ -50,7 +73,7 @@ export default class Charts extends Component {
         },
         yaxis: {
           title: {
-            text: "$ (thousands)",
+            text: "VNĐ (nghìn)",
           },
         },
         fill: {
@@ -59,7 +82,7 @@ export default class Charts extends Component {
         tooltip: {
           y: {
             formatter: function (val) {
-              return "$ " + val + " thousands";
+              return val * 1000 + " VNĐ";
             },
           },
         },

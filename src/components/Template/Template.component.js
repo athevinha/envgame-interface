@@ -10,67 +10,64 @@ import ReactStoreIndicator from "react-score-indicator";
 import { Link, Route, Switch } from "react-router-dom";
 import Footer from "./Footer.component";
 import Chart from "./Chart.component";
+import Quynh_Nhu from "./images/Quynh_Nhu.jpg";
+import The_Vinh from "./images/The_Vinh.jpg";
+import Quan_Ngo from "./images/Quan_Ngo.jpg";
 export default class Template extends Component {
   render() {
     return (
-      <div>
+      <div className="dark_blue">
         {/* Navigation */}
         <header id="header" className="header">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="text-container">
-                  <h1 className="h1-large h-name">Enviroment Games</h1>
-                  <p className="p-large p-name">
-                    Nền tảng thiết kế game tăng tỷ lệ cây trồng cho môi trường
-                  </p>
+          <div className="container text_center">
+            <div className="text-container text_left row">
+              <h1 className="h1-large h-name">Enviroment Games</h1>
+              <p className="p-large p-name">
+                Nền tảng thiết kế game tăng tỷ lệ cây trồng cho môi trường
+              </p>
+              <Link className="btn playButton text_center" to={"/Games"}>
+                <i className="fa fa-gamepad"></i> Chơi game ngay
+              </Link>
 
-                  <Link
-                    className="btn btn-success secondary playButton"
-                    to={"/Games"}
-                  >
-                    <i className="fa fa-gamepad"></i> Chơi game ngay
-                  </Link>
-                </div>{" "}
-                {/* end of text-container */}
-              </div>{" "}
               {/* end of col */}
               {/* end of col */}
             </div>{" "}
-            {/* end of row */}
+            {/* end of row row_T */}
           </div>{" "}
           {/* end of container */}
         </header>{" "}
-        <div id="details" className="basic-2">
+        <div id="details" className="basic-2 basic">
           <div className="container">
-            <div className="row">
+            <div className="row row_T">
               <div className="col-lg-5">
                 <div className="text-container">
-                  <h2 className="content text-uppercase">Thực trạng</h2>
-                  <hr />
+                  <h2 className=" text-uppercase title_T">Thực trạng</h2>
+                  <hr className="blue_dark_hr" />
                   <ul className="list-unstyled li-space-lg">
                     <li className="media">
-                      <i className="fa fa-chevron-right"></i>
                       <div className="media-body">
                         {" "}
-                        Diện tích rừng bị thiệt hại giảm 270ha/năm Trong 4 năm
-                        từ 2016-2019, diện tích rừng bị thiệt hại đã lên tới
+                        <spam className="circle_blue_small"></spam>Diện tích
+                        rừng bị thiệt hại giảm 270ha/năm Trong 4 năm từ
+                        2016-2019, diện tích rừng bị thiệt hại đã lên tới
                         7.283ha.
                       </div>
                     </li>
                     <li className="media">
-                      <i className="fa fa-chevron-right"></i>
                       <div className="media-body">
-                        Tây Nguyên có tổng diện tích tự nhiên 5.459.785ha, chiếm
-                        16,8% diện tích cả nước. Kết quả công bố hiện trạng rừng
-                        năm 2019 chỉ ra rằng, toàn khu vực Tây Nguyên có
-                        3.239.600ha đất lâm nghiệp, trong đó diện tích có rừng
-                        2.559.596ha.
+                        <spam className="circle_blue_small"></spam>Tây Nguyên có
+                        tổng diện tích tự nhiên 5.459.785ha, chiếm 16,8% diện
+                        tích cả nước. Kết quả công bố hiện trạng rừng năm 2019
+                        chỉ ra rằng, toàn khu vực Tây Nguyên có 3.239.600ha đất
+                        lâm nghiệp, trong đó diện tích có rừng 2.559.596ha.
                       </div>
                     </li>
                   </ul>
-                  <a href="https://laodong.vn/xa-hoi/nhung-he-luy-tu-mat-rung-ngay-cang-nghiem-trong-817416.ldo#:~:text=H%E1%BA%ADu%20qu%E1%BA%A3%20c%E1%BB%A7a%20vi%E1%BB%87c%20ph%C3%A1,Trung%20b%E1%BB%99%2C%20T%C3%A2y%20Nguy%C3%AAn%20v%C3%A0">
-                    laodong.vn.com
+                  <a
+                    className="btn btn-info"
+                    href="https://laodong.vn/xa-hoi/nhung-he-luy-tu-mat-rung-ngay-cang-nghiem-trong-817416.ldo#:~:text=H%E1%BA%ADu%20qu%E1%BA%A3%20c%E1%BB%A7a%20vi%E1%BB%87c%20ph%C3%A1,Trung%20b%E1%BB%99%2C%20T%C3%A2y%20Nguy%C3%AAn%20v%C3%A0"
+                  >
+                    Chi tiết
                   </a>
                 </div>{" "}
                 {/* end of text-container */}
@@ -84,17 +81,17 @@ export default class Template extends Component {
               </div>{" "}
               {/* end of col */}
             </div>{" "}
-            {/* end of row */}
+            {/* end of row row_T */}
           </div>{" "}
           {/* end of container */}
         </div>{" "}
-        {/* end of basic-2 */}
+        {/* end of basic-2 basic */}
         {/* end of details 1 */}
         {/* Details 2 */}
-        <div className="basic-3">
+        <div className="basic-3 basic">
           <div className="black-background"></div>
           <div className="container">
-            <div className="row">
+            <div className="row row_T">
               <div className="col-lg-7">
                 <div className="image-container">
                   <img className="img-fluid" src={content2} alt="alternative" />
@@ -104,41 +101,40 @@ export default class Template extends Component {
               {/* end of col */}
               <div className="col-lg-5">
                 <div className="text-container">
-                  <h2 id="title-2" className="text-uppercase">
+                  <h2 className="text-uppercase title_T">
                     Rừng là lá phổi của trái đất
                   </h2>
-                  <hr />
+                  <hr className="blue_dark_hr" />
                   <ul className="list-unstyled li-space-lg">
                     <li className="media">
-                      <i className="fa fa-chevron-right"></i>
+                      <spam className="circle_blue_small"> </spam>
                       <div className="media-body">Chống biển đổi khí hậu.</div>
                     </li>
                     <li className="media">
-                      <i className="fa fa-chevron-right"></i>
+                      <spam className="circle_blue_small"></spam>
                       <div className="media-body">Làm sạch không khí</div>
                     </li>
                     <li className="media">
-                      <i className="fa fa-chevron-right"></i>
+                      <spam className="circle_blue_small"></spam>
                       <div className="media-body">
                         Cung cấp Oxy cho con người.
                       </div>
-                      1
                     </li>
                     <li className="media">
-                      <i className="fa fa-chevron-right"></i>
+                      <spam className="circle_blue_small"></spam>
                       <div className="media-body">Tạo bóng mát.</div>
                     </li>
                     <li className="media">
-                      <i className="fa fa-chevron-right"></i>
+                      <spam className="circle_blue_small"></spam>
                       <div className="media-body">Bảo tồn năng lượng.</div>
                     </li>
                     <li className="media">
-                      <i className="fa fa-chevron-right"></i>
+                      <spam className="circle_blue_small"></spam>
                       <div className="media-body">Chống xói mòn đất</div>
                     </li>
                   </ul>
                   <a
-                    className="btn-solid-reg btn btn-block"
+                    className="btn btn-info"
                     href="https://jadiny.vn/blog/21-loi-ich-cua-viec-trong-cay-xanh-ma-ban-thay-ro_n507.html"
                   >
                     Chi tiết
@@ -148,38 +144,31 @@ export default class Template extends Component {
               </div>{" "}
               {/* end of col */}
             </div>{" "}
-            {/* end of row */}
+            {/* end of row row_T */}
           </div>{" "}
           {/* end of container */}
         </div>{" "}
-        {/* end of basic-3 */}
-        {/* end of details 2 */}
-        {/* Details Lightbox */}
-        {/* Lightbox */}
-        <div
-          id="details-lightbox"
-          className="lightbox-basic zoom-anim-dialog mfp-hide"
-        >
-          <div className="row">
+        <div className="container basic-4 basic">
+          <div className="row row_T">
             <div className="col-lg-4">
-              <h3>MINI GAME</h3>
-              <hr />
-              <p>
-                MINI GAME Đang là xu hướng thế giới để thu hút được nhiều khách
-                hàng
+              <h3 className="title_T">MINI GAME</h3>
+              <hr className="blue_dark_hr" />
+              <p className="light_blue">
+                <spam className="circle_blue_small"></spam> MINI GAME Đang là xu
+                hướng thế giới để thu hút được nhiều khách hàng
               </p>
-              <h3 className="text-uppercase">Thời Gian</h3>
-              <hr />
-              <p>
-                Mini game sẽ thu hút được rất nhiều người biết tới website,
-                fanpage hay sản phẩm của bạn và rất nhiều nhãn hàng lớn đã sử
-                dụng. Tuy nhiên chi phí lại quá đắt để ADgame cung cấp cho bạn
-                một công cụ để dùng với chi phí thấp. Chỉ với 20 phút làm quen
-                bạn đã có thể tạo ra nội dung có tương tác cao hơn nội dung
-                truyền thống
+              <h3 className="text-uppercase title_T">Thời Gian</h3>
+              <hr className="blue_dark_hr" />
+              <p className="light_blue">
+                <spam className="circle_blue_small"></spam>Mini game sẽ thu hút
+                được rất nhiều người biết tới website, fanpage hay sản phẩm của
+                bạn và rất nhiều nhãn hàng lớn đã sử dụng. Tuy nhiên chi phí lại
+                quá đắt để ADgame cung cấp cho bạn một công cụ để dùng với chi
+                phí thấp. Chỉ với 20 phút làm quen bạn đã có thể tạo ra nội dung
+                có tương tác cao hơn nội dung truyền thống
               </p>
               <a
-                className="btn-solid-reg btn btn-block"
+                className="btn btn-info"
                 href="https://harafunnel.com/blogs/thu-hut-khach-hang-moi/5-mini-game-tao-duoc-nhieu-tuong-tac-nhat-tu-cac-thuong-hieu-noi-tieng"
               >
                 Chi tiết
@@ -194,11 +183,17 @@ export default class Template extends Component {
             {/* end of col */}
             {/* end of col */}
           </div>{" "}
-          {/* end of row */}
+          {/* end of row row_T */}
         </div>{" "}
         <div className="counter">
           <div className="container">
-            <div className="row">
+            <div className="row row_T">
+              <div className="col-lg-12">
+                <h3 className="contact text-uppercase text_left title_T">
+                  Doanh thu và doanh thu đầu tư vào cây xanh
+                </h3>
+                <hr className="blue_dark_hr" />
+              </div>
               <div className="col-lg-12">
                 {/* Counter */}
                 <div id="counter">
@@ -208,38 +203,73 @@ export default class Template extends Component {
               </div>{" "}
               {/* end of col */}
             </div>{" "}
-            {/* end of row */}
+            {/* end of row row_T */}
           </div>{" "}
           {/* end of container */}
         </div>{" "}
         {/* Footer */}
-        <div className="footer">
+        <Footer></Footer>
+        <div className="container basic-5 basic">
+          <div className="row row_T">
+            <div className="col-lg-12">
+              <h3 className="contact text-uppercase text_left title_T">
+                Thông tin về nhóm
+              </h3>
+              <hr className="blue_dark_hr" />
+            </div>
+            <div className="col-lg-4 text_center">
+              <img src={The_Vinh} className="image_team" />
+              <p className="light_blue type_T">
+                <b>Đội trưởng</b>
+              </p>
+              <p className="white_color">
+                <b>Nguyễn Thế Vinh</b>
+              </p>
+              <p className="white_color ">THPT chuyên Đại Học Vinh</p>
+            </div>
+            <div className="col-lg-4 text_center">
+              <img src={Quynh_Nhu} className="image_team" />
+              <p className="light_blue type_T">Thành viên</p>
+              <p className="white_color">
+                <b>Đậu Quỳnh Như</b>
+              </p>
+              <p className="white_color">THPT chuyên Đại Học Vinh</p>
+            </div>
+            <div className="col-lg-4 text_center">
+              <img src={Quan_Ngo} className="image_team" />
+              <p className="light_blue type_T">Thành viên</p>
+              <p className="white_color">
+                <b>Ngô Minh Quân</b>
+              </p>
+              <p className="white_color">THPT Thái Lão</p>
+            </div>
+          </div>
+        </div>
+        <div className="footer basic">
           <div className="container">
-            <div className="row">
+            <div className="row row_T">
               <div className="col-lg-12">
-                <h1 className="contact text-uppercase">Thông tin liên hệ</h1>
-                <div className="social-container">
+                <h3 className="contact text-uppercase text_center title_T">
+                  Thông tin liên hệ
+                </h3>
+                <div className="social-container text_center">
                   <span className="fa-stack">
                     <a href="https://www.facebook.com/nguyen.thevinh.5496/">
-                      <i className="fa fa-circle fa-stack-2x"></i>
-                      <i className="fa fa-facebook-f fa-stack-1x"></i>
+                      <i className="fa fa-facebook fa-stack-1x"></i>
                     </a>
                   </span>
                   <span className="fa-stack">
                     <a href="https://github.com/athevinha">
-                      <i className="fa fa-circle fa-stack-2x"></i>
                       <i className="fa fa-github fa-stack-1x"></i>
                     </a>
                   </span>
                   <span className="fa-stack">
                     <a href="https://www.instagram.com/nguyen_the_vinh_lt/">
-                      <i className="fa fa-circle fa-stack-2x"></i>
                       <i className="fa fa-instagram fa-stack-1x"></i>
                     </a>
                   </span>
                   <span className="fa-stack">
                     <a href="https://www.youtube.com/channel/UC2LHhJZYclSyw2umXk7X6ow">
-                      <i className="fa fa-circle fa-stack-2x"></i>
                       <i className="fa fa-youtube fa-stack-1x"></i>
                     </a>
                   </span>
@@ -251,9 +281,8 @@ export default class Template extends Component {
         {/*  */}
         {/* Copyright */}
         <div className="copyright">
-          <Footer></Footer>
           <div className="container">
-            <div className="row">
+            <div className="row row_T">
               <div className="col-lg-6">
                 <ul className="list-unstyled li-space-lg p-small">
                   <li>

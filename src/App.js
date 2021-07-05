@@ -11,11 +11,11 @@ import DeleteGame from "./components/Admin/Delete-game.admin";
 import logoImg from "./components/Template/images/favicon.png";
 import GameService from "./service/game.service";
 import userService from "./service/user.service";
-import Iframe from "react-iframe";
 import Login from "./components/Login/login";
 import Logup from "./components/Logup/logup";
 import home_link from "./components/http_route/http-common";
 import UserPage from "./components/Userpage/user.page";
+import Game from "./components/Game/Game.component";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -81,23 +81,23 @@ class App extends Component {
               ? this.state.user_current.username
               : "Hãy đăng nhập"}
           </h3>
-          <hr className="black_hr" />
+          <hr className="blue_dark_hr" />
           <div
             className="grid-item-image avatar_show"
             style={{
               backgroundImage: `url(${this.state.user_current.avatar})`,
             }}
           ></div>
-          <hr className="black_hr" />
+          <hr className="blue_dark_hr" />
           <p class="w3-bar-item">{this.state.user_current.gmail}</p>
           {/* <p class="w3-bar-item">{this.state.user_current.earned_money}</p>
           <p class="w3-bar-item">{this.state.user_current.played_games}</p> */}
-          <hr className="black_hr" />
+          <hr className="blue_dark_hr" />
           <p class="w3-bar-item">
             <b>Description: </b>
             {this.state.user_current.description}
           </p>
-          <hr className="black_hr" />
+          <hr className="blue_dark_hr" />
           <p class="w3-bar-item">
             <b>User ID: </b>
             <Link to={`./users/${this.state.user_current._id}`}>
@@ -153,7 +153,9 @@ class App extends Component {
           <Route
             exact
             path="/Games"
-            render={(pr) => <Games className="width75" />}
+            render={(pr) => (
+              <Games className="width75" user={this.state.user_current} />
+            )}
           />
           <Route
             exact
@@ -179,16 +181,7 @@ class App extends Component {
                 exact
                 path={`/Games/${game.title}`}
                 render={(pr) => (
-                  <div className="background-iframe">
-                    <div className="enter"></div>
-                    <Iframe
-                      url={game.iframe}
-                      id="myId"
-                      className="myClassname"
-                      display="initial"
-                      position="relative"
-                    />
-                  </div>
+                  <Game game={game} user={this.state.user_current} />
                 )}
               />
             );

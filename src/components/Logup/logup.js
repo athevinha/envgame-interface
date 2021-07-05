@@ -22,10 +22,9 @@ export default class Logup extends Component {
       description: "",
       type: 1,
       avatar: "",
-      time_playgame: 0,
       earned_money: earned_money, // money make for month
       played_games: [], // list game played
-      interests: [], // list hobby
+      time_gaming: [], // time game
       tooken: "",
     };
   }
