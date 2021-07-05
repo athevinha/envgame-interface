@@ -86,6 +86,7 @@ class App extends Component {
             className="grid-item-image avatar_show"
             style={{
               backgroundImage: `url(${this.state.user_current.avatar})`,
+              backgroundColor: `rgb(0, 17, 51)`,
             }}
           ></div>
           <hr className="blue_dark_hr" />

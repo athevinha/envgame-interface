@@ -9,3 +9,7 @@
 .border_right_black {
   border-right: 1px rgb(230, 0, 0) soli;
 }
+.blue_dark_hr {
+  background-color: rgb(88, 189, 255) !;
+  height: 1px;
+}

@@ -32,39 +32,44 @@ export default class UserPage extends Component {
   render() {
     const user = this.props.user;
     return (
-      <div className="darker_blue light_blue">
+      <div className="dark_blue light_blue">
         <div className="enter"></div>
 
         <div className="container">
           <h2>Trang cá nhân </h2>
-          <hr className="black_hr block_hr" />
+          <hr className="green_dark_hr block_hr" />
           <div className="row">
             <div className="col-sm-6 text_left">
               <p>
-                <b>Access_tooken:</b> <spam>{user.tooken}</spam>
+                <b>Access_tooken:</b>{" "}
+                <spam className="title_T">{user.tooken}</spam>
               </p>
               <p>
-                <b>Type:</b> <spam>{user.type == 1 ? "USER" : "ADMIN"}</spam>
+                <b>Type:</b>{" "}
+                <spam className="title_T">
+                  {user.type == 1 ? "USER" : "ADMIN"}
+                </spam>
               </p>
               <p>
-                <b>Image:</b> <spam>{user.avatar}</spam>
+                <b>Image:</b> <spam className="title_T">{user.avatar}</spam>
               </p>
             </div>
             <div className="col-sm-4 text_left">
               <p>
-                <b>Username:</b> <spam>{user.username}</spam>
+                <b>Username:</b>{" "}
+                <spam className="title_T">{user.username}</spam>
               </p>
               <p>
-                <b>Gmail:</b> <spam>{user.gmail}</spam>
+                <b>Gmail:</b> <spam className="title_T">{user.gmail}</spam>
               </p>
               <p>
-                <b>_id:</b> <spam>{user._id}</spam>
+                <b>_id:</b> <spam className="title_T">{user._id}</spam>
               </p>
             </div>
           </div>
         </div>
         <div className="container">
-          <hr className="black_hr block_hr" />
+          <hr className="green_dark_hr block_hr" />
           <div className="row">
             <div className="col-sm-6 text_left">
               <p>
@@ -75,7 +80,8 @@ export default class UserPage extends Component {
                         return (
                           <div>
                             <spam>
-                              <b>{game.title}:</b> {game.time}
+                              <b>{game.title}:</b>{" "}
+                              <spam className="title_T">{game.time}</spam>
                             </spam>{" "}
                           </div>
                         );
@@ -92,7 +98,8 @@ export default class UserPage extends Component {
                         return (
                           <div>
                             <spam>
-                              <b>{game.title}:</b> {game.time}
+                              <b>{game.title}:</b>{" "}
+                              <spam className="title_T">{game.time}</spam>
                             </spam>{" "}
                           </div>
                         );
@@ -103,14 +110,14 @@ export default class UserPage extends Component {
           </div>
         </div>
         <div className="container">
-          <hr className="black_hr block_hr" />
           <p>
             <b>Thời gian chơi game:</b>{" "}
+            <hr className="green_dark_hr block_hr" />
             <UserPageGraphTime time_gaming={user.time_gaming} />
           </p>
-          <hr className="black_hr block_hr" />
+
           <p>
-            <b>Số tiền trồng cây:</b>{" "}
+            <b>Số tiền trồng cây:</b> <hr className="green_dark_hr block_hr" />
             {this.CheckArrNone(user.earned_money) == 0 ? (
               <UserPageGraph earned_money={user.earned_money}></UserPageGraph>
             ) : (

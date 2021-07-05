@@ -631,7 +631,7 @@ nav:hover {
   float: left;
 }
 .blue_dark_hr {
-  background-color: rgb(88, 189, 255);
+  background-color: rgb(88, 189, 255) !;
   height: 1px;
 }
 .green_dark_hr {

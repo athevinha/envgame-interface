@@ -54,22 +54,24 @@ export default class Games extends Component {
           </div>
         </div>
         <div className="enter"></div>
-        <div class="grid-container">
+        <div class="grid-container dark_blue">
           {this.state.games.map((game, id) => {
             return (
-              <div className="grid-item" key={id}>
+              <div className="grid-item darker_blue" key={id}>
                 <div
                   className="grid-item-image"
                   style={{ backgroundImage: `url(${game.url})` }}
                 ></div>
                 <div className="row">
                   <div className="grid-item-txt col-sm-6">
-                    <p>{game.title}</p>
-                    <p>{game.description} plays</p>
+                    <p className="light_blue title_G1">{game.title}</p>
+                    <p className="light_blue title_G2">
+                      {game.description} plays
+                    </p>
                   </div>
                   <div className=" col-sm-6">
                     <Link
-                      className="btn-info btn play-button"
+                      className="btn-info btn play-button light_blue"
                       to={`/Games/${game.title}`}
                       onClick={() => this.Get_Played_Game(game)}
                     >

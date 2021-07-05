@@ -27,7 +27,7 @@ export default class Game extends Component {
   }
   render() {
     return (
-      <div className="background-iframe">
+      <div className="background-iframe darker_blue">
         <div className="enter"></div>
         <Iframe
           url={this.state.game.iframe}

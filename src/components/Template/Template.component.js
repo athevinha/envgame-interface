@@ -283,22 +283,72 @@ export default class Template extends Component {
         <div className="copyright">
           <div className="container">
             <div className="row row_T">
-              <div className="col-lg-6">
+              <div className="col-lg-3">
                 <ul className="list-unstyled li-space-lg p-small">
                   <li>
-                    <a href="article.html">Article Details</a>
+                    <a
+                      className="light_blue"
+                      href="https://www.facebook.com/nguyen.thevinh.5496/"
+                    >
+                      Article Details
+                    </a>
                   </li>
                   <li>
-                    <a href="terms.html">Terms & Conditions</a>
+                    <a href="/" className="light_blue">
+                      Terms & Conditions
+                    </a>
                   </li>
                   <li>
-                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="/" className="light_blue">
+                      Privacy Policy
+                    </a>
                   </li>
                 </ul>
               </div>
-              <div className="col-lg-6">
-                <p className="p-small statement">
-                  Copyright © <a href="#your-link">envgame</a>
+              <div className="col-lg-3">
+                <ul className="list-unstyled li-space-lg p-small">
+                  <li>
+                    <a
+                      href="https://www.facebook.com/nguyen.thevinh.5496/"
+                      className="light_blue"
+                    >
+                      Contact
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.rmit.edu.vn/vi" className="light_blue">
+                      Rmit University
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-lg-3">
+                <ul className="list-unstyled li-space-lg p-small">
+                  <li>
+                    <a
+                      href="https://github.com/athevinha"
+                      className="light_blue"
+                    >
+                      Github
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.event.rmit.edu.vn/techgenius2021"
+                      className="light_blue"
+                    >
+                      Tech Genius
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-lg-3">
+                <p className="p-small statement white_color ">
+                  Copyright ©{" "}
+                  <a href="/" className="light_blue">
+                    envgame
+                  </a>
                 </p>
               </div>
             </div>

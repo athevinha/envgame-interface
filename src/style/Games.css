@@ -4,7 +4,6 @@
   grid-row-gap: 1.8rem;
   grid-template-columns: auto auto auto auto;
   padding: 10px;
-  background-color: rgb(197, 197, 197);
 }
 @media only screen and (max-width: 600px) {
   .grid-container {
@@ -15,10 +14,17 @@
   width: 100%;
 }
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
   font-size: 30px;
   text-align: center;
   border-radius: 1rem;
+}
+.title_G1 {
+  font-size: 60%;
+  margin-top: 20%;
+}
+.title_G2 {
+  font-size: 60%;
+  margin-bottom: 20%;
 }
 .grid-item-image {
   background-color: #cccccc; /* Used if the image is unavailable */
@@ -35,8 +41,9 @@
   padding-bottom: 1rem;
 }
 .play-button {
-  font-size: small;
+  font-size: 60%;
   text-transform: unset !important;
-  margin-top: 1.2rem;
+  margin-top: 20%;
+  margin-bottom: 20%;
   text-decoration: none;
 }
