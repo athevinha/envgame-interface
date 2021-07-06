@@ -104,7 +104,7 @@ export default class UserPage extends Component {
                           </div>
                         );
                     })
-                  : "Bạn chưa chơi game nào"}
+                  : ""}
               </p>
             </div>
           </div>

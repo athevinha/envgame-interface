@@ -27,7 +27,7 @@
   margin-bottom: 20%;
 }
 .grid-item-image {
-  background-color: #cccccc; /* Used if the image is unavailable */
+  background-color: rgb(0, 17, 51); /* Used if the image is unavailable */
   height: 30vh;
   width: 30vh;
   background-position: center; /* Center the image */
@@ -46,4 +46,10 @@
   margin-top: 20%;
   margin-bottom: 20%;
   text-decoration: none;
+}
+.fixed {
+  position: fixed !important;
+}
+.login_warn {
+  position: fixed;
 }

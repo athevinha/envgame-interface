@@ -4,16 +4,23 @@ import GameService from "../../service/game.service";
 import UserService from "../../service/user.service";
 import "../../style/Games.css";
 import { Link, Route, Switch } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
 export default class Games extends Component {
   constructor(props) {
     super(props);
     this.state = {
       games: [],
-      STime: 0,
-      ETime: 0,
     };
+    // toast.info("Loading...", {
+    //   position: "top-right",
+    //   autoClose: 15000,
+    //   hideProgressBar: false,
+    //   closeOnClick: true,
+    //   pauseOnHover: true,
+    //   draggable: true,
+    //   progress: undefined,
+    // });
     GameService.getAll().then((res) => {
-      console.log(res.data);
       this.setState({ games: res.data });
     });
     this.updateForm = React.createRef();
@@ -22,7 +29,6 @@ export default class Games extends Component {
     if (localStorage.getItem("tooken") == null) {
       this.updateForm.current.className = "update-admin display";
     }
-    this.setState({ STime: new Date().getTime() });
   }
   Get_Played_Game = (game) => {
     console.log(game);
@@ -38,8 +44,11 @@ export default class Games extends Component {
   render() {
     return (
       <div>
+        <ToastContainer />
+        {/* Same as */}
+        <ToastContainer />
         <div
-          className="update-admin hidden"
+          className="update-admin fixed hidden"
           id="login_warn"
           ref={this.updateForm}
         >

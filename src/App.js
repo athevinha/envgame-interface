@@ -16,6 +16,8 @@ import Logup from "./components/Logup/logup";
 import home_link from "./components/http_route/http-common";
 import UserPage from "./components/Userpage/user.page";
 import Game from "./components/Game/Game.component";
+import Cookie from "./components/Cookies/Cookies.js";
+// import * as Scroll from "react-scroll";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -23,6 +25,7 @@ class App extends Component {
       games: [],
       users: [],
       user_current: [],
+      theposition: window.pageYOffset,
     };
     GameService.getAll().then((res) => {
       console.log(res.data);
@@ -38,14 +41,14 @@ class App extends Component {
     userService.getAll().then((req) => {
       users = req.data;
       let user_tooken = localStorage.getItem("tooken");
+      this.show_side_bar();
+      setTimeout(() => {
+        this.hide_side_bar();
+      }, 3000);
       if (user_tooken == null) {
+        this.login.current.className = "nav-item";
       } else {
-        this.login.current.className = "nav-link hidden";
-        this.show_side_bar();
-        setTimeout(() => {
-          this.hide_side_bar();
-        }, 3000);
-
+        this.login.current.className = "nav-item hidden";
         users.map((user, id) => {
           if (user_tooken == user.tooken) this.setState({ user_current: user });
         });
@@ -53,6 +56,7 @@ class App extends Component {
       this.setState({ users: users });
     });
   }
+
   hide_side_bar = () => {
     this.user_in4.current.classList.add("hide_side");
     this.user_in4.current.classList.remove("show_side");
@@ -63,7 +67,8 @@ class App extends Component {
   };
   render() {
     return (
-      <div className="App">
+      <div className="App dark_blue">
+        <Cookie />
         <div
           class="w3-sidebar w3-light-black w3-bar-block ip11"
           onMouseOver={this.show_side_bar}
@@ -106,43 +111,47 @@ class App extends Component {
             </Link>
           </p>
         </div>
-        <nav className="navbar navbar-expand-lg fixed-top navbar-light">
-          <div className="container">
-            <a class="navbar-brand logo-image" href="index.html">
-              <Link to={"/"}>
-                <img src={logoImg} alt="alternative" />
-              </Link>
-            </a>
-            <spam className="title">EnvGame</spam>
-            <button
-              class="navbar-toggler p-0 border-0"
-              type="button"
-              data-toggle="offcanvas"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="navbar-collapse offcanvas-collapse"
-              id="navbarsExampleDefault"
-            >
-              <ul className="navbar-nav ml-auto">
-                <li className="nav-item">
-                  <Link id="home" className="nav-link page-scroll" to={"/"}>
-                    Giới thiệu
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link page-scroll" to={"/Games"}>
-                    Chơi game
-                  </Link>
-                </li>
-                <li className="nav-item" ref={this.login}>
-                  <Link className="nav-link page-scroll" to={"/Login"}>
-                    Đăng nhập
-                  </Link>
-                </li>
-              </ul>
-            </div>
+        {/* ==========================================================
+        *                       Nav Bar                           *
+        ========================================================== */}
+        <nav class="navbar navbar-expand-sm navbar-dark nav_custom">
+          {/* =================================== */}
+          <Link to={"/"}>
+            <img
+              src={logoImg}
+              alt="alternative"
+              className=" navbar-brand logo"
+            />
+          </Link>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link id="home" className="nav-link nav_link_custom" to={"/"}>
+                  Giới thiệu
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link nav_link_custom" to={"/Games"}>
+                  Chơi game
+                </Link>
+              </li>
+              <li className="nav-item" ref={this.login}>
+                <Link className="nav-link nav_link_custom" to={"/Login"}>
+                  Đăng nhập
+                </Link>
+              </li>
+            </ul>
+            <form className="form-inline search_nav_bar">
+              <input
+                className="form-control mr-sm-2 input_N"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-info my-2 my-sm-0" type="submit">
+                Search
+              </button>
+            </form>
           </div>
         </nav>
         <Switch>

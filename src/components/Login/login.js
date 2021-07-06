@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
 import "../../App.css";
+import "./login.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Link, Route, Switch } from "react-router-dom";
@@ -78,79 +79,79 @@ export default class Login extends Component {
         <ToastContainer />
         <div className="enter"></div>
         <body
-          class="img js-fullheight"
+          class="img fullheight dark_blue"
           //   style="background-image: url(images/bg.jpg);"
         >
-          <section class="ftco-section">
-            <div class="container">
-              <div class="row justify-content-center">
-                <p class="heading-section">Đăng nhập </p>
-                <hr />
+          <div class="container login_form text_center">
+            <div className="row text_center border_radius darker_blue">
+              <div class="col-lg-12 text_center">
+                <h3 class="light_blue">Đăng nhập </h3>
+                <hr className="blue_dark_hr" />
               </div>
-              <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-6">
-                  <div class="login-wrap p-0">
-                    <form action="#" class="signin-form" onSubmit={this.Login}>
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Gmail..."
-                          name="gmail"
-                          value={this.state.gmail}
-                          onChange={this.onLogin}
-                          required
-                        />
-                      </div>
-                      <div class="form-group">
-                        <input
-                          id="password-field"
-                          type="password"
-                          name="password"
-                          value={this.state.password}
-                          onChange={this.onLogin}
-                          class="form-control"
-                          placeholder="Password..."
-                          required
-                        />
-                      </div>
-                      <div class="form-group">
-                        <button
-                          type="submit"
-                          class="form-control btn btn-primary submit px-3"
-                        >
-                          Sign In
-                        </button>
-                      </div>
-                      <div class="form-group d-md-flex">
-                        <div class="w-50">
-                          {" "}
-                          <Link className="nav-link page-scroll" to={"/Logup"}>
-                            Đăng Ký
-                          </Link>
-                        </div>
-                        <div class="w-50 text-md-right">
-                          {/* style="color: #fff" */}
-                          <a href="#">Forgot Password</a>
-                        </div>
-                      </div>
-                    </form>
-                    <p class="w-100 text-center">
-                      &mdash; Or Sign In With &mdash;
-                    </p>
-                    <div class="social d-flex text-center">
-                      <a href="#" class="px-2 py-2 mr-md-1 rounded">
-                        <span class="ion-logo-facebook mr-2"></span> Facebook
-                      </a>
-                      <a href="#" class="px-2 py-2 ml-md-1 rounded">
-                        <span class="ion-logo-twitter mr-2"></span> Twitter
-                      </a>
+              <div class="col-lg-12 text_center">
+                <div class="login-wrap p-0">
+                  <form action="#" onSubmit={this.Login}>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control input_T"
+                        placeholder="Gmail..."
+                        name="gmail"
+                        value={this.state.gmail}
+                        onChange={this.onLogin}
+                        required
+                      />
                     </div>
-                  </div>
+                    <div class="form-group">
+                      <input
+                        id="password-field"
+                        type="password"
+                        name="password"
+                        value={this.state.password}
+                        onChange={this.onLogin}
+                        class="form-control input_T"
+                        placeholder="Password..."
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <button
+                        type="submit"
+                        class="form-control input_T btn btn-primary submit px-3"
+                      >
+                        Sign In
+                      </button>
+                    </div>
+                    <div class="form-group d-md-flex">
+                      <div class="w-50">
+                        {" "}
+                        <Link
+                          className="btn btn-primary nav-link page-scroll"
+                          to={"/Logup"}
+                        >
+                          Đăng Ký
+                        </Link>
+                      </div>
+                      <div class="w-50 text-md-right">
+                        {/* style="color: #fff" */}
+                        <a href="" className="">
+                          Forgot Password
+                        </a>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
+              <div className="col-lg-12 text_left">
+                <p className="p-small statement white_color ">
+                  Copyright ©{" "}
+                  <a href="/" className="light_blue">
+                    envgame
+                  </a>
+                </p>
+              </div>
             </div>
-          </section>
+          </div>
         </body>
       </div>
     );
