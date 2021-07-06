@@ -74,13 +74,13 @@ class App extends Component {
         <ToastContainer />
         <Cookie />
         <div
-          class="w3-sidebar w3-light-black w3-bar-block ip11"
+          class="w3-sidebar w3-light-black w3-bar-block ip11 text_center"
           onMouseOver={this.show_side_bar}
           onMouseOut={this.hide_side_bar}
           ref={this.ip11}
         ></div>
         <div
-          class="w3-sidebar w3-light-info w3-bar-block width20 hide_side"
+          class="w3-sidebar w3-light-info w3-bar-block width20 hide_side text_center"
           ref={this.user_in4}
           onMouseOver={this.show_side_bar}
           onMouseOut={this.hide_side_bar}
@@ -91,13 +91,18 @@ class App extends Component {
               : "Hãy đăng nhập"}
           </h3>
           <hr className="blue_dark_hr" />
-          <div
-            className="grid-item-image avatar_show"
-            style={{
-              backgroundImage: `url(${this.state.user_current.avatar})`,
-              backgroundColor: `rgb(0, 17, 51)`,
-            }}
-          ></div>
+          <div className="width20 text_center">
+            <div
+              className="grid-item-image avatar_show"
+              style={{
+                backgroundImage: `url(${this.state.user_current.avatar})`,
+                backgroundColor: `rgb(0, 17, 51)`,
+                display: `block`,
+                marginLeft: `auto`,
+                marginRight: `auto`,
+              }}
+            ></div>
+          </div>
           <hr className="blue_dark_hr" />
           <p class="w3-bar-item">{this.state.user_current.gmail}</p>
           {/* <p class="w3-bar-item">{this.state.user_current.earned_money}</p>
