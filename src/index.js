@@ -5,13 +5,10 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
 import "font-awesome/css/font-awesome.min.css";
-import ReactCursorPosition from "react-cursor-position";
 ReactDOM.render(
-  <ReactCursorPosition>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </ReactCursorPosition>,
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
   document.getElementById("root")
 );
 
