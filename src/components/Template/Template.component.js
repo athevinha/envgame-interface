@@ -158,15 +158,14 @@ export default class Template extends Component {
                 <spam className="circle_blue_small"></spam> MINI GAME Đang là xu
                 hướng thế giới để thu hút được nhiều khách hàng
               </p>
-              <h3 className="text-uppercase title_T">Thời Gian</h3>
+              <h3 className="text-uppercase title_T">Cây xanh</h3>
               <hr className="blue_dark_hr" />
               <p className="light_blue">
-                <spam className="circle_blue_small"></spam>Mini game sẽ thu hút
-                được rất nhiều người biết tới website, fanpage hay sản phẩm của
-                bạn và rất nhiều nhãn hàng lớn đã sử dụng. Tuy nhiên chi phí lại
-                quá đắt để ADgame cung cấp cho bạn một công cụ để dùng với chi
-                phí thấp. Chỉ với 20 phút làm quen bạn đã có thể tạo ra nội dung
-                có tương tác cao hơn nội dung truyền thống
+                <spam className="circle_blue_small"></spam> Một phần doanh thu
+                của <b>Envgame </b>được trích ra để góp phần bảo vệ môi trường
+                như là: Trồng cây, Sử dụng các biện pháp hóa học, tăng độ màu mỡ
+                của đất đai, huy động các đội/nhóm tình nguyện viên bảo vệ môi
+                trường, chi phí chăm sóc và duy trì cây trồng.
               </p>
               <a
                 className="btn btn-info"
