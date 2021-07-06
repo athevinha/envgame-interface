@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import UserService from "../../service/user.service";
 import "../../style/Games.css";
 import Iframe from "react-iframe";
-const STime = 0;
+let STime = 0;
 export default class Game extends Component {
   constructor(props) {
     super(props);
