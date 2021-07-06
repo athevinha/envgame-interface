@@ -1,12 +1,30 @@
 import Chart from "react-apexcharts";
 import React, { Component } from "react";
+import { ToastContainer, toast } from "react-toastify";
 export default class Footer extends Component {
   constructor(props) {
     super(props);
   }
   render() {
     return (
-      <div className="container basic">
+      <form
+        className="container basic"
+        onSubmit={(e) => {
+          e.preventDefault();
+          toast.dark("Cảm ơn đã phản hồi 😁😍!", {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+        }}
+      >
+        <ToastContainer />
+        {/* Same as */}
+        <ToastContainer />
         <div className="row row_T text_left">
           <div className="col-lg-12">
             <h3 className="contact text-uppercase text_center title_T">
@@ -49,7 +67,7 @@ export default class Footer extends Component {
             <button className="btn btn-info">Gửi phản hồi</button>
           </div>
         </div>
-      </div>
+      </form>
     );
   }
 }
