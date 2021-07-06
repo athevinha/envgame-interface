@@ -76,6 +76,9 @@ export default class Logup extends Component {
       }
       finalUser = {};
       console.log(this.state);
+      setTimeout(() => {
+        window.location = home_route.home_link().baseURL + "login";
+      }, 2000);
     });
   };
   render() {
