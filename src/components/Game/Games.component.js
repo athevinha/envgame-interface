@@ -11,15 +11,6 @@ export default class Games extends Component {
     this.state = {
       games: [],
     };
-    // toast.info("Loading...", {
-    //   position: "top-right",
-    //   autoClose: 15000,
-    //   hideProgressBar: false,
-    //   closeOnClick: true,
-    //   pauseOnHover: true,
-    //   draggable: true,
-    //   progress: undefined,
-    // });
     GameService.getAll().then((res) => {
       this.setState({ games: res.data });
     });

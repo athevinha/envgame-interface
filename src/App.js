@@ -17,6 +17,7 @@ import home_link from "./components/http_route/http-common";
 import UserPage from "./components/Userpage/user.page";
 import Game from "./components/Game/Game.component";
 import Cookie from "./components/Cookies/Cookies.js";
+import { ToastContainer, toast } from "react-toastify";
 // import * as Scroll from "react-scroll";
 class App extends Component {
   constructor(props) {
@@ -68,6 +69,9 @@ class App extends Component {
   render() {
     return (
       <div className="App dark_blue">
+        <ToastContainer />
+        {/* Same as */}
+        <ToastContainer />
         <Cookie />
         <div
           class="w3-sidebar w3-light-black w3-bar-block ip11"
@@ -141,11 +145,25 @@ class App extends Component {
                 </Link>
               </li>
             </ul>
-            <form className="form-inline search_nav_bar">
+            <form
+              className="form-inline search_nav_bar"
+              onSubmit={(e) => {
+                e.preventDefault();
+                toast("Tính năng chưa hoàn thành", {
+                  position: "top-right",
+                  autoClose: 2500,
+                  hideProgressBar: false,
+                  closeOnClick: true,
+                  pauseOnHover: true,
+                  draggable: true,
+                  progress: undefined,
+                });
+              }}
+            >
               <input
                 className="form-control mr-sm-2 input_N"
                 type="search"
-                placeholder="Search"
+                placeholder="Search game..."
                 aria-label="Search"
               />
               <button class="btn btn-outline-info my-2 my-sm-0" type="submit">
