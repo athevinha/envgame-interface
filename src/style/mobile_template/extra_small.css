@@ -1,0 +1,75 @@
+@media (max-width: 575.98px) {
+  .h-name {
+    font-size: 25px !important;
+    width: 100%;
+  }
+  .playButton {
+    font-size: 1.5rem;
+    margin: auto;
+  }
+  .playButton:hover {
+    font-size: 1.5rem;
+    color: black;
+    background: linear-gradient(to right, #830bac, #06dee1, #79ff6c, #fc3628);
+    padding-right: 30% !important;
+  }
+  .text-container {
+    margin: auto;
+  }
+  .p-name {
+    font-size: 18px;
+  }
+  /* header */
+  .row_T {
+    margin: auto;
+  }
+  .title_T {
+    font-size: 16px;
+  }
+  /* contact */
+  .fa-stack {
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+  }
+  .i_ct {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+  }
+  /* * Navbar * */
+  .navbar-toggler {
+    position: fixed;
+    top: 1rem;
+    left: 82%;
+  }
+  .logo {
+    position: fixed;
+    top: 0rem;
+  }
+  .navbar-nav {
+    margin-top: 3.5rem;
+  }
+  .nav-item {
+    background-color: rgb(0, 12, 35);
+    opacity: 0.9;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .nav-link {
+    color: #79ff6c !important;
+  }
+  .nav-link:focus {
+    color: #179296 !important;
+  }
+  .nav_link_custom {
+  }
+  .search_nav_bar {
+    display: none;
+    visibility: hidden;
+  }
+  .contact {
+    text-align: left !important;
+  }
+}

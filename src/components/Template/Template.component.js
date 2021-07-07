@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import Iframe from "react-iframe";
 import "../../style/Template.css";
+import "../../style/mobile_template/extra_small.css";
+import "../../style/mobile_template/small.css";
+import "../../style/mobile_template/medium.css";
+import "../../style/mobile_template/large.css";
+import "../../style/mobile_template/extra_large.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
 import content1 from "./images/content1.jpg";
@@ -253,26 +258,27 @@ export default class Template extends Component {
                   Thông tin liên hệ
                 </h3>
                 <div className="social-container text_center">
-                  <span className="fa-stack">
-                    <a href="https://www.facebook.com/nguyen.thevinh.5496/">
-                      <i className="fa fa-facebook fa-stack-1x"></i>
-                    </a>
-                  </span>
-                  <span className="fa-stack">
-                    <a href="https://github.com/athevinha">
-                      <i className="fa fa-github fa-stack-1x"></i>
-                    </a>
-                  </span>
-                  <span className="fa-stack">
-                    <a href="https://www.instagram.com/nguyen_the_vinh_lt/">
-                      <i className="fa fa-instagram fa-stack-1x"></i>
-                    </a>
-                  </span>
-                  <span className="fa-stack">
-                    <a href="https://www.youtube.com/channel/UC2LHhJZYclSyw2umXk7X6ow">
-                      <i className="fa fa-youtube fa-stack-1x"></i>
-                    </a>
-                  </span>
+                  <a
+                    className="fa-stack "
+                    href="https://www.facebook.com/nguyen.thevinh.5496/"
+                  >
+                    <i className="fa fa-facebook i_ct"></i>
+                  </a>
+                  <a className="fa-stack " href="https://github.com/athevinha">
+                    <i className="fa fa-github i_ct"></i>
+                  </a>
+                  <a
+                    className="fa-stack "
+                    href="https://www.instagram.com/nguyen_the_vinh_lt/"
+                  >
+                    <i className="fa fa-instagram i_ct"></i>
+                  </a>
+                  <a
+                    className="fa-stack "
+                    href="https://www.youtube.com/channel/UC2LHhJZYclSyw2umXk7X6ow"
+                  >
+                    <i className="fa fa-youtube i_ct"></i>
+                  </a>
                 </div>
               </div>
             </div>

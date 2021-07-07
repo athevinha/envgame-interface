@@ -59,12 +59,16 @@ class App extends Component {
   }
 
   hide_side_bar = () => {
-    this.user_in4.current.classList.add("hide_side");
-    this.user_in4.current.classList.remove("show_side");
+    if (this.user_in4.current.classList) {
+      this.user_in4.current.classList.add("hide_side");
+      this.user_in4.current.classList.remove("show_side");
+    }
   };
   show_side_bar = () => {
-    this.user_in4.current.classList.add("show_side");
-    this.user_in4.current.classList.remove("hide_side");
+    if (this.user_in4.current.classList) {
+      this.user_in4.current.classList.add("show_side");
+      this.user_in4.current.classList.remove("hide_side");
+    }
   };
   render() {
     return (
@@ -123,7 +127,7 @@ class App extends Component {
         {/* ==========================================================
         *                       Nav Bar                           *
         ========================================================== */}
-        <nav class="navbar navbar-expand-sm navbar-dark nav_custom">
+        <nav class="navbar navbar-expand-md navbar-dark nav_custom">
           {/* =================================== */}
           <Link to={"/"}>
             <img
@@ -132,7 +136,21 @@ class App extends Component {
               className=" navbar-brand logo"
             />
           </Link>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          {/* =============================================================================
+          ============================= *MOBILE NAVBAR *===============================
+          ============================================================================= */}
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          {/* =====================================================================
+          ========================= *END MOBILE NAVBAR *===========================
+          ========================================================================= */}
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul className="navbar-nav">
               <li className="nav-item">
                 <Link id="home" className="nav-link nav_link_custom" to={"/"}>
@@ -150,6 +168,7 @@ class App extends Component {
                 </Link>
               </li>
             </ul>
+
             <form
               className="form-inline search_nav_bar"
               onSubmit={(e) => {

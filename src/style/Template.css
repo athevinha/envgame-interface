@@ -129,7 +129,7 @@ h-name .center {
 .playButton:hover {
   color: black;
   background: linear-gradient(to right, #830bac, #06dee1, #79ff6c, #fc3628);
-  padding-right: 50% !important;
+  padding-right: 50%;
 }
 .p-small {
   font-size: 0.875rem;
@@ -339,128 +339,6 @@ h-name .center {
   /* end of extra pages */
 }
 /* end of min-width 992px */
-
-/* Min-width 1200px */
-@media (min-width: 1200px) {
-  /* General Styles */
-  .h1-large {
-    font-size: 3.125rem;
-    line-height: 3.75rem;
-  }
-  /* end of general styles */
-
-  /* Header */
-  .header {
-    padding-top: 11rem;
-    padding-bottom: 8rem;
-  }
-
-  .header .text-container {
-    margin-top: 10rem;
-    margin-right: 3rem;
-  }
-
-  .header .image-container {
-    text-align: right;
-  }
-  /* end of header */
-
-  /* Features */
-  .cards-1 .card {
-    width: 350px;
-    padding-right: 3rem;
-    padding-left: 3rem;
-  }
-
-  .cards-1 .card:nth-of-type(3n + 2) {
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-  }
-  /* end of features */
-
-  /* Details 1 */
-  .basic-2 .text-container {
-    margin-top: 4.25rem;
-  }
-
-  .basic-2 .image-container {
-    margin-left: 3.5rem;
-  }
-  /* end of details 1 */
-
-  /* Details 2 */
-  .basic-3 .image-container {
-    margin-right: 3.5rem;
-  }
-
-  .basic-3 .text-container {
-    margin-top: 3.25rem;
-  }
-  /* end of details 2 */
-
-  /* Details Lightbox */
-  .lightbox-basic .image-container {
-    margin-right: 1.5rem;
-  }
-  /* end of details lightbox */
-
-  /* Details 3 */
-  .basic-4 .text-container {
-    margin-top: 4.25rem;
-  }
-
-  .basic-4 .image-container {
-    margin-left: 3.5rem;
-  }
-  /* end of details 3 */
-
-  /* Statistics */
-  .counter #counter .cell {
-    margin-right: 2.875rem;
-    margin-left: 2.875rem;
-  }
-
-  .counter #counter .counter-value {
-    font-size: 3.75rem;
-    line-height: 4.25rem;
-  }
-  /* end of statistics */
-
-  /* Pricing */
-  .cards-2 .card {
-    width: 340px;
-  }
-
-  .cards-2 .card:nth-of-type(3n + 2) {
-    margin-right: 2.5rem;
-    margin-left: 2.5rem;
-  }
-
-  .cards-2 .card .card-body {
-    padding-right: 2.5rem;
-    padding-left: 2.5rem;
-  }
-  /* end of pricing */
-
-  /* Conclusion */
-  .basic-5 .text-container {
-    margin-top: 11.5rem;
-    margin-left: 3rem;
-  }
-  /* end of conclusion */
-
-  /* Extra Pages */
-  .ex-cards-1 .card {
-    width: 336px;
-  }
-
-  .ex-cards-1 .card:nth-of-type(3n + 2) {
-    margin-right: 2.875rem;
-    margin-left: 2.875rem;
-  }
-  /* end of extra pages */
-}
-/* end of min-width 1200px */
 
 .sr-only {
   visibility: hidden;
