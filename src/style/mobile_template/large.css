@@ -1,5 +1,20 @@
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .grid-container {
-    grid-template-columns: auto auto !important;
+  .ip11 {
+    left: 0.3rem;
+    width: 0.4rem;
+  }
+  .ip11:hover {
+    color: gray;
+    width: 1.5vw;
+  }
+  .w3-light-info {
+    width: 30%;
+  }
+  .w3-bar-item {
+    text-align: center !important;
+    font-size: 1rem;
+  }
+  .hide_side {
+    left: -30%;
   }
 }

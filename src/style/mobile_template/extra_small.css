@@ -81,10 +81,12 @@
   }
   /* *side bar * */
   .ip11 {
-    left: 2vw;
+    left: 0.3rem;
+    width: 0.4rem;
   }
   .ip11:hover {
     color: gray;
+    width: 1.5vw;
   }
   .w3-light-info {
     width: 70%;
