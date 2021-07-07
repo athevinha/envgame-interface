@@ -65,6 +65,11 @@
   }
   .nav_link_custom {
   }
+  .con_custom {
+    position: absolute;
+    top: 35%;
+    left: 0rem;
+  }
   .search_nav_bar {
     display: none;
     visibility: hidden;

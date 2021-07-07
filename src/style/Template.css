@@ -207,6 +207,7 @@ h-name .center {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   text-align: center;
+  height: 100vh;
 }
 .black {
   position: absolute;
@@ -216,10 +217,13 @@ h-name .center {
 }
 
 .header .text-container {
-  margin-bottom: 4rem;
   text-align: center;
 }
-
+.con_custom {
+  position: absolute;
+  top: 35%;
+  left: 5rem;
+}
 .header .h1-large {
   margin-bottom: 1.25rem;
 }

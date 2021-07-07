@@ -25,7 +25,7 @@ export default class Template extends Component {
       <div className="dark_blue">
         {/* Navigation */}
         <header id="header" className="header">
-          <div className="container text_center">
+          <div className="container text_center con_custom">
             <div className="text-container text_left row">
               <h1 className="h1-large h-name">Enviroment Games</h1>
               <p className="p-large p-name">
