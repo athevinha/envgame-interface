@@ -36,7 +36,7 @@ export default class Footer extends Component {
             <h3 className="contact text-uppercase text_center title_T">
               <input
                 type="text"
-                class="form-control input_T"
+                className="form-control input_T"
                 aria-describedby="helpId"
                 placeholder="Tên của bạn..."
               />
@@ -46,7 +46,7 @@ export default class Footer extends Component {
             <h3 className="contact text-uppercase text_center title_T">
               <input
                 type="text"
-                class="form-control input_T"
+                className="form-control input_T"
                 aria-describedby="helpId"
                 placeholder="Gmail của bạn..."
               />
@@ -55,7 +55,7 @@ export default class Footer extends Component {
           <div className="col-lg-12">
             <h3 className="contact text-uppercase text_center title_T">
               <textarea
-                class="form-control input_T"
+                className="form-control input_T"
                 name=""
                 id=""
                 rows="5"

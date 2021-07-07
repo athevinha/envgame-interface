@@ -29,7 +29,6 @@ class App extends Component {
       theposition: window.pageYOffset,
     };
     GameService.getAll().then((res) => {
-      console.log(res.data);
       this.setState({ games: res.data });
     });
     this.login = React.createRef();
@@ -78,18 +77,18 @@ class App extends Component {
         <ToastContainer />
         <Cookie />
         <div
-          class="w3-sidebar w3-light-black w3-bar-block ip11 text_center"
+          className="w3-sidebar w3-light-black w3-bar-block ip11 text_center"
           onMouseOver={this.show_side_bar}
           onMouseOut={this.hide_side_bar}
           ref={this.ip11}
         ></div>
         <div
-          class="w3-sidebar w3-light-info w3-bar-block width20 hide_side text_center"
+          className="w3-sidebar w3-light-info w3-bar-block width20 hide_side text_center"
           ref={this.user_in4}
           onMouseOver={this.show_side_bar}
           onMouseOut={this.hide_side_bar}
         >
-          <h3 class="text_center">
+          <h3 className="text_center break_word">
             {localStorage.tooken != null
               ? this.state.user_current.username
               : "Hãy đăng nhập"}
@@ -108,14 +107,16 @@ class App extends Component {
             ></div>
           </div>
           <hr className="blue_dark_hr" />
-          <p class="w3-bar-item">{this.state.user_current.gmail}</p>
+          <p className="w3-bar-item break_word">
+            {this.state.user_current.gmail}
+          </p>
           <hr className="blue_dark_hr" />
-          <p class="w3-bar-item">
+          <p className="w3-bar-item break_word">
             <b>Description: </b>
             {this.state.user_current.description}
           </p>
           <hr className="blue_dark_hr" />
-          <p class="w3-bar-item">
+          <p className="w3-bar-item break_word">
             <b>User ID: </b>
             <Link to={`./users/${this.state.user_current._id}`}>
               {this.state.user_current._id}
@@ -125,7 +126,7 @@ class App extends Component {
         {/* ==========================================================
         *                       Nav Bar                           *
         ========================================================== */}
-        <nav class="navbar navbar-expand-md navbar-dark nav_custom">
+        <nav className="navbar navbar-expand-md navbar-dark nav_custom">
           {/* =================================== */}
           <Link to={"/"}>
             <img
@@ -148,7 +149,7 @@ class App extends Component {
           {/* =====================================================================
           ========================= *END MOBILE NAVBAR *===========================
           ========================================================================= */}
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <div className="collapse navbar-collapse" id="collapsibleNavbar">
             <ul className="navbar-nav">
               <li className="nav-item">
                 <Link id="home" className="nav-link nav_link_custom" to={"/"}>
@@ -188,7 +189,10 @@ class App extends Component {
                 placeholder="Search game..."
                 aria-label="Search"
               />
-              <button class="btn btn-outline-info my-2 my-sm-0" type="submit">
+              <button
+                className="btn btn-outline-info my-2 my-sm-0"
+                type="submit"
+              >
                 Search
               </button>
             </form>
@@ -228,6 +232,7 @@ class App extends Component {
           {this.state.games.map((game, id) => {
             return (
               <Route
+                key={id}
                 exact
                 path={`/Games/${game.title}`}
                 render={(pr) => (
@@ -237,9 +242,9 @@ class App extends Component {
             );
           })}
           {this.state.users.map((user, id) => {
-            console.log(user);
             return (
               <Route
+                key={id}
                 exact
                 path={`/Users/${user._id}`}
                 render={(pr) => <UserPage user={user} />}

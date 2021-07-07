@@ -78,7 +78,7 @@ export default class UserPage extends Component {
                   ? user.played_games.map((game, id) => {
                       if (id % 2 == 0)
                         return (
-                          <div>
+                          <div key={id}>
                             <spam>
                               <b>{game.title}:</b>{" "}
                               <spam className="title_T">{game.time}</spam>
@@ -96,7 +96,7 @@ export default class UserPage extends Component {
                   ? user.played_games.map((game, id) => {
                       if (id % 2 != 0)
                         return (
-                          <div>
+                          <div key={id}>
                             <spam>
                               <b>{game.title}:</b>{" "}
                               <spam className="title_T">{game.time}</spam>

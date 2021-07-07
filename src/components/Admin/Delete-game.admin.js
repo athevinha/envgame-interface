@@ -13,7 +13,6 @@ export default class DeleteGame extends Component {
       games: [],
     };
     GameService.getAll().then((res) => {
-      console.log(res.data);
       this.setState({ games: res.data });
     });
   }

@@ -18,7 +18,6 @@ export default class UpdateGame extends Component {
       _id: "",
     };
     GameService.getAll().then((res) => {
-      console.log(res.data);
       this.setState({ games: res.data });
     });
     this.updateForm = React.createRef();
@@ -75,7 +74,6 @@ export default class UpdateGame extends Component {
           };
         }
       });
-      console.log(updateGames);
       this.setState({ games: updateGames });
     });
     //===================
@@ -178,7 +176,7 @@ export default class UpdateGame extends Component {
                         this.Update(game._id);
                       }}
                     >
-                      <i class="fa fa-refresh" aria-hidden="true"></i>
+                      <i className="fa fa-refresh" aria-hidden="true"></i>
                     </button>
                   </td>
                 </tr>

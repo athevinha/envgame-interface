@@ -17,7 +17,6 @@ export default class Login extends Component {
       users: [],
     };
     userService.getAll().then((req, res) => {
-      console.log(req.data);
       this.setState({ users: req.data });
     });
   }
@@ -35,7 +34,6 @@ export default class Login extends Component {
     e.preventDefault();
     let not_one = 0;
     this.state.users.map((user, id) => {
-      console.log(user);
       if (
         user.gmail == this.state.gmail &&
         user.password == this.state.password
@@ -56,7 +54,6 @@ export default class Login extends Component {
         }, 1500);
       } else {
         not_one++;
-        console.log(not_one);
         if (not_one == this.state.users.length) {
           toast.error("Đăng nhập thất bại, gmail hoặc mật khẩu không đúng!", {
             position: "top-right",
@@ -79,22 +76,22 @@ export default class Login extends Component {
         <ToastContainer />
         <div className="enter"></div>
         <body
-          class="img fullheight dark_blue"
+          className="img fullheight dark_blue"
           //   style="background-image: url(images/bg.jpg);"
         >
-          <div class="container login_form text_center">
+          <div className="container login_form text_center">
             <div className="row text_center border_radius darker_blue login_row">
-              <div class="col-lg-12 text_center">
-                <h3 class="light_blue glx_fold_T">Đăng nhập </h3>
+              <div className="col-lg-12 text_center">
+                <h3 className="light_blue glx_fold_T">Đăng nhập </h3>
                 <hr className="blue_dark_hr" />
               </div>
-              <div class="col-lg-12 text_center">
-                <div class="login-wrap p-0">
+              <div className="col-lg-12 text_center">
+                <div className="login-wrap p-0">
                   <form action="#" onSubmit={this.Login}>
-                    <div class="form-group">
+                    <div className="form-group">
                       <input
                         type="text"
-                        class="form-control input_T"
+                        className="form-control input_T"
                         placeholder="Gmail..."
                         name="gmail"
                         value={this.state.gmail}
@@ -102,28 +99,28 @@ export default class Login extends Component {
                         required
                       />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <input
                         id="password-field"
                         type="password"
                         name="password"
                         value={this.state.password}
                         onChange={this.onLogin}
-                        class="form-control input_T"
+                        className="form-control input_T"
                         placeholder="Password..."
                         required
                       />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <button
                         type="submit"
-                        class="form-control input_T btn btn-primary submit px-3 glx_fold"
+                        className="form-control input_T btn btn-primary submit px-3 glx_fold"
                       >
                         Sign In
                       </button>
                     </div>
-                    <div class="form-group d-md-flex red_forgot_pass ">
-                      <div class="w-50">
+                    <div className="form-group d-md-flex red_forgot_pass ">
+                      <div className="w-50">
                         {" "}
                         <Link
                           className="btn btn-primary nav-link page-scroll glx_fold"
@@ -132,7 +129,7 @@ export default class Login extends Component {
                           Đăng Ký
                         </Link>
                       </div>
-                      <div class="w-50 text-md-right forgot_pass">
+                      <div className="w-50 text-md-right forgot_pass">
                         {/* style="color: #fff" */}
                         <a href="" className="forgot_pass glx_fold">
                           Forgot Password

@@ -22,13 +22,11 @@ export default class Games extends Component {
     }
   }
   Get_Played_Game = (game) => {
-    console.log(game);
     let user = this.props.user;
     let time = new Date();
     time = time.toString();
     user.played_games.push({ title: game.title, time: time });
     UserService.update(user._id, user).then((req, res) => {
-      console.log(req.data);
       // this.setState({ users: req.data });
     });
   };
@@ -54,7 +52,7 @@ export default class Games extends Component {
           </div>
         </div>
         <div className="enter"></div>
-        <div class="grid-container dark_blue">
+        <div className="grid-container dark_blue">
           {this.state.games.map((game, id) => {
             return (
               <div className="grid-item darker_blue" key={id}>
