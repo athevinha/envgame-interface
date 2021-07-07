@@ -85,7 +85,7 @@ export default class Login extends Component {
           <div class="container login_form text_center">
             <div className="row text_center border_radius darker_blue login_row">
               <div class="col-lg-12 text_center">
-                <h3 class="light_blue">Đăng nhập </h3>
+                <h3 class="light_blue glx_fold_T">Đăng nhập </h3>
                 <hr className="blue_dark_hr" />
               </div>
               <div class="col-lg-12 text_center">
@@ -117,7 +117,7 @@ export default class Login extends Component {
                     <div class="form-group">
                       <button
                         type="submit"
-                        class="form-control input_T btn btn-primary submit px-3"
+                        class="form-control input_T btn btn-primary submit px-3 glx_fold"
                       >
                         Sign In
                       </button>
@@ -126,7 +126,7 @@ export default class Login extends Component {
                       <div class="w-50">
                         {" "}
                         <Link
-                          className="btn btn-primary nav-link page-scroll"
+                          className="btn btn-primary nav-link page-scroll glx_fold"
                           to={"/Logup"}
                         >
                           Đăng Ký
@@ -134,7 +134,7 @@ export default class Login extends Component {
                       </div>
                       <div class="w-50 text-md-right forgot_pass">
                         {/* style="color: #fff" */}
-                        <a href="" className="forgot_pass">
+                        <a href="" className="forgot_pass glx_fold">
                           Forgot Password
                         </a>
                       </div>
@@ -143,7 +143,7 @@ export default class Login extends Component {
                 </div>
               </div>
               <div className="col-lg-12 text_left">
-                <p className="p-small statement white_color ">
+                <p className="p-small statement white_color glx_fold">
                   Copyright ©{" "}
                   <a href="/" className="light_blue">
                     envgame

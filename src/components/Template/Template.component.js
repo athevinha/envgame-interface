@@ -6,6 +6,7 @@ import "../../style/mobile_template/small.css";
 import "../../style/mobile_template/medium.css";
 import "../../style/mobile_template/large.css";
 import "../../style/mobile_template/extra_large.css";
+import "../../style/mobile_template/galaxy_fold.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
 import content1 from "./images/content1.jpg";

@@ -95,7 +95,7 @@ export default class Logup extends Component {
           <div class="container login_form">
             <div class="row border_radius darker_blue login_row">
               <div class="col-lg-12 text_center">
-                <h3 class="light_blue">Đăng ký</h3>
+                <h3 class="light_blue glx_fold_T">Đăng ký</h3>
                 <hr className="blue_dark_hr" />
               </div>
               <div class="col-lg-12">
@@ -158,7 +158,7 @@ export default class Logup extends Component {
                     <div class="form-group">
                       <button
                         type="submit"
-                        class="form-control btn btn-primary submit px-3"
+                        class="form-control btn btn-primary submit px-3 glx_fold"
                       >
                         Đăng ký
                       </button>
@@ -167,7 +167,7 @@ export default class Logup extends Component {
                 </div>
               </div>
               <div className="col-lg-12 text_left">
-                <p className="p-small statement white_color ">
+                <p className="p-small statement white_color glx_fold">
                   Copyright ©{" "}
                   <a href="/" className="light_blue">
                     envgame
