@@ -1,2 +1,5 @@
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .grid-container {
+    grid-template-columns: auto auto !important;
+  }
 }

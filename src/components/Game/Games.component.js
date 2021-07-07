@@ -62,21 +62,23 @@ export default class Games extends Component {
                   className="grid-item-image"
                   style={{ backgroundImage: `url(${game.url})` }}
                 ></div>
-                <div className="row">
-                  <div className="grid-item-txt col-sm-6">
-                    <p className="light_blue title_G1">{game.title}</p>
-                    <p className="light_blue title_G2">
-                      {game.description} plays
-                    </p>
-                  </div>
-                  <div className=" col-sm-6">
-                    <Link
-                      className="btn-info btn play-button light_blue"
-                      to={`/Games/${game.title}`}
-                      onClick={() => this.Get_Played_Game(game)}
-                    >
-                      Chơi ngay
-                    </Link>
+                <div className="container text_center">
+                  <div className="play_des flex">
+                    <div className="col-sm-6 des_game des_go_game">
+                      <p className="light_blue title_G1">{game.title}</p>
+                      <p className="light_blue title_G2">
+                        {game.description} plays
+                      </p>
+                    </div>
+                    <div className="col-sm-6 go_game des_go_game">
+                      <Link
+                        className="btn-info btn play-button light_blue"
+                        to={`/Games/${game.title}`}
+                        onClick={() => this.Get_Played_Game(game)}
+                      >
+                        Chơi ngay
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>

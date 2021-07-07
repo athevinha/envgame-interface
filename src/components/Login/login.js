@@ -83,7 +83,7 @@ export default class Login extends Component {
           //   style="background-image: url(images/bg.jpg);"
         >
           <div class="container login_form text_center">
-            <div className="row text_center border_radius darker_blue">
+            <div className="row text_center border_radius darker_blue login_row">
               <div class="col-lg-12 text_center">
                 <h3 class="light_blue">Đăng nhập </h3>
                 <hr className="blue_dark_hr" />
@@ -122,7 +122,7 @@ export default class Login extends Component {
                         Sign In
                       </button>
                     </div>
-                    <div class="form-group d-md-flex">
+                    <div class="form-group d-md-flex red_forgot_pass ">
                       <div class="w-50">
                         {" "}
                         <Link
@@ -132,9 +132,9 @@ export default class Login extends Component {
                           Đăng Ký
                         </Link>
                       </div>
-                      <div class="w-50 text-md-right">
+                      <div class="w-50 text-md-right forgot_pass">
                         {/* style="color: #fff" */}
-                        <a href="" className="">
+                        <a href="" className="forgot_pass">
                           Forgot Password
                         </a>
                       </div>

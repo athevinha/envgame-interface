@@ -97,4 +97,38 @@
     left: -70%;
   }
   /* * login * */
+  .login_form {
+    width: 100vw !important;
+  }
+  .login_row {
+    margin: auto;
+  }
+  .red_forgot_pass {
+    display: flex;
+  }
+  .forgot_pass {
+    font-size: 15px;
+  }
+  .title_G1 {
+    margin-top: 1rem !important;
+  }
+  .title_G1,
+  .title_G2 {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+  }
+  .play-button {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .grid-item-txt {
+    padding-bottom: 0 !important;
+  }
+  .play_des {
+    margin: auto;
+    width: 100%;
+  }
+  .flex {
+    display: flex;
+  }
 }

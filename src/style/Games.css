@@ -36,14 +36,23 @@
   width: 100%;
   border-radius: 1rem 1rem 0 0;
 }
-.grid-item-txt {
+/* .grid-item-txt {
   width: 100%;
   padding-bottom: 1rem;
+} */
+.des_go_game {
+  width: 50%;
+}
+.play_des {
+  width: 100%;
+}
+.flex {
+  display: flex;
 }
 .play-button {
   font-size: 60%;
   text-transform: unset !important;
-  margin-top: 20%;
+  margin-top: 30%;
   margin-bottom: 20%;
   text-decoration: none;
 }

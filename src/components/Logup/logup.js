@@ -93,7 +93,7 @@ export default class Logup extends Component {
           //   style="background-image: url(images/bg.jpg);"
         >
           <div class="container login_form">
-            <div class="row border_radius darker_blue">
+            <div class="row border_radius darker_blue login_row">
               <div class="col-lg-12 text_center">
                 <h3 class="light_blue">Đăng ký</h3>
                 <hr className="blue_dark_hr" />
