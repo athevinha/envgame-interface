@@ -34,35 +34,35 @@ export default class UserPage extends Component {
     return (
       <div className="dark_blue light_blue">
         <div className="enter"></div>
-
+        <div className="enter"></div>
         <div className="container">
           <h2>Trang cá nhân </h2>
           <hr className="green_dark_hr block_hr" />
           <div className="row">
             <div className="col-sm-6 text_left">
-              <p>
+              <p className="break_word">
                 <b>Access_tooken:</b>{" "}
                 <spam className="title_T">{user.tooken}</spam>
               </p>
-              <p>
+              <p className="break_word">
                 <b>Type:</b>{" "}
                 <spam className="title_T">
                   {user.type == 1 ? "USER" : "ADMIN"}
                 </spam>
               </p>
-              <p>
+              <p className="break_word">
                 <b>Image:</b> <spam className="title_T">{user.avatar}</spam>
               </p>
             </div>
             <div className="col-sm-4 text_left">
-              <p>
+              <p className="break_word">
                 <b>Username:</b>{" "}
                 <spam className="title_T">{user.username}</spam>
               </p>
-              <p>
+              <p className="break_word">
                 <b>Gmail:</b> <spam className="title_T">{user.gmail}</spam>
               </p>
-              <p>
+              <p className="break_word">
                 <b>_id:</b> <spam className="title_T">{user._id}</spam>
               </p>
             </div>

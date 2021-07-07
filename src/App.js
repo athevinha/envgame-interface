@@ -89,7 +89,7 @@ class App extends Component {
           onMouseOver={this.show_side_bar}
           onMouseOut={this.hide_side_bar}
         >
-          <h3 class="w3-bar-item">
+          <h3 class="text_center">
             {localStorage.tooken != null
               ? this.state.user_current.username
               : "Hãy đăng nhập"}
@@ -109,8 +109,6 @@ class App extends Component {
           </div>
           <hr className="blue_dark_hr" />
           <p class="w3-bar-item">{this.state.user_current.gmail}</p>
-          {/* <p class="w3-bar-item">{this.state.user_current.earned_money}</p>
-          <p class="w3-bar-item">{this.state.user_current.played_games}</p> */}
           <hr className="blue_dark_hr" />
           <p class="w3-bar-item">
             <b>Description: </b>

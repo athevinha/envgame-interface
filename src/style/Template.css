@@ -71,11 +71,12 @@ html {
 .p-large {
   font-size: 1.125rem;
   line-height: 1.75rem;
+  text-align: left;
 }
 .p-name {
   font-size: 2rem;
   color: rgb(255, 255, 255);
-  font-weight: 550;
+  font-weight: 500;
 }
 .h-name {
   color: rgb(34, 255, 0);

@@ -1,3 +1,4 @@
+/* 575.98 */
 @media (max-width: 575.98px) {
   .h-name {
     font-size: 25px !important;
@@ -18,6 +19,7 @@
   }
   .p-name {
     font-size: 18px;
+    text-align: center;
   }
   /* header */
   .row_T {
@@ -41,12 +43,12 @@
   /* * Navbar * */
   .navbar-toggler {
     position: fixed;
-    top: 1rem;
-    left: 82%;
+    top: 0.8rem;
+    left: 80%;
   }
   .logo {
     position: fixed;
-    top: 0rem;
+    top: -0.2rem;
   }
   .navbar-nav {
     margin-top: 3.5rem;
@@ -67,7 +69,7 @@
   }
   .con_custom {
     position: absolute;
-    top: 35%;
+    top: 32%;
     left: 0rem;
   }
   .search_nav_bar {
@@ -77,4 +79,22 @@
   .contact {
     text-align: left !important;
   }
+  /* *side bar * */
+  .ip11 {
+    left: 2vw;
+  }
+  .ip11:hover {
+    color: gray;
+  }
+  .w3-light-info {
+    width: 70%;
+  }
+  .w3-bar-item {
+    text-align: center !important;
+    font-size: 1rem;
+  }
+  .hide_side {
+    left: -70%;
+  }
+  /* * login * */
 }

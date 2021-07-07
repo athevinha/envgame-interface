@@ -13,3 +13,6 @@
   background-color: rgb(88, 189, 255) !;
   height: 1px;
 }
+.break_word {
+  word-wrap: break-word;
+}

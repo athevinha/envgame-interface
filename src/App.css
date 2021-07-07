@@ -91,9 +91,7 @@
   border-radius: 5rem !important;
   border: 2px black solid;
 }
-.w3-bar-item {
-  text-align: center !important;
-}
+
 .dif_color {
   color: blanchedalmond;
 }
@@ -116,6 +114,10 @@
   /* left: 1%; */
   background-color: rgb(0, 12, 35);
   color: rgb(88, 255, 197);
+}
+.w3-bar-item {
+  text-align: center !important;
+  font-size: 1vw;
 }
 .ip11 {
   width: 0.45%;

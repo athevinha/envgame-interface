@@ -1,2 +1,7 @@
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 767px) and (max-width: 991.98px) {
+  .p-name {
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+  }
 }
