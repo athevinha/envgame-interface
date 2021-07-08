@@ -44,7 +44,8 @@ export default class Games extends Component {
           <div className="black-back"></div>
           <div className="login_warn">
             <p className="login_warn_1">
-              <b>Thông báo:</b> bạn cần <b>đăng nhập</b> để chơi game
+              Cố gắng <b> đăng nhập</b> để giúp mình có thêm thông tin xúy nhé.
+              1 xúy thui mà 🥺
             </p>
             <Link className="btn btn-info login_warn_2" to={"./login"}>
               Đăng nhập
