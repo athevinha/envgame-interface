@@ -4,7 +4,7 @@ class httpss {
     return {
       baseURL:
         process.env.NODE_ENV === "production"
-          ? "https://api.envgame.online/api"
+          ? "https://envgame.online/"
           : "http://localhost:3000/",
     };
   }
