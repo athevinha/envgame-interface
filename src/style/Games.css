@@ -61,4 +61,8 @@
 }
 .login_warn {
   position: fixed;
+  top: 40%;
+}
+.login_warn_1 {
+  font-size: 150%;
 }

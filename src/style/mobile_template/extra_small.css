@@ -133,4 +133,8 @@
   .flex {
     display: flex;
   }
+  .login_warn,
+  .login_warn_1 {
+    font-size: 18px !important;
+  }
 }
