@@ -15,11 +15,15 @@ export default class CreateGame extends Component {
     this.state = {
       title: "",
       description: this.random_x2y(2000, 5000).toString(),
-      url: "",
+      url: "/assets/img_games/",
       iframe: "",
+      how2play: "",
+      love_game: false,
+      mobile_game: false,
     };
   }
   onCreateGame = (e) => {
+    // console.log(e.target.name + ": " + e.target.value);
     this.setState({
       [e.target.name]: e.target.value,
     });
@@ -37,8 +41,11 @@ export default class CreateGame extends Component {
         this.setState({
           title: "",
           description: this.random_x2y(2000, 5000).toString(),
-          url: "",
+          url: "/assets/img_games/",
           iframe: "",
+          how2play: "",
+          love_game: false,
+          mobile_game: false,
         });
         toast.info("Thêm game thành công ", {
           position: "top-right",
@@ -65,7 +72,7 @@ export default class CreateGame extends Component {
         <ToastContainer />
         {/* Same as */}
         <ToastContainer />
-        <form onSubmit={this.CreateGame} className="form ">
+        <form onSubmit={this.CreateGame} className="form">
           <input
             onChange={this.onCreateGame}
             value={this.state.title}
@@ -94,6 +101,81 @@ export default class CreateGame extends Component {
             onChange={this.onCreateGame}
             className="form-control formCreate input_N"
           />
+          <input
+            name="how2play"
+            value={this.state.how2play}
+            placeholder="How to play game..."
+            onChange={this.onCreateGame}
+            className="form-control formCreate input_N"
+          />
+          {/* ==================== Form Check Love game ====================== */}
+          <p className="lovegame_lab table_admin_delete">Love game ❤ ?</p>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input formCreate "
+              type="radio"
+              id="inlineCheckbox1"
+              name="love_game"
+              value={false}
+              onChange={this.onCreateGame}
+            />
+            <label
+              class="form-check-label table_admin_delete"
+              for="inlineCheckbox1 input_N"
+            >
+              FALSE
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input formCreate "
+              type="radio"
+              id="inlineCheckbox2"
+              name="love_game"
+              value={true}
+              onChange={this.onCreateGame}
+            />
+            <label
+              class="form-check-label table_admin_delete"
+              for="inlineCheckbox2 input_N"
+            >
+              TRUE
+            </label>
+          </div>
+          {/* ==================== Form Check Mobile Game ====================== */}
+          <p className="lovegame_lab table_admin_delete">Mobile Game 📱 ?</p>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input formCreate "
+              type="radio"
+              id="inlineCheckbox1"
+              name="mobile_game"
+              value={false}
+              onChange={this.onCreateGame}
+            />
+            <label
+              class="form-check-label table_admin_delete"
+              for="inlineCheckbox1 input_N"
+            >
+              FALSE
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input formCreate "
+              type="radio"
+              id="inlineCheckbox2"
+              name="mobile_game"
+              value={true}
+              onChange={this.onCreateGame}
+            />
+            <label
+              class="form-check-label table_admin_delete"
+              for="inlineCheckbox2 input_N"
+            >
+              TRUE
+            </label>
+          </div>
           <input
             className="btn btn-block btn-danger playButton createButton"
             type="submit"

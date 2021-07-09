@@ -8,7 +8,32 @@
 .table_admin_read {
   color: rgb(88, 255, 197);
 }
+.form-update {
+  top: 10%;
+}
+.close-update {
+  top: 10%;
+  left: 72%;
+}
+.love_game_tr {
+  background-color: rgb(232, 186, 101);
+  color: black;
+}
+/* End update */
 .enter_admin {
   position: relative;
   height: 4rem;
+}
+.lovegame_lab {
+  color: rgb(88, 255, 197);
+  font-size: 20px;
+  margin-left: 10px;
+}
+.form-check-input {
+  padding: 0;
+  margin: 0;
+}
+.form-check {
+  height: 10px;
+  margin-left: 10px;
 }

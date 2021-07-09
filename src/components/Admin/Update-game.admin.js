@@ -16,6 +16,9 @@ export default class UpdateGame extends Component {
       newDescription: "",
       newUrl: "",
       newIframe: "",
+      newHow2play: "",
+      newLove_game: "",
+      newMobile_game: "",
       _id: "",
     };
     GameService.getAll().then((res) => {
@@ -40,6 +43,10 @@ export default class UpdateGame extends Component {
   CloseUpdate = (e) => {
     e.preventDefault();
     this.updateForm.current.className = "update-admin hidden";
+    let CB = document.getElementsByClassName("form-check-input");
+    for (let i = 0; i < CB.length; i++) {
+      CB[i].check = false;
+    }
   };
   UpdateGame = (e) => {
     e.preventDefault();
@@ -47,9 +54,11 @@ export default class UpdateGame extends Component {
     let newData = {
       newTitle: this.state.newTitle,
       newDescription: this.state.newDescription,
-      newUrl:
-        "/assets/img_games/" + this.Space2Under(this.state.newTitle) + ".png",
+      newUrl: this.state.newUrl,
       newIframe: this.state.newIframe,
+      newHow2play: this.state.newHow2play,
+      newLove_game: this.state.newLove_game,
+      newMobile_game: this.state.newMobile_game,
     };
     gameService.update(_id, newData).then((req, res) => {
       toast.info("Cập nhật thành công ", {
@@ -69,9 +78,11 @@ export default class UpdateGame extends Component {
             _id: _id,
             title: req.data.title,
             description: req.data.description,
-            url:
-              "/assets/img_games/" + this.Space2Under(req.data.title) + ".png",
+            url: req.data.url,
             iframe: req.data.iframe,
+            love_game: req.data.love_game,
+            how2play: req.data.how2play,
+            mobile_game: req.data.mobile_game,
           };
         }
       });
@@ -84,6 +95,9 @@ export default class UpdateGame extends Component {
       newDescription: "",
       newUrl: "",
       newIframe: "",
+      newHow2play: "",
+      newLove_game: "",
+      newMobile_game: "",
     });
   };
   onUpdateGame = (e) => {
@@ -129,9 +143,84 @@ export default class UpdateGame extends Component {
               className="form-control inputUpdate input_N"
             />
             <input
-              className="btn btn-block btn-info"
+              name="newHow2play"
+              value={this.state.newHow2play}
+              placeholder="How to play game..."
+              onChange={this.onUpdateGame}
+              className="form-control inputUpdate input_N"
+            />
+            {/* ==================== Form Check ====================== */}
+            <p className="lovegame_lab table_admin_delete">Love game ❤ ?</p>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input formCreate "
+                type="radio"
+                id="inlineCheckbox1"
+                name="newLove_game"
+                value={false}
+                onChange={this.onUpdateGame}
+              />
+              <label
+                class="form-check-label table_admin_delete"
+                for="inlineCheckbox1 input_N"
+              >
+                FALSE
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input formCreate "
+                type="radio"
+                id="inlineCheckbox2"
+                name="newLove_game"
+                value={true}
+                onChange={this.onUpdateGame}
+              />
+              <label
+                class="form-check-label table_admin_delete"
+                for="inlineCheckbox2 input_N"
+              >
+                TRUE
+              </label>
+            </div>
+            {/* ==================== Form Check Mobile ====================== */}
+            <p className="lovegame_lab table_admin_delete">Mobile Game 📱 ?</p>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input formCreate "
+                type="radio"
+                id="inlineCheckbox1"
+                name="newMobile_game"
+                value={false}
+                onChange={this.onUpdateGame}
+              />
+              <label
+                class="form-check-label table_admin_delete"
+                for="inlineCheckbox1 input_N"
+              >
+                FALSE
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input formCreate "
+                type="radio"
+                id="inlineCheckbox2"
+                name="newMobile_game"
+                value={true}
+                onChange={this.onUpdateGame}
+              />
+              <label
+                class="form-check-label table_admin_delete"
+                for="inlineCheckbox2 input_N"
+              >
+                TRUE
+              </label>
+            </div>
+            <input
+              className="btn btn-block btn-info playButton createButton"
               type="submit"
-              value="update"
+              value="UPDATE"
             />
             <button
               className="btn btn-light close-update"
@@ -150,13 +239,17 @@ export default class UpdateGame extends Component {
               <th scope="col">Description</th>
               <th scope="col">Url</th>
               <th scope="col">Iframe</th>
+              <th scope="col">Type</th>
               <th scope="col">Function</th>
             </tr>
           </thead>
           <tbody>
             {this.state.games.map((game, id) => {
               return (
-                <tr key={id}>
+                <tr
+                  key={id}
+                  className={game.love_game == true ? "love_game_tr" : ""}
+                >
                   <th>
                     {/* {game._id} */}
                     {id}
@@ -173,6 +266,7 @@ export default class UpdateGame extends Component {
                       ? game.iframe.length
                       : game.iframe}
                   </td>
+                  <td>{game.mobile_game == true ? "MOBILE" : "PC"}</td>
                   <td>
                     <button
                       className="btn btn-info"

@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import UserService from "../../service/user.service";
 import "../../style/Games.css";
 import Iframe from "react-iframe";
+import { ToastContainer, toast } from "react-toastify";
 let STime = 0;
 export default class Game extends Component {
   constructor(props) {
@@ -14,6 +15,17 @@ export default class Game extends Component {
   componentDidMount() {
     if (localStorage.getItem("tooken") == null) {
       this.updateForm.current.className = "update-admin display";
+    }
+    if (this.props.game.title == "Evil Glitch") {
+      toast.info("Click vào fullscreen ở dưới cùng bên trái để di chuyển nhé", {
+        position: "top-right",
+        autoClose: 7000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
     }
     STime = new Date().getTime();
   }
@@ -29,7 +41,10 @@ export default class Game extends Component {
   render() {
     return (
       <div className="background-iframe darker_blue">
-        <div className="enter"></div>
+        <ToastContainer />
+        {/* Same as */}
+        <ToastContainer />
+        <div className="enter_game"></div>
         <Iframe
           url={this.state.game.iframe}
           id="myId"

@@ -53,13 +53,17 @@ export default class DeleteGame extends Component {
               <th scope="col">Description</th>
               <th scope="col">Url</th>
               <th scope="col">Iframe</th>
+              <th scope="col">TYPE</th>
               <th scope="col">Function</th>
             </tr>
           </thead>
           <tbody>
             {this.state.games.map((game, id) => {
               return (
-                <tr key={id}>
+                <tr
+                  key={id}
+                  className={game.love_game == true ? "love_game_tr" : ""}
+                >
                   <th>{game._id}</th>
                   <td>{game.title}</td>
                   <td>{game.description}</td>
@@ -69,6 +73,7 @@ export default class DeleteGame extends Component {
                       ? game.iframe.length
                       : game.iframe}
                   </td>
+                  <td>{game.mobile_game == true ? "MOBILE" : "PC"}</td>
                   <td>
                     <button
                       className="btn btn-danger"

@@ -31,12 +31,16 @@ export default class ReadGame extends Component {
               <th scope="col">Description</th>
               <th scope="col">Url</th>
               <th scope="col">Iframe</th>
+              <th scope="col">Type</th>
             </tr>
           </thead>
           <tbody>
             {this.state.games.map((game, id) => {
               return (
-                <tr key={id}>
+                <tr
+                  key={id}
+                  className={game.love_game == true ? "love_game_tr" : ""}
+                >
                   <th>
                     {/* {game._id} */}
                     {id}
@@ -49,6 +53,7 @@ export default class ReadGame extends Component {
                       ? game.iframe.length
                       : game.iframe}
                   </td>
+                  <td>{game.mobile_game == true ? "MOBILE" : "PC"}</td>
                 </tr>
               );
             })}
