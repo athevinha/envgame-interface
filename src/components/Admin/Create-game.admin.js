@@ -5,6 +5,7 @@ import "../../App.css";
 import { ToastContainer, toast } from "react-toastify";
 import { Link, Route, Switch } from "react-router-dom";
 import home_route from "../http_route/http-common";
+import "./admin.css";
 export default class CreateGame extends Component {
   random_x2y = (x, y) => {
     return Math.floor(Math.random() * y) + x;
@@ -60,44 +61,43 @@ export default class CreateGame extends Component {
   };
   render() {
     return (
-      <div>
+      <div className="dark_blue">
         <ToastContainer />
         {/* Same as */}
         <ToastContainer />
-        <form onSubmit={this.CreateGame} className="form">
+        <form onSubmit={this.CreateGame} className="form ">
           <input
             onChange={this.onCreateGame}
             value={this.state.title}
             name="title"
             placeholder="Title..."
-            className="form-control formCreate"
+            className="form-control formCreate input_N"
           />
           <input
             name="description"
             value={this.state.description}
             placeholder="Description..."
             onChange={this.onCreateGame}
-            className="form-control formCreate"
+            className="form-control formCreate input_N"
           />
           <input
             name="url"
             value={this.state.url}
             placeholder="Url..."
             onChange={this.onCreateGame}
-            className="form-control formCreate"
+            className="form-control formCreate input_N"
           />
           <input
             name="iframe"
             value={this.state.iframe}
             placeholder="Iframe..."
             onChange={this.onCreateGame}
-            className="form-control formCreate"
+            className="form-control formCreate input_N"
           />
           <input
-            className="btn btn-block btn-danger"
+            className="btn btn-block btn-danger playButton createButton"
             type="submit"
-            value="create
-          "
+            value="CREATE"
           />
         </form>
       </div>

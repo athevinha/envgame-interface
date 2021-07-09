@@ -77,7 +77,7 @@ class App extends Component {
         <ToastContainer />
         <Cookie />
         <div
-          className="w3-sidebar w3-light-black w3-bar-block ip11 text_center"
+          className="w3-sidebar w3-bar-block ip11 text_center"
           onMouseOver={this.show_side_bar}
           onMouseOut={this.hide_side_bar}
           ref={this.ip11}

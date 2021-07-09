@@ -44,8 +44,8 @@ export default class DeleteGame extends Component {
         <ToastContainer />
         {/* Same as */}
         <ToastContainer />
-        <div className="enter"></div>
-        <table className="table table">
+        <div className="enter_admin"></div>
+        <table className="table table table_admin_delete">
           <thead>
             <tr>
               <th scope="col">_id</th>

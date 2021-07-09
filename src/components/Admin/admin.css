@@ -1,0 +1,14 @@
+/* CREATE */
+.createButton:hover {
+  padding-right: 0;
+}
+/* UPDATE */
+.table_admin_update,
+.table_admin_delete,
+.table_admin_read {
+  color: rgb(88, 255, 197);
+}
+.enter_admin {
+  position: relative;
+  height: 4rem;
+}

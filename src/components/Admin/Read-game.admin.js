@@ -22,24 +22,33 @@ export default class ReadGame extends Component {
   render() {
     return (
       <div>
-        <div className="enter"></div>
-        <table className="table">
+        <div className="enter_admin"></div>
+        <table className="table table_admin_read">
           <thead>
             <tr>
               <th scope="col">_id</th>
               <th scope="col">Title</th>
               <th scope="col">Description</th>
               <th scope="col">Url</th>
+              <th scope="col">Iframe</th>
             </tr>
           </thead>
           <tbody>
             {this.state.games.map((game, id) => {
               return (
                 <tr key={id}>
-                  <th>{game._id}</th>
+                  <th>
+                    {/* {game._id} */}
+                    {id}
+                  </th>
                   <td>{game.title}</td>
                   <td>{game.description}</td>
-                  <td>{game.url.length >= 15 ? game.url.length : game.url}</td>
+                  <td>{game.url.length >= 100 ? game.url.length : game.url}</td>
+                  <td>
+                    {game.iframe.length >= 100
+                      ? game.iframe.length
+                      : game.iframe}
+                  </td>
                 </tr>
               );
             })}

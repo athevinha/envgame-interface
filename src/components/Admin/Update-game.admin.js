@@ -6,6 +6,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import gameService from "../../service/game.service";
 import home_route from "../http_route/http-common";
+import "./admin.css";
 export default class UpdateGame extends Component {
   constructor(props) {
     super(props);
@@ -104,28 +105,28 @@ export default class UpdateGame extends Component {
               value={this.state.newTitle}
               name="newTitle"
               placeholder="Title..."
-              className="form-control inputUpdate"
+              className="form-control inputUpdate input_N"
             />
             <input
               name="newDescription"
               value={this.state.newDescription}
               placeholder="Description..."
               onChange={this.onUpdateGame}
-              className="form-control inputUpdate"
+              className="form-control inputUpdate input_N"
             />
             <input
               name="newUrl"
               value={this.state.newUrl}
               placeholder="Url..."
               onChange={this.onUpdateGame}
-              className="form-control inputUpdate"
+              className="form-control inputUpdate input_N"
             />
             <input
               name="newIframe"
               value={this.state.newIframe}
               placeholder="Iframe..."
               onChange={this.onUpdateGame}
-              className="form-control inputUpdate"
+              className="form-control inputUpdate input_N"
             />
             <input
               className="btn btn-block btn-info"
@@ -140,8 +141,8 @@ export default class UpdateGame extends Component {
             </button>
           </form>
         </div>
-        <div className="enter"></div>
-        <table className="table">
+        <div className="enter_admin"></div>
+        <table className="table table_admin_update">
           <thead>
             <tr>
               <th scope="col">_id</th>
@@ -156,7 +157,10 @@ export default class UpdateGame extends Component {
             {this.state.games.map((game, id) => {
               return (
                 <tr key={id}>
-                  <th>{game._id}</th>
+                  <th>
+                    {/* {game._id} */}
+                    {id}
+                  </th>
                   <td>{game.title}</td>
                   <td>{game.description}</td>
                   <td>
@@ -165,7 +169,7 @@ export default class UpdateGame extends Component {
                       : game.url}
                   </td>
                   <td>
-                    {game.iframe.length >= 15
+                    {game.iframe.length >= 100
                       ? game.iframe.length
                       : game.iframe}
                   </td>

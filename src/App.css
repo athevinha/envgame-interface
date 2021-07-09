@@ -114,6 +114,8 @@
   /* left: 1%; */
   background-color: rgb(0, 12, 35);
   color: rgb(88, 255, 197);
+  position: fixed !important;
+  z-index: 200;
 }
 .w3-bar-item {
   text-align: center !important;
@@ -127,11 +129,13 @@
   border: 1px black solid;
   top: 25%;
   transition: 0.2s;
+  position: fixed;
+  z-index: 200;
 }
 .ip11:hover {
-  width: 0.8%;
+  width: 0.6%;
   border-radius: 50px;
-  border: 2px black solid;
+  border: 1.5px black solid;
   top: 11%;
   height: 78%;
 }
@@ -153,6 +157,9 @@
   background: linear-gradient(transparent, #06dee1, #79ff6c, #fc3628, #830bac);
   border-radius: 3px;
 }
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
 /* ========================================= */
 /* =============== Nav Bar================ */
 /* ========================================= */
@@ -168,8 +175,9 @@
   height: 2rem;
 }
 .nav_custom {
+  top: 0 !important;
   position: fixed !important;
-  width: 100%;
+  width: 100% !important;
   height: 4rem;
   z-index: 2000 !important;
   background-color: rgb(0, 17, 51) !important;

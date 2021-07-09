@@ -221,7 +221,7 @@ h-name .center {
   text-align: center;
 }
 .con_custom {
-  position: absolute;
+  position: sticky !important;
   top: 35%;
   left: 5rem;
 }
