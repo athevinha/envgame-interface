@@ -68,6 +68,22 @@ export default class UserPageGraphTime extends Component {
         },
       },
       area: {
+        zoom: {
+          enabled: true,
+          type: "x",
+          autoScaleXaxis: true,
+          zoomedArea: {
+            fill: {
+              color: "#90CAF9",
+              opacity: 0.4,
+            },
+            stroke: {
+              color: "#0D47A1",
+              opacity: 0.4,
+              width: 1,
+            },
+          },
+        },
         series: [
           {
             name: "Thời gian chơi game",
@@ -83,7 +99,9 @@ export default class UserPageGraphTime extends Component {
             height: 350,
             type: "area",
             zoom: {
-              enabled: false,
+              enabled: true,
+              autoScaleYaxis: true,
+              zoomX: "Racer",
             },
           },
           dataLabels: {
@@ -112,9 +130,9 @@ export default class UserPageGraphTime extends Component {
             },
           },
           markers: {
-            size: 5,
+            size: 1,
             hover: {
-              size: 6,
+              size: 2,
             },
           },
 

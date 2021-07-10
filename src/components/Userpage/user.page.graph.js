@@ -19,6 +19,9 @@ export default class UserPageGraph extends Component {
         chart: {
           type: "bar",
           height: 350,
+          zoom: {
+            enabled: true,
+          },
         },
         plotOptions: {
           bar: {

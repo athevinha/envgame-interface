@@ -16,17 +16,15 @@ export default class Game extends Component {
     if (localStorage.getItem("tooken") == null) {
       this.updateForm.current.className = "update-admin display";
     }
-    if (this.props.game.title == "Evil Glitch") {
-      toast.info("Click vào fullscreen ở dưới cùng bên trái để di chuyển nhé", {
-        position: "top-right",
-        autoClose: 7000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
-    }
+    toast.info(this.props.game.how2play, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
     STime = new Date().getTime();
   }
   componentWillUnmount() {

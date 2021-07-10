@@ -3,17 +3,31 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import GameService from "../../service/game.service";
 import UserService from "../../service/user.service";
 import "../../style/Games.css";
-import { Link, Route, Switch } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
+import { isMobile } from "react-device-detect";
+import Switch from "react-input-switch";
+
 export default class Games extends Component {
   constructor(props) {
     super(props);
     this.state = {
       games: [],
+      is_love_game: false,
+      search: "",
     };
     GameService.getAll().then((res) => {
-      this.setState({ games: res.data });
+      if (isMobile == true) {
+        this.setState({
+          games: res.data.filter((game) => {
+            return game.mobile_game == true;
+          }),
+        });
+      } else {
+        this.setState({ games: res.data });
+      }
     });
+
     this.updateForm = React.createRef();
   }
   componentDidMount() {
@@ -30,12 +44,62 @@ export default class Games extends Component {
       // this.setState({ users: req.data });
     });
   };
+  // =====================Game=================
+  onSearchGame = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value,
+    });
+    let { games } = this.props;
+    console.log(this.state.games);
+    this.setState({
+      games: games.filter((game) => {
+        return game.title.toLowerCase().includes(e.target.value) == true;
+      }),
+    });
+  };
+  onIs_love_gameGame = (e) => {
+    console.log(e);
+  };
+  onSubmitSearch = (e) => {
+    e.preventDefault();
+  };
+  onLoveGame = () => {};
   render() {
     return (
       <div>
         <ToastContainer />
         {/* Same as */}
         <ToastContainer />
+        <form
+          className="form-inline search_nav_bar"
+          onSubmit={this.onSubmitSearch}
+        >
+          <input
+            className="form-control mr-sm-2 input_N"
+            type="search"
+            placeholder="Search game..."
+            name="search"
+            onChange={this.onSearchGame}
+            value={this.state.search}
+            aria-label="Search"
+          />
+          <button className="btn btn-outline-info my-2 my-sm-0" type="submit">
+            Search
+          </button>
+          <div class="custom-control custom-switch btn_love_game">
+            <Switch
+              value={this.state.on_love_game}
+              onChange={(on_love_game) => {
+                this.setState({ on_love_game: on_love_game });
+                console.log(on_love_game);
+              }}
+              on={true}
+              off={false}
+              className="switch_love_game"
+            />
+            <label class="">Game yêu thích</label>
+          </div>
+        </form>
         <div
           className="update-admin fixed hidden"
           id="login_warn"

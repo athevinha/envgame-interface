@@ -27,6 +27,7 @@ class App extends Component {
       users: [],
       user_current: [],
       theposition: window.pageYOffset,
+      // Search and love value
     };
     GameService.getAll().then((res) => {
       this.setState({ games: res.data });
@@ -69,6 +70,7 @@ class App extends Component {
       this.user_in4.current.classList.remove("hide_side");
     }
   };
+  // Game======
   render() {
     return (
       <div className="App dark_blue">
@@ -167,35 +169,6 @@ class App extends Component {
                 </Link>
               </li>
             </ul>
-
-            <form
-              className="form-inline search_nav_bar"
-              onSubmit={(e) => {
-                e.preventDefault();
-                toast("Tính năng chưa hoàn thành", {
-                  position: "top-right",
-                  autoClose: 2500,
-                  hideProgressBar: false,
-                  closeOnClick: true,
-                  pauseOnHover: true,
-                  draggable: true,
-                  progress: undefined,
-                });
-              }}
-            >
-              <input
-                className="form-control mr-sm-2 input_N"
-                type="search"
-                placeholder="Search game..."
-                aria-label="Search"
-              />
-              <button
-                className="btn btn-outline-info my-2 my-sm-0"
-                type="submit"
-              >
-                Search
-              </button>
-            </form>
           </div>
         </nav>
         <Switch>
@@ -208,7 +181,11 @@ class App extends Component {
             exact
             path="/Games"
             render={(pr) => (
-              <Games className="width75" user={this.state.user_current} />
+              <Games
+                className="width75"
+                user={this.state.user_current}
+                games={this.state.games}
+              />
             )}
           />
           <Route
@@ -258,3 +235,4 @@ class App extends Component {
 }
 
 export default App;
+// Trước tiên là chúc sinh nhật đạ nha 😁, hơn 16 tuổi rồi đọ. Anh chúc em luôn tươi trẻ mạnh khỏe và hạnh phúc, xinh lại càng xinh, duyên lại càng duyên, yêu lại càng yêu. Mãi mãi là người anh yêu nhất 😘❤😻
