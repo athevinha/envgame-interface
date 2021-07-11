@@ -63,7 +63,7 @@ export default class Footer extends Component {
               ></textarea>
             </h3>
           </div>
-          <div className="col-lg-12 text_left">
+          <div className="col-lg-12 text_center">
             <button className="btn btn-info">Gửi phản hồi</button>
           </div>
         </div>

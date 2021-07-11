@@ -258,6 +258,7 @@ export default class Template extends Component {
                 <h3 className="contact text-uppercase text_center title_T">
                   Thông tin liên hệ
                 </h3>
+                <hr className="blue_dark_hr" />
                 <div className="social-container text_center">
                   <a
                     className="fa-stack "
