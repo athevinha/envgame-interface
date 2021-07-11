@@ -85,13 +85,12 @@ export default class Logup extends Component {
         <ToastContainer />
         {/* Same as */}
         <ToastContainer />
-        <div className="enter"></div>
         <body
           className="img fullheight dark_blue"
           //   style="background-image: url(images/bg.jpg);"
         >
           <div className="container login_form">
-            <div className="row border_radius darker_blue login_row">
+            <div className="row border_radius darker_blue logup_row">
               <div className="col-lg-12 text_center">
                 <h3 className="light_blue glx_fold_T">Đăng ký</h3>
                 <hr className="blue_dark_hr" />
@@ -105,7 +104,7 @@ export default class Logup extends Component {
                         name="username"
                         value={this.state.username}
                         onChange={this.onLogup}
-                        className="form-control input_T"
+                        className="form-control input_T logup_input"
                         placeholder="Username..."
                         required
                       />
@@ -116,7 +115,7 @@ export default class Logup extends Component {
                         name="gmail"
                         value={this.state.gmail}
                         onChange={this.onLogup}
-                        className="form-control input_T"
+                        className="form-control input_T logup_input"
                         placeholder="Gmail..."
                         required
                       />
@@ -128,7 +127,7 @@ export default class Logup extends Component {
                         value={this.state.password}
                         onChange={this.onLogup}
                         type="password"
-                        className="form-control input_T"
+                        className="form-control input_T logup_input"
                         placeholder="Password..."
                         required
                       />
@@ -139,7 +138,7 @@ export default class Logup extends Component {
                         name="avatar"
                         value={this.state.avatar}
                         onChange={this.onLogup}
-                        className="form-control input_T"
+                        className="form-control input_T logup_input"
                         placeholder="Link your image..."
                       />
                     </div>
@@ -149,14 +148,14 @@ export default class Logup extends Component {
                         name="description"
                         value={this.state.description}
                         onChange={this.onLogup}
-                        className="form-control input_T"
+                        className="form-control input_T logup_input"
                         placeholder="Description..."
                       />
                     </div>
                     <div className="form-group">
                       <button
                         type="submit"
-                        className="form-control btn btn-primary submit px-3 glx_fold"
+                        className="logup_input form-control btn btn-primary submit px-3 glx_fold"
                       >
                         Đăng ký
                       </button>
@@ -164,7 +163,7 @@ export default class Logup extends Component {
                   </form>
                 </div>
               </div>
-              <div className="col-lg-12 text_left">
+              <div className="col-lg-12 text_left no_margin copy_right_fold">
                 <p className="p-small statement white_color glx_fold">
                   Copyright ©{" "}
                   <a href="/" className="light_blue">

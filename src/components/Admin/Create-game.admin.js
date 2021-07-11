@@ -15,7 +15,7 @@ export default class CreateGame extends Component {
     this.state = {
       title: "",
       description: this.random_x2y(2000, 5000).toString(),
-      url: "/assets/img_games/",
+      url: "https://athevinha.github.io/GameJS/img_games/",
       iframe: "",
       how2play: "",
       love_game: false,
@@ -41,7 +41,7 @@ export default class CreateGame extends Component {
         this.setState({
           title: "",
           description: this.random_x2y(2000, 5000).toString(),
-          url: "/assets/img_games/",
+          url: "https://athevinha.github.io/GameJS/img_games/",
           iframe: "",
           how2play: "",
           love_game: false,

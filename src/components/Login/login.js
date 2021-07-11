@@ -74,7 +74,6 @@ export default class Login extends Component {
         <ToastContainer />
         {/* Same as */}
         <ToastContainer />
-        <div className="enter"></div>
         <body
           className="img fullheight dark_blue"
           //   style="background-image: url(images/bg.jpg);"

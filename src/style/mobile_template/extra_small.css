@@ -101,9 +101,26 @@
   /* * login * */
   .login_form {
     width: 100vw !important;
+    top: 10% !important;
+  }
+  .logup_row {
+    width: 100vw;
+    position: relative;
+    top: -8.5vh;
+    margin: auto;
+  }
+  .no_margin {
+    margin: 0 !important;
+  }
+  .logup_input {
+    position: relative;
+  }
+  .fullheight {
+    height: 100%;
   }
   .login_row {
     margin: auto;
+    height: 80vh;
   }
   .red_forgot_pass {
     display: flex;
@@ -136,5 +153,10 @@
   .login_warn,
   .login_warn_1 {
     font-size: 18px !important;
+  }
+}
+@media (min-width: 321px) and (max-width: 575.98px) {
+  .logup_row {
+    top: 5vh;
   }
 }

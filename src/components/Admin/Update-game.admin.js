@@ -257,7 +257,7 @@ export default class UpdateGame extends Component {
                   <td>{game.title}</td>
                   <td>{game.description}</td>
                   <td>
-                    {game.url && game.url.length >= 50
+                    {game.url && game.url.length >= 80
                       ? game.url.length
                       : game.url}
                   </td>

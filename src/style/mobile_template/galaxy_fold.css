@@ -5,4 +5,19 @@
   .glx_fold_T {
     font-size: 20px;
   }
+  .logup_input {
+    width: 80vw;
+    position: relative;
+    margin-left: -18.5vw;
+  }
+  .copy_right_fold {
+    position: relative;
+    left: -15vw;
+  }
+  .logup_row {
+    height: 85vh;
+    position: relative;
+    top: 2vh;
+    padding-top: 0 !important;
+  }
 }
