@@ -18,6 +18,7 @@ import UserPage from "./components/Userpage/user.page";
 import Game from "./components/Game/Game.component";
 import Cookie from "./components/Cookies/Cookies.js";
 import { ToastContainer, toast } from "react-toastify";
+import { isMobile } from "react-device-detect";
 // import * as Scroll from "react-scroll";
 class App extends Component {
   constructor(props) {
@@ -30,7 +31,15 @@ class App extends Component {
       // Search and love value
     };
     GameService.getAll().then((res) => {
-      this.setState({ games: res.data });
+      if (isMobile == true) {
+        this.setState({
+          games: res.data.filter((game) => {
+            return game.mobile_game == true;
+          }),
+        });
+      } else {
+        this.setState({ games: res.data });
+      }
     });
     this.login = React.createRef();
     this.user_in4 = React.createRef();
@@ -235,4 +244,4 @@ class App extends Component {
 }
 
 export default App;
-// Trước tiên là chúc sinh nhật đạ nha 😁, hơn 16 tuổi rồi đọ. Anh chúc em luôn tươi trẻ mạnh khỏe và hạnh phúc, xinh lại càng xinh, duyên lại càng duyên, yêu lại càng yêu. Mãi mãi là người anh yêu nhất 😘❤😻
+// npm install --legacy-peer-deps

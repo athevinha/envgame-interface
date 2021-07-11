@@ -10,6 +10,11 @@
     grid-template-columns: auto !important;
   }
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: auto auto auto !important;
+  }
+}
 .row {
   width: 100%;
 }
@@ -77,7 +82,7 @@
 .search_nav_bar {
   z-index: 2100;
   width: 50%;
-  left: 50%;
+  left: 48%;
   margin-left: 15%;
   padding: 0.9rem 1rem;
   position: fixed;

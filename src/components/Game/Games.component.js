@@ -57,13 +57,22 @@ export default class Games extends Component {
       }),
     });
   };
-  onIs_love_gameGame = (e) => {
-    console.log(e);
+  onLoveGame = (on_love_game) => {
+    this.setState({ on_love_game: on_love_game });
+    let { games } = this.props;
+    if (on_love_game == true)
+      this.setState({
+        games: games.filter((game) => {
+          return game.love_game == on_love_game;
+        }),
+      });
+    else {
+      this.setState({ games: games });
+    }
   };
   onSubmitSearch = (e) => {
     e.preventDefault();
   };
-  onLoveGame = () => {};
   render() {
     return (
       <div>
@@ -90,8 +99,7 @@ export default class Games extends Component {
             <Switch
               value={this.state.on_love_game}
               onChange={(on_love_game) => {
-                this.setState({ on_love_game: on_love_game });
-                console.log(on_love_game);
+                this.onLoveGame(on_love_game);
               }}
               on={true}
               off={false}
@@ -118,7 +126,7 @@ export default class Games extends Component {
         </div>
         <div className="enter"></div>
         <div className="grid-container dark_blue">
-          {this.state.games.map((game, id) => {
+          {this.state.games.reverse().map((game, id) => {
             return (
               <div className="grid-item darker_blue" key={id}>
                 <div

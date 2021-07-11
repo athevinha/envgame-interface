@@ -17,8 +17,8 @@ export default class UpdateGame extends Component {
       newUrl: "",
       newIframe: "",
       newHow2play: "",
-      newLove_game: "",
-      newMobile_game: "",
+      newLove_game: false,
+      newMobile_game: false,
       _id: "",
     };
     GameService.getAll().then((res) => {
@@ -96,8 +96,8 @@ export default class UpdateGame extends Component {
       newUrl: "",
       newIframe: "",
       newHow2play: "",
-      newLove_game: "",
-      newMobile_game: "",
+      newLove_game: null,
+      newMobile_game: null,
     });
   };
   onUpdateGame = (e) => {
