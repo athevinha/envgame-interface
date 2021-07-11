@@ -49,7 +49,7 @@ export default class Games extends Component {
     this.setState({
       [e.target.name]: e.target.value,
     });
-    let { games } = this.props;
+    let games = this.props.games.reverse();
     console.log(this.state.games);
     this.setState({
       games: games.filter((game) => {
