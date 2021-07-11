@@ -99,7 +99,7 @@ class App extends Component {
           onMouseOver={this.show_side_bar}
           onMouseOut={this.hide_side_bar}
         >
-          <h3 className="text_center break_word">
+          <h3 className="text_center break_word name_in4_side">
             {localStorage.tooken != null
               ? this.state.user_current.username
               : "Hãy đăng nhập"}

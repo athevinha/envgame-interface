@@ -20,4 +20,18 @@
     top: 2vh;
     padding-top: 0 !important;
   }
+  .playButton:hover {
+    padding-right: 18% !important;
+  }
+  .w3-bar-item {
+    text-align: center !important;
+    font-size: 0.8rem !important;
+  }
+  .avatar_show {
+    width: 4rem !important;
+    height: 4rem !important;
+  }
+  .name_in4_side {
+    font-size: 1.2rem !important;
+  }
 }

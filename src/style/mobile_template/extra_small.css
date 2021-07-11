@@ -93,7 +93,11 @@
   }
   .w3-bar-item {
     text-align: center !important;
-    font-size: 1rem;
+    font-size: 80% !important;
+  }
+  .avatar_show {
+    width: 8rem !important;
+    height: 8rem !important;
   }
   .hide_side {
     left: -70%;
