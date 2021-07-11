@@ -75,10 +75,6 @@
   position: relative;
   height: 3.22rem;
 }
-/* .Iframe {
-  width: 100%;
-  height: calc(100vh - 2rem);
-} */
 .search_nav_bar {
   z-index: 2100;
   width: 50%;
