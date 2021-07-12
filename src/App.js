@@ -48,6 +48,9 @@ class App extends Component {
     this.ip11 = React.createRef();
   }
   componentDidMount() {
+    if (window.location.href == "http://3.0.241.73:5000/") {
+      window.location = "https://envgame.online/";
+    }
     let users = [];
     userService.getAll().then((req) => {
       users = req.data;
