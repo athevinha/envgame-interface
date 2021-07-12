@@ -19,6 +19,11 @@ export default class Login extends Component {
     userService.getAll().then((req, res) => {
       this.setState({ users: req.data });
     });
+    window.onmessage = function (e) {
+      if (e.data == "hello") {
+        alert("It works!");
+      }
+    };
   }
   componentDidMount() {
     if (localStorage.getItem("tooken") != null) {

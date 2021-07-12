@@ -71,7 +71,7 @@ export default class Template extends Component {
                     </li>
                   </ul>
                   <a
-                    className="btn btn-info"
+                    className="btn btn-info more_in4"
                     href="https://laodong.vn/xa-hoi/nhung-he-luy-tu-mat-rung-ngay-cang-nghiem-trong-817416.ldo#:~:text=H%E1%BA%ADu%20qu%E1%BA%A3%20c%E1%BB%A7a%20vi%E1%BB%87c%20ph%C3%A1,Trung%20b%E1%BB%99%2C%20T%C3%A2y%20Nguy%C3%AAn%20v%C3%A0"
                   >
                     Chi tiết
@@ -141,7 +141,7 @@ export default class Template extends Component {
                     </li>
                   </ul>
                   <a
-                    className="btn btn-info"
+                    className="btn btn-info more_in4"
                     href="https://jadiny.vn/blog/21-loi-ich-cua-viec-trong-cay-xanh-ma-ban-thay-ro_n507.html"
                   >
                     Chi tiết
@@ -174,7 +174,7 @@ export default class Template extends Component {
                 trường, chi phí chăm sóc và duy trì cây trồng.
               </p>
               <a
-                className="btn btn-info"
+                className="btn btn-info more_in4"
                 href="https://harafunnel.com/blogs/thu-hut-khach-hang-moi/5-mini-game-tao-duoc-nhieu-tuong-tac-nhat-tu-cac-thuong-hieu-noi-tieng"
               >
                 Chi tiết
@@ -258,7 +258,6 @@ export default class Template extends Component {
                 <h3 className="contact text-uppercase text_center title_T">
                   Thông tin liên hệ
                 </h3>
-                <hr className="blue_dark_hr" />
                 <div className="social-container text_center">
                   <a
                     className="fa-stack "

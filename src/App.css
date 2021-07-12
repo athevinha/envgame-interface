@@ -12,6 +12,9 @@
   position: relative;
   height: 2rem;
 }
+.PC_left {
+  text-align: left !important;
+}
 .form-update {
   position: fixed;
   z-index: 1050 !important;

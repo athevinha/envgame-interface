@@ -42,6 +42,7 @@ class App extends Component {
       }
     });
     this.login = React.createRef();
+    this.logout = React.createRef();
     this.user_in4 = React.createRef();
     this.hover_side = React.createRef();
     this.ip11 = React.createRef();
@@ -57,8 +58,10 @@ class App extends Component {
       }, 3000);
       if (user_tooken == null) {
         this.login.current.className = "nav-item";
+        this.logout.current.className = "nav-item hidden";
       } else {
         this.login.current.className = "nav-item hidden";
+        this.logout.current.className = "nav-item";
         users.map((user, id) => {
           if (user_tooken == user.tooken) this.setState({ user_current: user });
         });
@@ -80,6 +83,9 @@ class App extends Component {
     }
   };
   // Game======
+  logout_click = () => {
+    localStorage.removeItem("tooken");
+  };
   render() {
     return (
       <div className="App dark_blue">
@@ -176,6 +182,15 @@ class App extends Component {
                 <Link className="nav-link nav_link_custom" to={"/Login"}>
                   Đăng nhập
                 </Link>
+              </li>
+              <li className="nav-item" ref={this.logout}>
+                <a
+                  href={home_link.home_link().baseURL}
+                  className="nav-link nav_link_custom logout"
+                  onClick={this.logout_click}
+                >
+                  Đăng xuất
+                </a>
               </li>
             </ul>
           </div>

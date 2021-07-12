@@ -46,6 +46,11 @@ export default class Copyright extends Component {
                     Rmit University
                   </a>
                 </li>
+                <li>
+                  <a href="https://hackathon.tiki.vn/" className="light_blue">
+                    Hackathon Tiki
+                  </a>
+                </li>
               </ul>
             </div>
             <div className="col-lg-3">
@@ -55,13 +60,17 @@ export default class Copyright extends Component {
                     Github
                   </a>
                 </li>
-
                 <li>
                   <a
                     href="https://www.event.rmit.edu.vn/techgenius2021"
                     className="light_blue"
                   >
                     Tech Genius
+                  </a>
+                </li>
+                <li>
+                  <a href="https://hackathon.tiki.vn/" className="light_blue">
+                    Tini App
                   </a>
                 </li>
               </ul>

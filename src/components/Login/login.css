@@ -14,3 +14,6 @@
   padding: 3rem 3rem 3rem 4rem;
   border-radius: 20px;
 }
+.logout {
+  cursor: pointer;
+}
