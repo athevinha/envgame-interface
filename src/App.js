@@ -48,7 +48,6 @@ class App extends Component {
     this.ip11 = React.createRef();
   }
   componentDidMount() {
-    window.location = "https://envgame.online/";
     let users = [];
     userService.getAll().then((req) => {
       users = req.data;
