@@ -194,3 +194,9 @@ body {
 .nav_link_custom:focus {
   color: #79ff6c !important;
 }
+.z_index_3000 {
+  z-index: 3000 !important;
+}
+.z_index_4000 {
+  z-index: 4000 !important;
+}

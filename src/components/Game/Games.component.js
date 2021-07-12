@@ -18,6 +18,15 @@ export default class Games extends Component {
     };
     GameService.getAll().then((res) => {
       if (isMobile == true) {
+        toast.info("Vào bằng máy tính để chơi nhiều game hay hơn nhé!", {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
         this.setState({
           games: res.data.filter((game) => {
             return game.mobile_game == true;
@@ -113,11 +122,10 @@ export default class Games extends Component {
           id="login_warn"
           ref={this.updateForm}
         >
-          <div className="black-back"></div>
-          <div className="login_warn">
+          <div className="black-back z_index_3000"></div>
+          <div className="login_warn z_index_4000">
             <p className="login_warn_1">
-              Cố gắng <b> đăng nhập</b> để giúp mình có thêm một chút thông tin
-              nhé. 1 xúy thui mà 🥺
+              <b>Đăng nhập</b> rùi chơi game nhé! 3 phút thui mà 🥺
             </p>
             <Link className="btn btn-info login_warn_2" to={"./login"}>
               Đăng nhập
