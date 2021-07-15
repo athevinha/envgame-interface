@@ -19,6 +19,7 @@ import Game from "./components/Game/Game.component";
 import Cookie from "./components/Cookies/Cookies.js";
 import { ToastContainer, toast } from "react-toastify";
 import { isMobile } from "react-device-detect";
+import ReadUser from "./components/Admin/Read-user";
 // import * as Scroll from "react-scroll";
 class App extends Component {
   constructor(props) {
@@ -231,6 +232,7 @@ class App extends Component {
             path="/Admin/Games/Delete"
             render={(pr) => <DeleteGame />}
           />
+          <Route exact path="/Userin4" render={(pr) => <ReadUser />} />
           <Route exact path="/Logup" render={(pr) => <Logup />} />
           <Route exact path="/Login" render={(pr) => <Login />} />
           {this.state.games.map((game, id) => {
