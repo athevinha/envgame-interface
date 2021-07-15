@@ -30,6 +30,7 @@ export default class ReadUser extends Component {
         <table className="table table_admin_read">
           <thead>
             <tr>
+              <th scope="col">STT</th>
               <th scope="col">name</th>
               <th scope="col">_id</th>
             </tr>
@@ -38,6 +39,7 @@ export default class ReadUser extends Component {
             {this.state.users.map((user, id) => {
               return (
                 <tr key={id}>
+                  <td>{id + 1}</td>
                   <td>{user.username}</td>
                   <td>
                     <Link to={"/users/" + user._id}>{user._id} </Link>
