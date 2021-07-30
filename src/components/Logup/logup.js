@@ -164,7 +164,7 @@ export default class Logup extends Component {
                         value={this.state.avatar}
                         onChange={this.onLogup}
                         className="form-control input_T logup_input"
-                        placeholder="Link your image..."
+                        placeholder="Link your image... (Default)"
                       />
                     </div>
                     <div className="form-group">

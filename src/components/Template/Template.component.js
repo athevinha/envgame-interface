@@ -30,8 +30,7 @@ export default class Template extends Component {
             <div className="text-container text_left row">
               <h1 className="h1-large h-name">Enviroment Games</h1>
               <p className="p-large p-name">
-                Chơi game vì một môi trường xanh sạch đẹp
-                niuernbiuwenrbuiwneriub
+                Bảo vệ môi trường bằng những giờ giải trí của chính bạn!
               </p>
               <Link className="btn playButton text_center" to={"/Games"}>
                 <i className="fa fa-gamepad"></i> Chơi game ngay
