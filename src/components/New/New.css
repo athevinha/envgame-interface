@@ -1,3 +1,7 @@
 .back_white {
   background-color: white;
 }
+.no_mar_top {
+  margin-top: 1rem !important
+  ;
+}

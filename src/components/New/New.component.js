@@ -58,18 +58,34 @@ export default class New extends Component {
               </div>
               <div className="col-lg-6 back_white">
                 <div className="image-container">
-                  <img className="img-fluid" src={ICV3} alt="alternative" />
+                  <img
+                    className="img-fluid no_mar_top"
+                    src={ICV3}
+                    alt="alternative"
+                  />
                 </div>{" "}
                 <div className="image-container">
-                  <img className="img-fluid" src={ICV3acc} alt="alternative" />
+                  <img
+                    className="img-fluid no_mar_top"
+                    src={ICV3acc}
+                    alt="alternative"
+                  />
                 </div>
               </div>
               <div className="col-lg-6 back_white">
                 <div className="image-container">
-                  <img className="img-fluid" src={RNV2} alt="alternative" />
+                  <img
+                    className="img-fluid no_mar_top"
+                    src={RNV2}
+                    alt="alternative"
+                  />
                 </div>{" "}
                 <div className="image-container">
-                  <img className="img-fluid" src={RNV2acc} alt="alternative" />
+                  <img
+                    className="img-fluid no_mar_top"
+                    src={RNV2acc}
+                    alt="alternative"
+                  />
                 </div>
               </div>
             </div>
@@ -99,7 +115,11 @@ export default class New extends Component {
               </div>
               <div className="col-lg-12">
                 <div className="image-container">
-                  <img className="img-fluid" src={BXH} alt="alternative" />
+                  <img
+                    className="img-fluid no_mar_top"
+                    src={BXH}
+                    alt="alternative"
+                  />
                 </div>{" "}
               </div>
             </div>
@@ -133,7 +153,7 @@ export default class New extends Component {
               <div className="col-lg-12">
                 <div className="image-container">
                   <img
-                    className="img-fluid"
+                    className="img-fluid no_mar_top"
                     src={S20072021}
                     alt="alternative"
                   />
@@ -188,7 +208,7 @@ export default class New extends Component {
               <div className="col-lg-12">
                 <div className="image-container">
                   <img
-                    className="img-fluid"
+                    className="img-fluid no_mar_top"
                     src={S120072021}
                     alt="alternative"
                   />
