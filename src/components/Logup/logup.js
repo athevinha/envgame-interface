@@ -9,6 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Copyright from "../Template/Copyright.component";
 import home_route from "../http_route/http-common";
 import person_name from "../realName/person";
+import avatar from "./avatar.jpg";
 export default class Logup extends Component {
   random_x2y = (x, y) => {
     return Math.floor(Math.random() * y) + x;
@@ -68,6 +69,7 @@ export default class Logup extends Component {
     e.preventDefault();
     if (this.condition_real_account(this.state.username)) {
       let finalUser = this.state;
+      finalUser.avatar = finalUser.avatar == "" ? avatar : finalUser.avatar;
       finalUser.tooken = this.GenerateTooken();
       UserService.create(finalUser).then((req, res) => {
         toast.success("Đăng ký thành công!", {
@@ -91,7 +93,7 @@ export default class Logup extends Component {
         }, 2000);
       });
     } else {
-      toast.error("Bạn đã nhập sai tên!", {
+      toast.error("Tên bạn nhập không phải tên thật!", {
         position: "top-right",
         autoClose: 1500,
         hideProgressBar: false,
@@ -134,7 +136,7 @@ export default class Logup extends Component {
                     </div>
                     <div className="form-group">
                       <input
-                        type="text"
+                        type="gmail"
                         name="gmail"
                         value={this.state.gmail}
                         onChange={this.onLogup}
