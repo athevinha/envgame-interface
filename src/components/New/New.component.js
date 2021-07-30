@@ -34,7 +34,7 @@ export default class New extends Component {
             <div className="row row_T">
               <div className="col-lg-12">
                 <small>
-                  <i> 1:24 AM | 31/07/2021 | Thành Phố Vinh, Nghệ An</i>
+                  <i>3:24 AM | 31/07/2021 | Thành Phố Vinh, Nghệ An</i>
                 </small>
               </div>
               <div className="col-lg-12">
