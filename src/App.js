@@ -20,6 +20,7 @@ import Cookie from "./components/Cookies/Cookies.js";
 import { ToastContainer, toast } from "react-toastify";
 import { isMobile } from "react-device-detect";
 import ReadUser from "./components/Admin/Read-user";
+import OnTop from "./components/onTop/onTop.js";
 // import * as Scroll from "react-scroll";
 class App extends Component {
   constructor(props) {
@@ -182,6 +183,11 @@ class App extends Component {
                   Chơi game
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link nav_link_custom" to={"/Charts"}>
+                  Xếp hạng
+                </Link>
+              </li>
               <li className="nav-item" ref={this.login}>
                 <Link className="nav-link nav_link_custom" to={"/Login"}>
                   Đăng nhập
@@ -232,6 +238,7 @@ class App extends Component {
             path="/Admin/Games/Delete"
             render={(pr) => <DeleteGame />}
           />
+          <Route exact path="/Charts" render={(pr) => <OnTop />} />
           <Route exact path="/Userin4" render={(pr) => <ReadUser />} />
           <Route exact path="/Logup" render={(pr) => <Logup />} />
           <Route exact path="/Login" render={(pr) => <Login />} />

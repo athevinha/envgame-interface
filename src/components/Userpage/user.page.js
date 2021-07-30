@@ -15,12 +15,12 @@ export default class UserPage extends Component {
     };
   }
   componentDidMount() {
-    if (
-      localStorage.tooken != this.props.user.tooken &&
-      localStorage.tooken != "U51Ff7qkyIids536my2RtQWQ0zl60OGHjybteQQd"
-    ) {
-      window.location = home_route.home_link().baseURL;
-    }
+    // if (
+    //   localStorage.tooken != this.props.user.tooken &&
+    //   localStorage.tooken != "U51Ff7qkyIids536my2RtQWQ0zl60OGHjybteQQd"
+    // ) {
+    //   window.location = home_route.home_link().baseURL;
+    // }
   }
   CheckArrNone = (Arr) => {
     if (Arr.length == 0) {
