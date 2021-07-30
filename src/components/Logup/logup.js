@@ -8,6 +8,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Copyright from "../Template/Copyright.component";
 import home_route from "../http_route/http-common";
+import person_name from "../realName/person";
 export default class Logup extends Component {
   random_x2y = (x, y) => {
     return Math.floor(Math.random() * y) + x;
@@ -53,12 +54,44 @@ export default class Logup extends Component {
       [e.target.name]: e.target.value,
     });
   };
+  condition_real_account = (username) => {
+    let condition = false;
+    person_name.map((name, id) => {
+      if (username.toLowerCase().includes(name)) {
+        condition = true;
+        console.log(name);
+      }
+    });
+    return condition;
+  };
   logup = (e) => {
     e.preventDefault();
-    let finalUser = this.state;
-    finalUser.tooken = this.GenerateTooken();
-    UserService.create(finalUser).then((req, res) => {
-      toast.success("Đăng ký thành công!", {
+    if (this.condition_real_account(this.state.username)) {
+      let finalUser = this.state;
+      finalUser.tooken = this.GenerateTooken();
+      UserService.create(finalUser).then((req, res) => {
+        toast.success("Đăng ký thành công!", {
+          position: "top-right",
+          autoClose: 1500,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+        let clear = Object.keys(this.state);
+        for (let i = 0; i < clear.length; i++) {
+          this.setState({
+            [clear[i]]: "",
+          });
+        }
+        finalUser = {};
+        setTimeout(() => {
+          window.location = home_route.home_link().baseURL + "login";
+        }, 2000);
+      });
+    } else {
+      toast.error("Bạn đã nhập sai tên!", {
         position: "top-right",
         autoClose: 1500,
         hideProgressBar: false,
@@ -67,17 +100,7 @@ export default class Logup extends Component {
         draggable: true,
         progress: undefined,
       });
-      let clear = Object.keys(this.state);
-      for (let i = 0; i < clear.length; i++) {
-        this.setState({
-          [clear[i]]: "",
-        });
-      }
-      finalUser = {};
-      setTimeout(() => {
-        window.location = home_route.home_link().baseURL + "login";
-      }, 2000);
-    });
+    }
   };
   render() {
     return (

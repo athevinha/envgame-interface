@@ -200,3 +200,13 @@ body {
 .z_index_4000 {
   z-index: 4000 !important;
 }
+.logout {
+  color: #fc3628 !important;
+}
+.logout,
+.nav_link_custom {
+  transition: 0.4s;
+}
+.nav_link_custom:hover {
+  color: #06dee1 !important;
+}

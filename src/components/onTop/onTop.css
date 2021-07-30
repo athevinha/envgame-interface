@@ -5,3 +5,7 @@ html {
 .onTopTable {
   height: 80vh;
 }
+.top3 {
+  background-color: rgb(0, 184, 240);
+  color: black;
+}

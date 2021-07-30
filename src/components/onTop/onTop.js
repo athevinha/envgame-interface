@@ -50,25 +50,36 @@ export default class OnTop extends Component {
               <tr>
                 <th scope="col">STT</th>
                 <th scope="col">Tên</th>
-                <th scope="col">Gmail</th>
-                <th scope="col">Tổng Thời Gian Chơi (phút)</th>
+                {window.innerWidth >= 600 ? <th scope="col">Gmail</th> : ""}
+                {window.innerWidth >= 600 ? (
+                  <th scope="col">Tổng Thời Gian Chơi (phút)</th>
+                ) : (
+                  <th scope="col">Thời Gian(Phút)</th>
+                )}
               </tr>
             </thead>
             <tbody>
               {this.state.users.map((user, id) => {
-                if (id < this.state.top_limit)
+                if (id < this.state.top_limit) {
+                  console.log(window.innerWidth);
                   return (
-                    <tr key={id}>
+                    <tr key={id} className={id < 3 ? "top3" : ""}>
                       <td>{id + 1}</td>
                       <td>
-                        <Link to={"/users/" + user._id}>{user.username} </Link>
+                        <Link
+                          className={id < 3 ? "top3" : ""}
+                          to={"/users/" + user._id}
+                        >
+                          {user.username}{" "}
+                        </Link>
                       </td>
-                      <td>{user.gmail}</td>
+                      {window.innerWidth >= 600 ? <td>{user.gmail}</td> : ""}
                       <td>
                         {Math.round((user.sum_time * 100) / 1000 / 60) / 100}
                       </td>
                     </tr>
                   );
+                }
               })}
             </tbody>
           </table>
