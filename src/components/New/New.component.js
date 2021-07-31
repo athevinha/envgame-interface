@@ -377,7 +377,7 @@ export default class New extends Component {
               </div>
               <div className="col-lg-12">
                 <h3 className="contact text-uppercase text_left title_T">
-                  Làm phần backend cho hệ thống
+                  Làm phần Backend cho hệ thống
                 </h3>
                 <hr className="blue_dark_hr" />
               </div>
@@ -402,7 +402,7 @@ export default class New extends Component {
               </div>
               <div className="col-lg-12">
                 <h3 className="contact text-uppercase text_left title_T">
-                  Build Teamplate Website bằng ReactJS
+                  Build Teamplate Website và Frontend bằng ReactJS
                 </h3>
                 <hr className="blue_dark_hr" />
               </div>
