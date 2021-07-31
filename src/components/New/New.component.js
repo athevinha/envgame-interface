@@ -9,6 +9,9 @@ import RNV2acc from "./31072021/ResnetV2acc.png";
 import BXH from "./30072021/BXH.png";
 import S20072021 from "./20072021/search.PNG";
 import S120072021 from "./20072021/theme.jpg";
+import S25052021 from "./25052021/1.jpg";
+import game from "./25052021/game.PNG";
+import TCN from "./20072021/TCN.png";
 import "./New.css";
 export default class New extends Component {
   constructor(props) {
@@ -36,7 +39,7 @@ export default class New extends Component {
             <div className="row row_T">
               <div className="col-lg-12">
                 <small>
-                  <i>3:24 AM | 31/07/2021 | Thành Phố Vinh, Nghệ An</i>
+                  <i>4:06 AM | 31/07/2021 | Thành Phố Vinh, Nghệ An</i>
                 </small>
               </div>
               <div className="col-lg-12">
@@ -213,6 +216,219 @@ export default class New extends Component {
                     alt="alternative"
                   />
                 </div>{" "}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="counter basic-2 basic">
+          <div className="container">
+            <div className="row row_T">
+              <div className="col-lg-12">
+                <small>
+                  <i> 4:53 AM | 08/07/2021 | Thành Phố Vinh, Nghệ An</i>
+                </small>
+              </div>
+              <div className="col-lg-12">
+                <h3 className="contact text-uppercase text_left title_T">
+                  Thêm game
+                </h3>
+                <hr className="blue_dark_hr" />
+              </div>
+              <div className="col-lg-12">
+                <p>Thêm được một lượng game nhất định vào hệ thống.</p>
+              </div>
+              <div className="col-lg-12">
+                <div className="image-container">
+                  <img
+                    className="img-fluid no_mar_top"
+                    src={game}
+                    alt="alternative"
+                  />
+                </div>{" "}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="counter basic-2 basic">
+          <div className="container">
+            <div className="row row_T">
+              <div className="col-lg-12">
+                <small>
+                  <i> 0:23 AM | 21/06/2021 | Thành Phố Vinh, Nghệ An</i>
+                </small>
+              </div>
+              <div className="col-lg-12">
+                <h3 className="contact text-uppercase text_left title_T">
+                  Hoàn thiện Fontend và Backend
+                </h3>
+                <hr className="blue_dark_hr" />
+              </div>
+              <div className="col-lg-12">
+                <p>Trang web đã có thể bắt đầu hoạt động và phát triển.</p>
+              </div>
+              <div className="col-lg-12">
+                <div className="image-container">
+                  <img
+                    className="img-fluid no_mar_top"
+                    src={S25052021}
+                    alt="alternative"
+                  />
+                </div>{" "}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="counter basic-2 basic">
+          <div className="container">
+            <div className="row row_T">
+              <div className="col-lg-12">
+                <small>
+                  <i> 1:34 AM | 03/06/2021 | Thành Phố Vinh, Nghệ An</i>
+                </small>
+              </div>
+              <div className="col-lg-12">
+                <h3 className="contact text-uppercase text_left title_T">
+                  Hoàn thiện trang cá nhân.
+                </h3>
+                <hr className="blue_dark_hr" />
+              </div>
+              <div className="col-lg-12">
+                <p>
+                  Trang cá nhân hiển thị rất nhiều thông tin của người dùng như
+                  là: lịch sử chơi, thời gian chơi của từng game, tên, gmail,
+                  tooken... Các dữ liệu có nhiều tham số như là thời gian chơi
+                  hay là số trồng cây đều được vẽ biểu đồ ra
+                </p>
+              </div>
+              <div className="col-lg-12">
+                <div className="image-container">
+                  <img
+                    className="img-fluid no_mar_top"
+                    src={TCN}
+                    alt="alternative"
+                  />
+                </div>{" "}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ==================================================== */}
+        <div className="counter basic-2 basic">
+          <div className="container">
+            <div className="row row_T">
+              <div className="col-lg-12">
+                <small>
+                  <i> 4:07 AM | 30/05/2021 | Thành Phố Vinh, Nghệ An</i>
+                </small>
+              </div>
+              <div className="col-lg-12">
+                <h3 className="contact text-uppercase text_left title_T">
+                  Hoàn thiện thanh Side Bar
+                </h3>
+                <hr className="blue_dark_hr" />
+              </div>
+              <div className="col-lg-12">
+                <p>
+                  Thanh Side Bar dùng để hiển thị thông tin của người dùng như
+                  là username, gmail, avatar...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ==================================================== */}
+        <div className="counter basic-2 basic">
+          <div className="container">
+            <div className="row row_T">
+              <div className="col-lg-12">
+                <small>
+                  <i> 11:34 AM | 29/05/2021 | Thành Phố Vinh, Nghệ An</i>
+                </small>
+              </div>
+              <div className="col-lg-12">
+                <h3 className="contact text-uppercase text_left title_T">
+                  Hoàn thiện đăng nhập và đăng ký.
+                </h3>
+                <hr className="blue_dark_hr" />
+              </div>
+              <div className="col-lg-12">
+                <p>
+                  Trang web có đã có thể đăng nhập, đăng ký. Bổ sung thêm hệ
+                  thống nhớ người dùng
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ==================================================== */}
+        <div className="counter basic-2 basic">
+          <div className="container">
+            <div className="row row_T">
+              <div className="col-lg-12">
+                <small>
+                  <i> 11:23 PM | 25/05/2021 | Thành Phố Vinh, Nghệ An</i>
+                </small>
+              </div>
+              <div className="col-lg-12">
+                <h3 className="contact text-uppercase text_left title_T">
+                  Làm phần backend cho hệ thống
+                </h3>
+                <hr className="blue_dark_hr" />
+              </div>
+              <div className="col-lg-12">
+                <p>
+                  Kết nối đến MongoDB Database. Thiết lập các Schema, function
+                  API
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ==================================================== */}
+        <div className="counter basic-2 basic">
+          <div className="container">
+            <div className="row row_T">
+              <div className="col-lg-12">
+                <small>
+                  <i> 3:42 PM | 06/05/2021 | Thành Phố Vinh, Nghệ An</i>
+                </small>
+              </div>
+              <div className="col-lg-12">
+                <h3 className="contact text-uppercase text_left title_T">
+                  Build Teamplate Website bằng ReactJS
+                </h3>
+                <hr className="blue_dark_hr" />
+              </div>
+              <div className="col-lg-12">
+                <p>Tạo router cho website. Làm Landing Page cho website.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* ==================================================== */}
+        <div className="counter basic-2 basic">
+          <div className="container">
+            <div className="row row_T">
+              <div className="col-lg-12">
+                <small>
+                  <i> 2:23 PM | 02/05/2021 | Thành Phố Vinh, Nghệ An</i>
+                </small>
+              </div>
+              <div className="col-lg-12">
+                <h3 className="contact text-uppercase text_left title_T">
+                  Bắt đầu thực hiện ý tưởng
+                </h3>
+                <hr className="blue_dark_hr" />
+              </div>
+              <div className="col-lg-12">
+                <p>Tìm hiểu về tình hình hiện tại của mỗi chủ đề ở Việt Nam.</p>
               </div>
             </div>
           </div>
