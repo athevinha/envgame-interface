@@ -18,7 +18,7 @@ export default class Game extends Component {
     // }
     toast.info(this.props.game.how2play, {
       position: "top-right",
-      autoClose: 10000,
+      autoClose: 2000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
