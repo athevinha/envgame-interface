@@ -195,7 +195,7 @@ class App extends Component {
                 </Link>
               </li>
               <li className="nav-item" ref={this.login}>
-                <Link className="nav-link nav_link_custom" to={"/Login"}>
+                <Link className="nav-link nav_link_custom login_link" to={"/Login"}>
                   Đăng nhập
                 </Link>
               </li>

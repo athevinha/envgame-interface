@@ -13,9 +13,9 @@ export default class Game extends Component {
     };
   }
   componentDidMount() {
-    if (localStorage.getItem("tooken") == null) {
-      this.updateForm.current.className = "update-admin display";
-    }
+    // if (localStorage.getItem("tooken") == null) {
+    //   this.updateForm.current.className = "update-admin display";
+    // }
     toast.info(this.props.game.how2play, {
       position: "top-right",
       autoClose: 10000,
@@ -29,12 +29,14 @@ export default class Game extends Component {
   }
   componentWillUnmount() {
     let { user } = this.props;
-    let time_gaming = new Date().getTime() - STime;
-    user.time_gaming.push({
-      title: this.state.game.title,
-      time: time_gaming,
-    });
-    UserService.update(user._id, user).then((req, res) => {});
+    if (user.time_gaming) {
+      let time_gaming = new Date().getTime() - STime;
+      user.time_gaming.push({
+        title: this.state.game.title,
+        time: time_gaming,
+      });
+      UserService.update(user._id, user).then((req, res) => {});
+    }
   }
   render() {
     return (

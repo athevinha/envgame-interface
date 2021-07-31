@@ -210,3 +210,6 @@ body {
 .nav_link_custom:hover {
   color: #06dee1 !important;
 }
+.login_link {
+  color: deepskyblue !important;
+}

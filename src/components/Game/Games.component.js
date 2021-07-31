@@ -28,30 +28,32 @@ export default class Games extends Component {
           progress: undefined,
         });
         this.setState({
-          games: res.data.filter((game) => {
+          games: res.data.reverse().filter((game) => {
             return game.mobile_game == true;
           }),
         });
       } else {
-        this.setState({ games: res.data });
+        this.setState({ games: res.data.reverse() });
       }
     });
 
     this.updateForm = React.createRef();
   }
-  componentDidMount() {
-    if (localStorage.getItem("tooken") == null) {
-      this.updateForm.current.className = "update-admin display";
-    }
-  }
+  // componentDidMount() {
+  //   if (localStorage.getItem("tooken") == null) {
+  //     this.updateForm.current.className = "update-admin display";
+  //   }
+  // }
   Get_Played_Game = (game) => {
     let user = this.props.user;
-    let time = new Date();
-    time = time.toString();
-    user.played_games.push({ title: game.title, time: time });
-    UserService.update(user._id, user).then((req, res) => {
-      // this.setState({ users: req.data });
-    });
+    if (user.played_games) {
+      let time = new Date();
+      time = time.toString();
+      user.played_games.push({ title: game.title, time: time });
+      UserService.update(user._id, user).then((req, res) => {
+        // this.setState({ users: req.data });
+      });
+    }
   };
   // =====================Game=================
   onSearchGame = (e) => {
@@ -134,7 +136,7 @@ export default class Games extends Component {
         </div>
         <div className="enter"></div>
         <div className="grid-container dark_blue">
-          {this.state.games.reverse().map((game, id) => {
+          {this.state.games.map((game, id) => {
             return (
               <div className="grid-item darker_blue" key={id}>
                 <div
