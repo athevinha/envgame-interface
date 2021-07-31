@@ -28,7 +28,7 @@ export default class Cookie extends Component {
       >
         {" "}
         <spam style={{ color: "rgb(88, 255, 197)" }}>
-          {"Accept all cookies để có thể chơi nhiều game hơn"}
+          {"Accept all cookies để hệ thống ghi nhớ thông tin của bạn nhé 😁!"}
         </spam>
       </CookieConsent>
     );
