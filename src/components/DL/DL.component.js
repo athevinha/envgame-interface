@@ -12,13 +12,17 @@ export default class DL extends Component {
   render() {
     return (
       <div>
-        {/* <Iframe
-          url={this.state.game.iframe}
+        <div className="enter"></div>
+        <div className="enter"></div>
+        <Iframe
+          url="https://envgame-plant-deep-learning.netlify.app/plant%20disease/"
           id="myId"
           className="myClassname"
           display="initial"
           position="relative"
-        /> */}
+          width="100vw"
+          height="100vh"
+        />
       </div>
     );
   }

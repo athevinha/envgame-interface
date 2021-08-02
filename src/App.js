@@ -22,6 +22,7 @@ import { isMobile } from "react-device-detect";
 import ReadUser from "./components/Admin/Read-user";
 import OnTop from "./components/onTop/onTop.js";
 import New from "./components/New/New.component.js";
+import DL from "./components/DL/DL.component";
 // import * as Scroll from "react-scroll";
 class App extends Component {
   constructor(props) {
@@ -195,10 +196,19 @@ class App extends Component {
                 </Link>
               </li>
               <li className="nav-item" ref={this.login}>
-                <Link className="nav-link nav_link_custom login_link" to={"/Login"}>
+                <Link className="nav-link nav_link_custom " to={"/DL-Plant"}>
+                  Công nghệ
+                </Link>
+              </li>
+              <li className="nav-item" ref={this.login}>
+                <Link
+                  className="nav-link nav_link_custom login_link"
+                  to={"/Login"}
+                >
                   Đăng nhập
                 </Link>
               </li>
+
               <li className="nav-item" ref={this.logout}>
                 <a
                   href={home_link.home_link().baseURL}
@@ -245,6 +255,7 @@ class App extends Component {
             render={(pr) => <DeleteGame />}
           />
           <Route exact path="/New" render={(pr) => <New />} />
+          <Route exact path="/DL-Plant" render={(pr) => <DL />} />
           <Route exact path="/Charts" render={(pr) => <OnTop />} />
           <Route exact path="/Userin4" render={(pr) => <ReadUser />} />
           <Route exact path="/Logup" render={(pr) => <Logup />} />
