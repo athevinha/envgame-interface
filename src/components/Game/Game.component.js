@@ -39,18 +39,49 @@ export default class Game extends Component {
       UserService.update(user._id, user).then((req, res) => {});
     }
   }
+  compare = (a, b) => {
+    if (a.score < b.score) {
+      return 1;
+    }
+    if (a.score > b.score) {
+      return -1;
+    }
+    return 0;
+  };
+  push_or_replace = (ranks, user) => {
+    let push = true;
+    ranks.map((rank, id) => {
+      if (user.username == rank.username) {
+        console.log("push = false");
+        rank.score = Math.max(user.score, rank.score);
+        push = false;
+      }
+    });
+    if (push == true) {
+      ranks.push({
+        username: user.username,
+        score: user.score,
+      });
+    }
+    return ranks;
+  };
   receiveMessage = (e) => {
     // const childFrameObj = document.getElementById("myId");
     // childFrameObj.contentWindow.postMessage(this.props.user, "*");
 
     let { user } = this.props;
     let { game } = this.state;
-    game.rank.push({
-      username: user.username,
-      score: e.data.score,
-    });
+    var user_array = new Array();
+    if (user.username) {
+      game.rank = this.push_or_replace(game.rank, {
+        username: user.username,
+        score: e.data.score,
+      });
+      console.log(game);
+      game.rank.sort(this.compare);
+    }
     gameService.update_rank(game._id, game).then((req, res) => {
-      console.log(req.data);
+      // console.log(req.data);
     });
     // e.data.call_back_user(this.props.user);
   };
