@@ -23,7 +23,6 @@ import ReadUser from "./components/Admin/Read-user";
 import OnTop from "./components/onTop/onTop.js";
 import New from "./components/New/New.component.js";
 import DL from "./components/DL/DL.component";
-// import * as Scroll from "react-scroll";
 class App extends Component {
   constructor(props) {
     super(props);
