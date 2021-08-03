@@ -21,7 +21,7 @@ import { ToastContainer, toast } from "react-toastify";
 import { isMobile } from "react-device-detect";
 import ReadUser from "./components/Admin/Read-user";
 import OnTop from "./components/onTop/onTop.js";
-import New from "./components/New/New.component.js";
+import News from "./components/New/News.component.js";
 import DL from "./components/DL/DL.component";
 class App extends Component {
   constructor(props) {
@@ -190,7 +190,7 @@ class App extends Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link nav_link_custom" to={"/New"}>
+                <Link className="nav-link nav_link_custom" to={"/News"}>
                   Cập nhật mới
                 </Link>
               </li>
@@ -253,7 +253,7 @@ class App extends Component {
             path="/Admin/Games/Delete"
             render={(pr) => <DeleteGame />}
           />
-          <Route exact path="/New" render={(pr) => <New />} />
+          <Route exact path="/News" render={(pr) => <News />} />
           <Route exact path="/DL-Plant" render={(pr) => <DL />} />
           <Route exact path="/Charts" render={(pr) => <OnTop />} />
           <Route exact path="/Userin4" render={(pr) => <ReadUser />} />
@@ -288,4 +288,4 @@ class App extends Component {
 }
 
 export default App;
-// npm install --legacy-peer-deps
+// Envgame - Nền tảng thiết kế game tăng tỷ lệ cây trồng cho môi trường
