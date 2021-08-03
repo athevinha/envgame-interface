@@ -5,3 +5,9 @@
   margin-top: 1rem !important
   ;
 }
+.text_center {
+  text-align: center;
+}
+.color_white {
+  color: white;
+}

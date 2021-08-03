@@ -6,9 +6,22 @@ import "./New.css";
 export default class New extends Component {
   constructor(props) {
     super(props);
+    this.description = React.createRef();
   }
-  componentDidMount() {}
+  componentDidMount() {
+    this.check();
+  }
+  check = () => {
+    setTimeout(
+      () => (this.description.current.innerHTML = this.props.description),
+      500
+    );
+    {
+      console.log("????");
+    }
+  };
   render() {
+    let a = "hello";
     return (
       <div className="dark_blue light_blue">
         <div className="counter basic-2 basic">
@@ -26,7 +39,8 @@ export default class New extends Component {
                 <hr className="blue_dark_hr" />
               </div>
               <div className="col-lg-12">
-                <p>{this.props.description}</p>
+                <p ref={this.description}></p>
+                {this.check()}
               </div>
               <div className="col-lg-12">
                 <div className="image-container">

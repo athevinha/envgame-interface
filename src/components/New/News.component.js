@@ -13,6 +13,7 @@ import S25052021 from "./25052021/1.jpg";
 import game from "./25052021/game.PNG";
 import TCN from "./20072021/TCN.png";
 import New from "./New.component";
+import CN from "./03082021/CN.PNG";
 import "./New.css";
 export default class News extends Component {
   constructor(props) {
@@ -38,10 +39,18 @@ export default class News extends Component {
         <div className="counter basic-2 basic">
           <div className="container">
             <div className="row row_T">
-              <div className="col-lg-12">
+              <div className="col-lg-11">
                 <small>
                   <i>4:06 AM | 31/07/2021 | Thành Phố Vinh, Nghệ An</i>
                 </small>
+              </div>
+              <div className="col-lg-1">
+                {/* <small> */}{" "}
+                <i>
+                  {" "}
+                  Ghim <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+                </i>
+                {/* </small> */}
               </div>
               <div className="col-lg-12">
                 <h3 className="contact text-uppercase text_left title_T">
@@ -92,6 +101,73 @@ export default class News extends Component {
                   />
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="counter basic-2 basic">
+          <div className="container">
+            <div className="row row_T">
+              <div className="col-lg-12">
+                <small>
+                  <i>10:39 AM | 03/08/2021 | Thành Phố Vinh, Nghệ An</i>
+                </small>
+              </div>
+              <div className="col-lg-12">
+                <h3 className="contact text-uppercase text_left title_T">
+                  Cập nhật: Demo ứng dụng Deep Learning vào chăm sóc cây trồng.
+                </h3>
+                <hr className="blue_dark_hr" />
+              </div>
+              <div className="col-lg-12">
+                Hệ thống đã có ở phần <b>Công Nghệ</b> trên website của envgame.
+                Model có các classes sau:
+                <hr />
+                <table className="table table table_admin_delete color_white">
+                  <thead>
+                    <tr>
+                      <th scope="col" className="text_center">
+                        Model
+                      </th>
+                      <th scope="col" className="text_center">
+                        Model
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="text_center">Vi khuẩn đốm</td>
+                      <td className="text_center">Phát triển tốt</td>
+                    </tr>
+                    <tr>
+                      <td className="text_center">Bệnh nấm mốc</td>
+                      <td className="text_center">Virus vàng xoăn</td>
+                    </tr>
+                    <tr>
+                      <td className="text_center">Đốm lá Septoria</td>
+                      <td className="text_center">Bệnh nhện hai đốm</td>
+                    </tr>
+                    <tr>
+                      <td className="text_center">Bệnh cháy sớm</td>
+                      <td className="text_center">
+                        Mầm bệnh nấm Corynespora Cassiicola
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text_center">Bệnh mốc sương</td>
+                      <td className="text_center">Lá bị Mosaic Virus</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              {/* <div className="col-lg-12">
+                <div className="image-container">
+                  <img
+                    className="img-fluid no_mar_top"
+                    src={CN}
+                    alt="alternative"
+                  />
+                </div>{" "}
+              </div> */}
             </div>
           </div>
         </div>
