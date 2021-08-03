@@ -109,7 +109,7 @@ export default class News extends Component {
             <div className="row row_T">
               <div className="col-lg-12">
                 <small>
-                  <i>10:39 AM | 03/08/2021 | Thành Phố Vinh, Nghệ An</i>
+                  <i>1:07 PM | 03/08/2021 | Thành Phố Vinh, Nghệ An</i>
                 </small>
               </div>
               <div className="col-lg-12">
