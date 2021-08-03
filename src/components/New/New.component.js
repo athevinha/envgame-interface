@@ -17,7 +17,6 @@ export default class New extends Component {
       500
     );
     {
-      console.log("????");
     }
   };
   render() {

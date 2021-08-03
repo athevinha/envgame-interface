@@ -23,6 +23,7 @@ export default class UpdateGame extends Component {
     };
     GameService.getAll().then((res) => {
       this.setState({ games: res.data });
+      console.log(res.data);
     });
     this.updateForm = React.createRef();
   }

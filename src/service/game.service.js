@@ -14,6 +14,9 @@ class GameService {
   update(id, data) {
     return http.put(`/games/update/${id}`, data);
   }
+  update_rank(id, data) {
+    return http.put(`/games/update_rank/${id}`, data);
+  }
 
   delete(id) {
     return http.delete(`/games/delete/${id}`);

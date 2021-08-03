@@ -12,10 +12,7 @@ export default class ChartGame extends Component {
       game: this.props.game,
     };
   }
-  componentDidMount() {
-    // if (localStorage.getItem("tooken") == null) {
-    //   this.updateForm.current.className = "update-admin display";
-  }
+  componentDidMount() {}
   componentWillUnmount() {}
   render() {
     return (

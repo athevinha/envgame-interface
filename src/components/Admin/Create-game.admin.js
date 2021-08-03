@@ -20,6 +20,7 @@ export default class CreateGame extends Component {
       how2play: "",
       love_game: false,
       mobile_game: false,
+      rank: [],
     };
   }
   onCreateGame = (e) => {
@@ -46,6 +47,7 @@ export default class CreateGame extends Component {
           how2play: "",
           love_game: false,
           mobile_game: false,
+          rank: [],
         });
         toast.info("Thêm game thành công ", {
           position: "top-right",
