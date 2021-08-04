@@ -190,8 +190,16 @@ class App extends Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link nav_link_custom" to={"/News"}>
-                  Cập nhật mới
+                <Link
+                  className="nav-link nav_link_custom new_link"
+                  to={"/News"}
+                >
+                  Cập nhật mới{" "}
+                  <span className="unread_new">
+                    <b>
+                      [15] <i class="fa fa-bell fa-spin"></i>
+                    </b>
+                  </span>
                 </Link>
               </li>
               <li className="nav-item" ref={this.login}>
