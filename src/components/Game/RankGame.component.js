@@ -24,15 +24,8 @@ export default class RankGame extends Component {
         <ToastContainer />
         {/* Same as */}
         <ToastContainer />
+        {/* {this.state.rank == [] ? "" : <p className="BXH_G">Bảng xếp hạng</p>} */}
         <table className="table rank_game_table">
-          <thead>
-            ` `
-            <tr className="rank_game_tr">
-              <th className="rank_game_th" scope="col"></th>
-              <th className="rank_game_th" scope="col"></th>
-              <th className="rank_game_th" scope="col"></th>
-            </tr>
-          </thead>
           <tbody>
             {this.state.ranks.map((rank, id) => {
               if (id < this.state.top_limit) {

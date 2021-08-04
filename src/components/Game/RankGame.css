@@ -1,6 +1,6 @@
 .rank_game_table {
   position: fixed;
-  top: 2rem;
+  top: 4rem;
   width: 20%;
   opacity: 0.5;
   background-color: gray !important;
@@ -10,27 +10,29 @@
 .rank_game_td {
   font-size: 13px;
 }
+.BXH_G {
+  width: 100%;
+}
 @media (max-width: 750px) {
   .rank_game_table {
     position: fixed;
     top: 4rem;
-    width: 40%;
-    height: 20px;
+    width: 60%;
     opacity: 0.7;
     background-color: gray !important;
     color: black;
-    left: 50%;
+    left: 35%;
   }
   .rank_game_th {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding-top: 0.1rem !important;
+    padding-bottom: 0.1rem !important;
     padding-left: 1%;
     padding-right: 1%;
   }
   .rank_game_td {
     font-size: 80%;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding-top: 0.1rem !important;
+    padding-bottom: 0.1rem !important;
     padding-left: 1%;
     padding-right: 1%;
   }
