@@ -14,6 +14,8 @@ import game from "./25052021/game.PNG";
 import TCN from "./20072021/TCN.png";
 import New from "./New.component";
 import CN from "./03082021/CN.PNG";
+import H from "./04082021/H.png";
+import F from "./04082021/F.png";
 import "./New.css";
 export default class News extends Component {
   constructor(props) {
@@ -44,7 +46,7 @@ export default class News extends Component {
                   <i>4:06 AM | 31/07/2021 | Thành Phố Vinh, Nghệ An</i>
                 </small>
               </div>
-              <div className="col-lg-1">
+              <div className="col-lg-1 pin">
                 {/* <small> */}{" "}
                 <i>
                   {" "}
@@ -99,6 +101,44 @@ export default class News extends Component {
                     src={RNV2acc}
                     alt="alternative"
                   />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="counter basic-2 basic">
+          <div className="container">
+            <div className="row row_T">
+              <div className="col-lg-12">
+                <small>
+                  <i>11:36 PM | 04/08/2021 | Thành Phố Vinh, Nghệ An</i>
+                </small>
+              </div>
+              <div className="col-lg-12">
+                <h3 className="contact text-uppercase text_left title_T">
+                  Cập nhật bảng xếp hạng của game <i>Flappy Bird</i> và{" "}
+                  <i>Hextris</i>
+                </h3>
+                <hr className="blue_dark_hr" />
+              </div>
+              <div className="col-lg-12">
+                <p>
+                  Chỉ có 5 người chơi xuất sắc có điểm số cao được lọt vào hệ
+                  thống rank của game. Các game được áp dụng bảng xếp hạng vào
+                  gồm: <br />
+                  - Flappy Bird <br />
+                  - Hextris <br />
+                  <i> Cả 2 game này đều được hỗ trợ ở cả Mobile và PC. </i>
+                </p>
+              </div>
+              <div className="col-lg-6 ">
+                <div className="image-container">
+                  <img className="img-fluid " src={F} alt="alternative" />
+                </div>
+              </div>
+              <div className="col-lg-6 ">
+                <div className="image-container">
+                  <img className="img-fluid" src={H} alt="alternative" />
                 </div>
               </div>
             </div>

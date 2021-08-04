@@ -7,15 +7,16 @@ export default class New extends Component {
   constructor(props) {
     super(props);
     this.description = React.createRef();
+    this.title = React.createRef();
   }
   componentDidMount() {
     this.check();
   }
   check = () => {
-    setTimeout(
-      () => (this.description.current.innerHTML = this.props.description),
-      500
-    );
+    setTimeout(() => {
+      this.description.current.innerHTML = this.props.description;
+      this.title.current.innerHTML = this.props.title;
+    }, 500);
     {
     }
   };
@@ -33,7 +34,8 @@ export default class New extends Component {
               </div>
               <div className="col-lg-12">
                 <h3 className="contact text-uppercase text_left title_T">
-                  {this.props.title}
+                  <p ref={this.title}></p>
+                  {this.check()}
                 </h3>
                 <hr className="blue_dark_hr" />
               </div>

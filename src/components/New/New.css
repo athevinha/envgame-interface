@@ -11,3 +11,17 @@
 .color_white {
   color: white;
 }
+.pin {
+  color: white;
+  border: 2px white solid;
+  border-radius: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+  text-align: center;
+}
+.pin:hover {
+  background-color: black;
+  color: white;
+}
+.img-fluid {
+}
