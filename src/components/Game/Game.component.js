@@ -1,17 +1,18 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import UserService from "../../service/user.service";
-import GameService from "../../service/game.service";
 import "../../style/Games.css";
 import Iframe from "react-iframe";
 import { ToastContainer, toast } from "react-toastify";
 import gameService from "../../service/game.service";
+import RankGame from "./RankGame.component";
 let STime = 0;
 export default class Game extends Component {
   constructor(props) {
     super(props);
     this.state = {
       game: this.props.game,
+      rank: [],
     };
     this.iframe_ref = React.createRef();
   }
@@ -79,11 +80,9 @@ export default class Game extends Component {
       });
       console.log(game);
       game.rank.sort(this.compare);
+      this.setState({ rank: game.rank });
     }
-    gameService.update_rank(game._id, game).then((req, res) => {
-      // console.log(req.data);
-    });
-    // e.data.call_back_user(this.props.user);
+    gameService.update_rank(game._id, game).then((req, res) => {});
   };
   render() {
     return (
@@ -99,6 +98,7 @@ export default class Game extends Component {
           display="initial"
           position="relative"
         />
+        <RankGame ranks={this.state.game.rank} />
       </div>
     );
   }
