@@ -18,6 +18,7 @@
   transition: 0.5s;
   cursor: pointer;
   text-align: center;
+  font-size: 13px;
 }
 .pin:hover {
   background-color: black;
