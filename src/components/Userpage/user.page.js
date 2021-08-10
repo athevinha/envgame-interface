@@ -41,8 +41,8 @@ export default class UserPage extends Component {
           <div className="row">
             <div className="col-sm-6 text_left">
               <p className="break_word">
-                <b>Access_tooken:</b>{" "}
-                <spam className="title_T">{user.tooken}</spam>
+                <b>Description:</b>{" "}
+                <spam className="title_T">{user.description}</spam>
               </p>
               <p className="break_word">
                 <b>Type:</b>{" "}
