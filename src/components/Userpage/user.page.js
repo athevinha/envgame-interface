@@ -34,8 +34,7 @@ export default class UserPage extends Component {
           <div className="row">
             <div className="col-sm-6 text_left">
               <p className="break_word">
-                <b>Description:</b>{" "}
-                <spam className="title_T">{user.description}</spam>
+                <b>_id:</b> <spam className="title_T">{user._id}</spam>
               </p>
               <p className="break_word">
                 <b>Type:</b>{" "}
@@ -55,8 +54,10 @@ export default class UserPage extends Component {
               <p className="break_word">
                 <b>Gmail:</b> <spam className="title_T">{user.gmail}</spam>
               </p>
+
               <p className="break_word">
-                <b>_id:</b> <spam className="title_T">{user._id}</spam>
+                <b>Description:</b>{" "}
+                <spam className="title_T">{user.description}</spam>
               </p>
             </div>
           </div>
