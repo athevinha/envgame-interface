@@ -43,12 +43,12 @@ export default class Copyright extends Component {
                 </li>
                 <li>
                   <a href="https://www.rmit.edu.vn/vi" className="light_blue">
-                    Rmit University
+                    Rmit University Competition
                   </a>
                 </li>
                 <li>
                   <a href="https://hackathon.tiki.vn/" className="light_blue">
-                    Hackathon Tiki
+                    Tiki Hackathon
                   </a>
                 </li>
               </ul>
@@ -76,12 +76,25 @@ export default class Copyright extends Component {
               </ul>
             </div>
             <div className="col-lg-3">
-              <p className="p-small statement white_color ">
-                Copyright ©{" "}
-                <a href="/" className="light_blue">
-                  envgame
-                </a>
-              </p>
+              <ul className="list-unstyled li-space-lg p-small">
+                <li className="p-small statement white_color ">
+                  <a
+                    href="http://dosttn.gov.vn/thong-bao/thong-bao-to-chuc-cuoc-thi-hackathon-nghe-an-nam-2021--41694/"
+                    className="light_blue"
+                  >
+                    Nghe An Hackathon
+                  </a>
+                </li>
+                {/* <li className="p-small statement white_color ">
+                  <br />
+                </li> */}
+                <li className="p-small statement white_color ">
+                  Copyright ©{" "}
+                  <a href="/" className="light_blue">
+                    Envgame
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
