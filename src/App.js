@@ -23,6 +23,7 @@ import ReadUser from "./components/Admin/Read-user";
 import OnTop from "./components/onTop/onTop.js";
 import News from "./components/New/News.component.js";
 import DL from "./components/DL/DL.component";
+import NF_404 from "./components/404_error/404.component";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -267,6 +268,7 @@ class App extends Component {
           <Route exact path="/Userin4" render={(pr) => <ReadUser />} />
           <Route exact path="/Logup" render={(pr) => <Logup />} />
           <Route exact path="/Login" render={(pr) => <Login />} />
+
           {this.state.games.map((game, id) => {
             return (
               <Route
@@ -289,6 +291,9 @@ class App extends Component {
               />
             );
           })}
+          <Route path="*">
+            <NF_404 />
+          </Route>
         </Switch>
       </div>
     );

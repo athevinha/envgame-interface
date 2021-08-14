@@ -14,8 +14,10 @@ export default class New extends Component {
   }
   check = () => {
     setTimeout(() => {
-      this.description.current.innerHTML = this.props.description;
-      this.title.current.innerHTML = this.props.title;
+      if (this.description.current && this.title.current) {
+        this.description.current.innerHTML = this.props.description;
+        this.title.current.innerHTML = this.props.title;
+      }
     }, 500);
     {
     }
