@@ -10,6 +10,7 @@ export default class NF_404 extends Component {
     super(props);
     this.state = {};
   }
+  //sgqwregwer
   componentDidMount() {}
   componentWillUnmount() {}
   render() {
