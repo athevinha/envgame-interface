@@ -166,35 +166,134 @@ export default class News extends Component {
                   <thead>
                     <tr>
                       <th scope="col" className="text_center">
-                        Model
+                        Classes
                       </th>
                       <th scope="col" className="text_center">
-                        Model
+                        Classes
                       </th>
                     </tr>
                   </thead>
+
                   <tbody>
                     <tr>
-                      <td className="text_center">Vi khuẩn đốm</td>
-                      <td className="text_center">Phát triển tốt</td>
+                      <td className="text_center">Táo - bệnh nấm</td>
+                      <td className="text_center">Táo - bệnh thối đen nho</td>
                     </tr>
                     <tr>
-                      <td className="text_center">Bệnh nấm mốc</td>
-                      <td className="text_center">Virus vàng xoăn</td>
+                      <td className="text_center">Táo - bệnh gỉ lá</td>
+                      <td className="text_center">Táo - phát triển tốt</td>
                     </tr>
                     <tr>
-                      <td className="text_center">Đốm lá Septoria</td>
-                      <td className="text_center">Bệnh nhện hai đốm</td>
-                    </tr>
-                    <tr>
-                      <td className="text_center">Bệnh cháy sớm</td>
                       <td className="text_center">
-                        Mầm bệnh nấm Corynespora Cassiicola
+                        Anh đào - bệnh phấn trắng (chua)
+                      </td>
+                      <td className="text_center">
+                        Anh đào - phát triển tốt (chua)
                       </td>
                     </tr>
                     <tr>
-                      <td className="text_center">Bệnh mốc sương</td>
-                      <td className="text_center">Lá bị Mosaic Virus</td>
+                      <td className="text_center">
+                        Ngô & bắp - bệnh đốm lá xám
+                      </td>
+                      <td className="text_center">
+                        Ngô & bắp - bệnh 'gỉ sắt' nâu sẫm
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text_center">Ngô & bắp - bệnh bạc lá</td>
+                      <td className="text_center">
+                        Ngô & bắp - phát triển tốt
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text_center">Nho - bệnh thối đen nho</td>
+                      <td className="text_center">Nho - bệnh sởi đen</td>
+                    </tr>
+                    <tr>
+                      <td className="text_center">
+                        Nho - bệnh bạc lá (Bệnh thán thư)
+                      </td>
+                      <td className="text_center">Nho - phát triển tốt</td>
+                    </tr>
+                    <tr>
+                      <td className="text_center">
+                        Cam - bệnh vàng lá gân xanh
+                      </td>
+                      <td className="text_center">
+                        Đào - bệnh đốm lá do vi khuẩn Bacterial Leaf Spot
+                        Disease
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text_center">Đào - phát triển tốt</td>
+                      <td className="text_center">
+                        Ớt chuông- bệnh đốm lá do vi khuẩn Bacterial Leaf Spot
+                        Disease
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text_center">
+                        Ớt chuông - phát triển tốt
+                      </td>
+                      <td className="text_center">Khoai tây - bệnh bạc lá</td>
+                    </tr>
+                    <tr>
+                      <td className="text_center">
+                        Khoai tây - bệnh mốc sương
+                      </td>
+                      <td className="text_center">
+                        Khoai tây - phát triển tốt
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text_center">Dâu rừng - phát triển tốt</td>
+                      <td className="text_center">
+                        Đậu tương - phát triển tốt
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text_center">Bí đao - bệnh phấn trắng</td>
+                      <td className="text_center">
+                        Dâu - bệnh lá cháy sém (rụng, héo)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text_center">Dâu - phát triển tốt</td>
+                      <td className="text_center">
+                        Việt quất - phát triển tốt
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text_center">Cà chua - bệnh bạc lá</td>
+                      <td className="text_center">Cà chua - bệnh mốc sương</td>
+                    </tr>
+                    <tr>
+                      <td className="text_center">
+                        Cà chua - bệnh mốc lá Passalora fulva
+                      </td>
+                      <td className="text_center">
+                        Cà chua - bệnh đốm lá Septoria
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text_center">
+                        Cà chua - bệnh đốm vi khuẩn
+                      </td>
+                      <td className="text_center">Cà chua - bệnh thán thư</td>
+                    </tr>
+                    <tr>
+                      <td className="text_center">
+                        Cà chua - bệnh vi rút vàng xoăn (xoăn lá)
+                      </td>
+                      <td className="text_center">
+                        Cà chua - bệnh xoăn lá (bệnh khảm)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text_center">
+                        Cà chua - bệnh đốm lá do vi khuẩn Bacterial Leaf Spot
+                      </td>
+                      <td className="text_center">Cà chua - phát triển tốt</td>
                     </tr>
                   </tbody>
                 </table>
