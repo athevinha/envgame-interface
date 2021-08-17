@@ -7,7 +7,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Link, Route, Switch } from "react-router-dom";
 import userService from "../../service/user.service";
-import home_route from "../http_routes/http-common";
+import home_route from "../http_route/http-common";
 export default class Login extends Component {
   constructor(props) {
     super(props);

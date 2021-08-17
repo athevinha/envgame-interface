@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import userService from "../../service/user.service";
 // import "../../App.css";
 import { Link } from "react-router-dom";
-import home_route from "../http_routes/http-common";
+import home_route from "../http_route/http-common";
 export default class ReadUser extends Component {
   constructor(props) {
     super(props);

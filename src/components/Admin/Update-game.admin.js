@@ -5,7 +5,7 @@ import "../../App.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import gameService from "../../service/game.service";
-import home_route from "../http_routes/http-common";
+import home_route from "../http_route/http-common";
 import "./admin.css";
 export default class UpdateGame extends Component {
   constructor(props) {

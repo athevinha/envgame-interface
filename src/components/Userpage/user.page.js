@@ -4,7 +4,7 @@ import "font-awesome/css/font-awesome.min.css";
 import "./user.page.css";
 
 import "react-toastify/dist/ReactToastify.css";
-import home_route from "../http_routes/http-common";
+import home_route from "../http_route/http-common";
 import UserPageGraph from "./user.page.graph";
 import UserPageGraphTime from "./user.page.graph_time";
 export default class UserPage extends Component {

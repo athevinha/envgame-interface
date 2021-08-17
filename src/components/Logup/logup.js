@@ -6,8 +6,9 @@ import "../../App.css";
 import "./logup.js";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import home_route from "../http_routes/http-common";
-import person_name from "../real_name/person";
+import Copyright from "../Template/Copyright.component";
+import home_route from "../http_route/http-common";
+import person_name from "../realName/person";
 import avatar from "./avatar.jpg";
 export default class Logup extends Component {
   random_x2y = (x, y) => {
