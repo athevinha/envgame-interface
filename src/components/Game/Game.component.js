@@ -53,7 +53,6 @@ export default class Game extends Component {
     let push = true;
     ranks.map((rank, id) => {
       if (user.username == rank.username) {
-        console.log("push = false");
         rank.score = Math.max(user.score, rank.score);
         push = false;
       }
@@ -78,7 +77,6 @@ export default class Game extends Component {
         username: user.username,
         score: e.data.score,
       });
-      console.log(game);
       game.rank.sort(this.compare);
       this.setState({ rank: game.rank });
     }

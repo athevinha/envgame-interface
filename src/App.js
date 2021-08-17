@@ -268,7 +268,6 @@ class App extends Component {
           <Route exact path="/Userin4" render={(pr) => <ReadUser />} />
           <Route exact path="/Logup" render={(pr) => <Logup />} />
           <Route exact path="/Login" render={(pr) => <Login />} />
-
           {this.state.games.map((game, id) => {
             return (
               <Route

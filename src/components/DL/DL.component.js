@@ -15,7 +15,7 @@ export default class DL extends Component {
         <div className="enter"></div>
         <div className="enter"></div>
         <Iframe
-          url="https://envgame-plant-deep-learning.netlify.app/plant%20disease/"
+          url="https://envgame-leaf-disease.netlify.app/"
           id="myId"
           className="myClassname"
           display="initial"
