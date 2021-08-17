@@ -4,7 +4,7 @@ import GameService from "../../service/game.service";
 import "../../App.css";
 import { ToastContainer, toast } from "react-toastify";
 import { Link, Route, Switch } from "react-router-dom";
-import home_route from "../http_route/http-common";
+import home_route from "../http_routes/http-common";
 import "./admin.css";
 export default class CreateGame extends Component {
   random_x2y = (x, y) => {

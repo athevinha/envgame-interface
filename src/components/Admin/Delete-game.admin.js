@@ -5,7 +5,7 @@ import GameService from "../../service/game.service";
 import "../../App.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import home_route from "../http_route/http-common";
+import home_route from "../http_routes/http-common";
 export default class DeleteGame extends Component {
   constructor(props) {
     super(props);

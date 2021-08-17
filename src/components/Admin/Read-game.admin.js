@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import GameService from "../../service/game.service";
 import "../../App.css";
-import home_route from "../http_route/http-common";
+import home_route from "../http_routes/http-common";
 export default class ReadGame extends Component {
   constructor(props) {
     super(props);
