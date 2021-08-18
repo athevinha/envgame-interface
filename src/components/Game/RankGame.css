@@ -13,6 +13,9 @@
 .BXH_G {
   width: 100%;
 }
+.myClassname {
+  border: none;
+}
 @media (max-width: 750px) {
   .rank_game_table {
     position: fixed;

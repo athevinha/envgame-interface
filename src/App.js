@@ -23,6 +23,7 @@ import ReadUser from "./components/Admin/Read-user";
 import OnTop from "./components/onTop/onTop.js";
 import News from "./components/New/News.component.js";
 import DL from "./components/DL/DL.component";
+import DL_classes from "./components/DL/Dl_classes.component";
 import NF_404 from "./components/404_error/404.component";
 class App extends Component {
   constructor(props) {
@@ -264,6 +265,11 @@ class App extends Component {
           />
           <Route exact path="/News" render={(pr) => <News />} />
           <Route exact path="/DL-Plant" render={(pr) => <DL />} />
+          <Route
+            exact
+            path="/DL-Plant/Classes"
+            render={(pr) => <DL_classes />}
+          />
           <Route exact path="/Charts" render={(pr) => <OnTop />} />
           <Route exact path="/Userin4" render={(pr) => <ReadUser />} />
           <Route exact path="/Logup" render={(pr) => <Logup />} />

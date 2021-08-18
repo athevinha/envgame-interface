@@ -97,6 +97,7 @@ export default class Game extends Component {
           position="relative"
         />
         <RankGame ranks={this.state.game.rank} />
+        {/* Chức năng bỏ quả đăng nhập của game */}
       </div>
     );
   }
