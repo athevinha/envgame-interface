@@ -213,5 +213,17 @@ body {
 .login_link {
   color: deepskyblue !important;
 }
+
 .unread_new {
+  position: relative;
+  top: -10px;
+  padding-right: 1px;
+  padding-top: 1px;
+  text-align: center;
+  width: 18px;
+  height: 18px;
+  background-color: red;
+  border-radius: 50px;
+  font-size: 11px;
+  display: inline-block; /* or block */
 }

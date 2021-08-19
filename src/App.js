@@ -94,6 +94,10 @@ class App extends Component {
   logout_click = () => {
     localStorage.removeItem("tooken");
   };
+  read_new = () => {
+    if (document.querySelector(".unread_new"))
+      document.querySelector(".unread_new").className = "hidden";
+  };
   render() {
     return (
       <div className="App dark_blue">
@@ -195,13 +199,10 @@ class App extends Component {
                 <Link
                   className="nav-link nav_link_custom new_link"
                   to={"/News"}
+                  onClick={this.read_new}
                 >
                   Cập nhật mới{" "}
-                  <span className="unread_new">
-                    <b>
-                      [15] <i class="fa fa-bell fa-spin"></i>
-                    </b>
-                  </span>
+                  <span className="unread_new color_white">16 </span>
                 </Link>
               </li>
               <li className="nav-item" ref={this.login}>
