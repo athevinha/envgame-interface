@@ -67,7 +67,7 @@
 .login_warn_1 {
   z-index: 1050 !important;
   color: white;
-  font-size: 200%;
+  /* font-size: 200%; */
 }
 .login_warn_2 {
   z-index: 1050 !important;
