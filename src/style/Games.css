@@ -66,14 +66,35 @@
 }
 .login_warn {
   position: fixed;
-  top: 40%;
+  top: 35%;
+}
+.check_box_not_show_notfication {
+  margin-top: 10px;
+}
+.check_box_not_show_notfication_input {
+  margin-right: 5px;
+}
+.color_white {
+  color: white;
+}
+.color_green {
+  color: rgb(11, 209, 123);
 }
 .login_warn_1 {
   font-size: 150%;
 }
+.close_button_game {
+  margin-right: 10px;
+}
 .enter_game {
   position: relative;
   height: 3.22rem;
+}
+.margin_3 {
+  margin: 3px !important;
+}
+#ul_not_login {
+  list-style: none;
 }
 .search_nav_bar {
   z-index: 2100;
@@ -116,4 +137,9 @@
 }
 .switch_love_game {
   margin-right: 0.5rem;
+}
+@media (max-width: 767.98) {
+  .login_warn {
+    top: 20%;
+  }
 }

@@ -39,11 +39,13 @@ export default class Games extends Component {
 
     this.updateForm = React.createRef();
   }
-  // componentDidMount() {
-  //   if (localStorage.getItem("tooken") == null) {
-  //     this.updateForm.current.className = "update-admin display";
-  //   }
-  // }
+  componentDidMount() {
+    if (localStorage.getItem("show_login") != "false") {
+      if (localStorage.getItem("tooken") == null) {
+        this.updateForm.current.className = "update-admin display";
+      }
+    }
+  }
   Get_Played_Game = (game) => {
     let user = this.props.user;
     if (user.played_games) {
@@ -83,6 +85,12 @@ export default class Games extends Component {
   };
   onSubmitSearch = (e) => {
     e.preventDefault();
+  };
+  not_login = (e) => {
+    this.updateForm.current.className = "update-admin hidden";
+  };
+  checkBox = () => {
+    localStorage.setItem("show_login", false);
   };
   render() {
     return (
@@ -126,12 +134,43 @@ export default class Games extends Component {
         >
           <div className="black-back z_index_3000"></div>
           <div className="login_warn z_index_4000">
-            <p className="login_warn_1">
+            <p className="login_warn_1 ">
               <b>Đăng nhập</b> rùi chơi game nhé! 3 phút thui mà 😀
             </p>
-            <Link className="btn btn-info login_warn_2" to={"./login"}>
+            <p className="color_green text_center">
+              <p className="margin_3">
+                <b>Lợi ích của việc đăng nhập:</b>
+              </p>
+              <p className="margin_3">
+                Có thể tranh đua bảng xếp hạng cùng bạn bè
+              </p>
+              <p className="margin_3">
+                Tìm lại những trò chơi bạn đã chơi trước đây và rất nhiều dịch
+                vụ khác
+              </p>
+              <p className="margin_3">
+                Bạn có thể tự hòa rằng bạn đã góp phần bảo vệ môi trường
+              </p>
+            </p>
+            <button
+              className="btn btn-outline-danger login_warn_2 close_button_game"
+              onClick={this.not_login}
+            >
+              Không đăng nhập
+            </button>
+            <Link className="btn btn-outline-info login_warn_2" to={"./login"}>
               Đăng nhập
             </Link>
+            <div className="check_box_not_show_notfication">
+              <input
+                type="checkbox"
+                className="check_box_not_show_notfication_input"
+                onClick={this.checkBox}
+              />
+              <span className="color_white">
+                <i>Sẽ không hiển thị thông báo này nữa</i>
+              </span>
+            </div>
           </div>
         </div>
         <div className="enter"></div>
