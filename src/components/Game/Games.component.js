@@ -149,7 +149,7 @@ export default class Games extends Component {
                 vụ khác
               </p>
               <p className="margin_3">
-                Bạn có thể tự hòa rằng bạn đã góp phần bảo vệ môi trường
+                Bạn có thể tự hào rằng bạn đã góp phần bảo vệ môi trường
               </p>
             </p>
             <button
