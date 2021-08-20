@@ -6,6 +6,8 @@ import ICV3 from "./31072021/InceptionV3.png";
 import ICV3acc from "./31072021/InceptionV3acc.png";
 import RNV2 from "./31072021/ResnetV2.png";
 import RNV2acc from "./31072021/ResnetV2acc.png";
+import MBNacc from "./31072021/mobilenet_acc.png";
+import MBNloss from "./31072021/mobilenet_loss.png";
 import BXH from "./30072021/BXH.png";
 import S20072021 from "./20072021/search.PNG";
 import S120072021 from "./20072021/theme.jpg";
@@ -71,6 +73,9 @@ export default class News extends Component {
                   đạt trên 90%.
                 </p>
               </div>
+              <div className="col-sm-12 text_center">
+                <h4>InceptionV3 và Resnet Inception</h4>
+              </div>
               <div className="col-lg-6 back_white">
                 <div className="image-container">
                   <img
@@ -79,13 +84,6 @@ export default class News extends Component {
                     alt="alternative"
                   />
                 </div>{" "}
-                <div className="image-container">
-                  <img
-                    className="img-fluid no_mar_top"
-                    src={ICV3acc}
-                    alt="alternative"
-                  />
-                </div>
               </div>
               <div className="col-lg-6 back_white">
                 <div className="image-container">
@@ -95,13 +93,39 @@ export default class News extends Component {
                     alt="alternative"
                   />
                 </div>{" "}
+              </div>
+              <div className="col-sm-6 text_center acc_loss">
+                loss: 0.2843 - <b>accuracy:</b> 0.9066 <br />
+                val_loss: 0.2255 - <b>val_accuracy:</b> 0.9290
+              </div>
+              <div className="col-sm-6 text_center acc_loss">
+                loss: 0.2223 - <b>accuracy:</b> 0.9256 <br />
+                val_loss: 0.1486 - <b>val_accuracy:</b> 0.9513
+              </div>
+              <div className="col-sm-12 text_center">
+                <h4>MobileNet model</h4>
+              </div>
+              <div className="col-lg-6 back_white">
                 <div className="image-container">
                   <img
                     className="img-fluid no_mar_top"
-                    src={RNV2acc}
+                    src={MBNloss}
+                    alt="alternative"
+                  />
+                </div>{" "}
+              </div>
+              <div className="col-lg-6 back_white">
+                <div className="image-container">
+                  <img
+                    className="img-fluid no_mar_top"
+                    src={MBNacc}
                     alt="alternative"
                   />
                 </div>
+              </div>
+              <div className="col-sm-12 text_center acc_loss">
+                loss: 0.2223 - <b>accuracy:</b> 0.9256 <br />
+                val_loss: 0.1486 - <b>val_accuracy:</b> 0.9513
               </div>
             </div>
           </div>

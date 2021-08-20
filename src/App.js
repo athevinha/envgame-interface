@@ -202,7 +202,7 @@ class App extends Component {
                   onClick={this.read_new}
                 >
                   Cập nhật mới{" "}
-                  <span className="unread_new color_white">16 </span>
+                  <span className="unread_new color_white">17 </span>
                 </Link>
               </li>
               <li className="nav-item" ref={this.login}>
