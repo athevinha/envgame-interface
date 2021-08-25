@@ -52,8 +52,11 @@ class App extends Component {
     this.hover_side = React.createRef();
     this.ip11 = React.createRef();
   }
-
+  onRouter = () => {
+    alert("hgaha");
+  };
   componentDidMount() {
+    console.log(Switch)
     if (window.location.href == "http://3.0.241.73:5000/") {
       window.location = "https://envgame.online/";
     }
@@ -240,7 +243,7 @@ class App extends Component {
             </ul>
           </div>
         </nav>
-        <Switch>
+        <Switch onChange={this.changeRouter}>
           <Route
             exact
             path={["/", "/Home"]}
