@@ -12,7 +12,6 @@ export default class NF_404 extends Component {
   }
   //sgqwregwer    hello testingqweg
   componentDidMount() {}
-  componentWillUnmount() {}
   render() {
     return (
       <div className="full_img_404">

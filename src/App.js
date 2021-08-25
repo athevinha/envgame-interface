@@ -56,7 +56,7 @@ class App extends Component {
     alert("hgaha");
   };
   componentDidMount() {
-    console.log(Switch)
+    console.log(Switch);
     if (window.location.href == "http://3.0.241.73:5000/") {
       window.location = "https://envgame.online/";
     }

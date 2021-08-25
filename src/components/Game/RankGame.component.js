@@ -17,7 +17,6 @@ export default class RankGame extends Component {
   hide_rank = () => {};
   show_rank = () => {};
   componentDidMount() {}
-  componentWillUnmount() {}
   render() {
     return (
       <div className="background-iframe darker_blue">

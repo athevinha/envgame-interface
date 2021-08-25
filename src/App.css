@@ -216,6 +216,7 @@ body {
     position: relative;
     left: 55vw;
     margin-bottom: 5px;
+    transition: 0.3s;
   }
   .logout_link:hover {
     background-color: #fc3628;
@@ -223,6 +224,7 @@ body {
     border-radius: 20px;
   }
   .login_link {
+    transition: 0.3s;
     position: relative;
     width: 15vw !important;
     color: deepskyblue !important;
@@ -238,8 +240,8 @@ body {
 
 .logout,
 .nav_link_custom {
-  /* transition: 0.3s; */
   padding-bottom: 5px !important;
+  border-radius: 0px;
 }
 .unread_new {
   position: absolute;
@@ -270,8 +272,13 @@ body {
 .taskbar_icon:focus {
   color: #79ff6c !important;
 }
+.nav_link_custom:hover {
+  transition: 0.3s;
+  background-color: deepskyblue !important ;
+  border-radius: 15px;
+}
 .nav_link_custom:focus {
-  background-color: deepskyblue !important;
+  background-color: #79ff6c !important;
   color: black !important;
-  border-radius: 10px;
+  border-radius: 15px;
 }
