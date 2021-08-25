@@ -192,7 +192,7 @@ class App extends Component {
               </li>
               <li className="nav-item">
                 <Link className="nav-link nav_link_custom" to={"/Charts"}>
-                  <i class="fa fa-trophy"></i>
+                  <i className="fa fa-trophy"></i>
                 </Link>
               </li>
               <li className="nav-item">
@@ -201,13 +201,14 @@ class App extends Component {
                   to={"/News"}
                   onClick={this.read_new}
                 >
-                  <i class="fa fa-bell"></i>
+                  <i className="fa fa-bell"></i>
+
                   <span className="unread_new color_white">17 </span>
                 </Link>
               </li>
               <li className="nav-item" ref={this.login}>
                 <Link className="nav-link nav_link_custom " to={"/DL-Plant"}>
-                  Công nghệ
+                  <i className="fa fa-robot"></i>
                 </Link>
               </li>
               <li className="nav-item" ref={this.login}>
