@@ -188,11 +188,20 @@ body {
 .smaller_nav {
   height: 50px;
 }
-.nav_link_custom {
-  color: white !important;
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0.3rem !important;
+    padding-left: 0.3rem !important;
+  }
 }
-.nav_link_custom:focus {
-  color: #79ff6c !important;
+.nav_link_custom {
+  text-align: center;
+  /* width: 4vw !important; */
+  color: white !important;
+  font-size: 25px;
+}
+.font15 {
+  font-size: 15px;
 }
 .z_index_3000 {
   z-index: 3000 !important;
@@ -200,30 +209,69 @@ body {
 .z_index_4000 {
   z-index: 4000 !important;
 }
-.logout {
-  color: #fc3628 !important;
-}
-.logout,
-.nav_link_custom {
-  transition: 0.4s;
-}
-.nav_link_custom:hover {
-  color: #06dee1 !important;
-}
-.login_link {
-  color: deepskyblue !important;
+@media (min-width: 768px) {
+  .logout_link {
+    color: #fc3628 !important;
+    width: 15vw !important;
+    position: relative;
+    left: 55vw;
+    margin-bottom: 5px;
+  }
+  .logout_link:hover {
+    background-color: #fc3628;
+    color: black !important;
+    border-radius: 20px;
+  }
+  .login_link {
+    position: relative;
+    width: 15vw !important;
+    color: deepskyblue !important;
+    left: 55vw;
+    margin-bottom: 5px;
+  }
+  .login_link:hover {
+    background-color: deepskyblue;
+    color: black !important;
+    border-radius: 20px;
+  }
 }
 
+.logout,
+.nav_link_custom {
+  /* transition: 0.3s; */
+  padding-bottom: 5px !important;
+}
 .unread_new {
-  position: relative;
-  top: -10px;
-  padding-right: 1px;
-  padding-top: 1px;
+  position: absolute;
   text-align: center;
-  width: 18px;
-  height: 18px;
+  margin-left: -15px;
+  margin-top: -5px;
+  width: 24px;
+  height: 24px;
   background-color: red;
   border-radius: 50px;
-  font-size: 11px;
+  font-size: 12px;
   display: inline-block; /* or block */
+  border: 2px solid rgb(0, 17, 35);
+}
+.taskbar_icon {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  padding-top: 12px;
+  background: rgb(0, 17, 35);
+  color: white;
+  text-align: center;
+}
+.taskbar_icon:hover {
+  color: deepskyblue;
+}
+
+.taskbar_icon:focus {
+  color: #79ff6c !important;
+}
+.nav_link_custom:focus {
+  background-color: deepskyblue !important;
+  color: black !important;
+  border-radius: 10px;
 }

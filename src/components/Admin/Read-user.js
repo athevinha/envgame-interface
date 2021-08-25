@@ -11,15 +11,14 @@ export default class ReadUser extends Component {
       users: [],
     };
     userService.getAll().then((req) => {
-      console.log(req.data);
       this.setState({ users: req.data });
     });
   }
   componentDidMount() {
-    let home_link = home_route.home_link().baseURL;
-    if (localStorage.tooken != "U51Ff7qkyIids536my2RtQWQ0zl60OGHjybteQQd") {
-      window.location = home_link;
-    }
+    // let home_link = home_route.home_link().baseURL;
+    // if (localStorage.tooken != "U51Ff7qkyIids536my2RtQWQ0zl60OGHjybteQQd") {
+    //   window.location = home_link;
+    // }
   }
   render() {
     return (

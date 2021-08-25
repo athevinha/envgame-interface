@@ -35,6 +35,7 @@ class App extends Component {
       theposition: window.pageYOffset,
       // Search and love value
     };
+
     GameService.getAll().then((res) => {
       if (isMobile == true) {
         this.setState({
@@ -46,12 +47,12 @@ class App extends Component {
         this.setState({ games: res.data });
       }
     });
-    this.login = React.createRef();
-    this.logout = React.createRef();
+
     this.user_in4 = React.createRef();
     this.hover_side = React.createRef();
     this.ip11 = React.createRef();
   }
+
   componentDidMount() {
     if (window.location.href == "http://3.0.241.73:5000/") {
       window.location = "https://envgame.online/";
@@ -65,11 +66,7 @@ class App extends Component {
         this.hide_side_bar();
       }, 3000);
       if (user_tooken == null) {
-        this.login.current.className = "nav-item";
-        this.logout.current.className = "nav-item hidden";
       } else {
-        this.login.current.className = "nav-item hidden";
-        this.logout.current.className = "nav-item";
         users.map((user, id) => {
           if (user_tooken == user.tooken) this.setState({ user_current: user });
         });
@@ -180,19 +177,23 @@ class App extends Component {
           ========================================================================= */}
           <div className="collapse navbar-collapse" id="collapsibleNavbar">
             <ul className="navbar-nav">
+              {/* <li className="nav-link nav_link_custom">Envgame</li> */}
               <li className="nav-item">
                 <Link id="home" className="nav-link nav_link_custom" to={"/"}>
-                  Giới thiệu
+                  <i className="taskbar_icon fas fa-home"></i>
+                  {isMobile == true ? " Giới thiệu" : ""}
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link nav_link_custom" to={"/Games"}>
-                  Chơi game
+                  <i className="taskbar_icon fas fa-gamepad"></i>
+                  {isMobile == true ? " Chơi game" : ""}
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link nav_link_custom" to={"/Charts"}>
-                  <i className="fa fa-trophy"></i>
+                  <i className="taskbar_icon fa fa-trophy"></i>
+                  {isMobile == true ? " Bảng xếp hạng" : ""}
                 </Link>
               </li>
               <li className="nav-item">
@@ -201,34 +202,41 @@ class App extends Component {
                   to={"/News"}
                   onClick={this.read_new}
                 >
-                  <i className="fa fa-bell"></i>
-
-                  <span className="unread_new color_white">17 </span>
+                  <i className="taskbar_icon fa fa-bell"></i>
+                  <b>
+                    <span className="unread_new color_white">17 </span>
+                  </b>
+                  {isMobile == true ? " Thông báo" : ""}
                 </Link>
               </li>
               <li className="nav-item" ref={this.login}>
                 <Link className="nav-link nav_link_custom " to={"/DL-Plant"}>
-                  <i className="fa fa-robot"></i>
+                  <i className="taskbar_icon fa fa-robot"></i>
+                  {isMobile == true ? " Deep Learning" : ""}
                 </Link>
               </li>
-              <li className="nav-item" ref={this.login}>
-                <Link
-                  className="nav-link nav_link_custom login_link"
-                  to={"/Login"}
-                >
-                  Đăng nhập
-                </Link>
-              </li>
-
-              <li className="nav-item" ref={this.logout}>
-                <a
-                  href={home_link.home_link().baseURL}
-                  className="nav-link nav_link_custom logout"
-                  onClick={this.logout_click}
-                >
-                  Đăng xuất
-                </a>
-              </li>
+              {localStorage.tooken == null || localStorage.tooken == "" ? (
+                <li className="nav-item" ref={this.login}>
+                  <Link
+                    className="nav-link nav_link_custom login_link"
+                    to={"/Login"}
+                  >
+                    <i className="taskbar_icon fas fa-sign-in-alt"></i> Đăng
+                    nhập
+                  </Link>
+                </li>
+              ) : (
+                <li className="nav-item" ref={this.logout}>
+                  <a
+                    href={home_link.home_link().baseURL}
+                    className="nav-link nav_link_custom logout_link"
+                    onClick={this.logout_click}
+                  >
+                    <i className="taskbar_icon fas fa-sign-out-alt"></i> Đăng
+                    xuất
+                  </a>
+                </li>
+              )}
             </ul>
           </div>
         </nav>
