@@ -214,7 +214,7 @@ body {
     color: #fc3628 !important;
     width: 15vw !important;
     position: relative;
-    left: 55vw;
+    left: 51vw;
     margin-bottom: 5px;
     transition: 0.3s;
   }
@@ -228,7 +228,7 @@ body {
     position: relative;
     width: 15vw !important;
     color: deepskyblue !important;
-    left: 55vw;
+    left: 51vw;
     margin-bottom: 5px;
   }
   .login_link:hover {

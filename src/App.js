@@ -25,6 +25,7 @@ import News from "./components/New/News.component.js";
 import DL from "./components/DL/DL.component";
 import DL_classes from "./components/DL/Dl_classes.component";
 import NF_404 from "./components/404_error/404.component";
+import Chat from "./components/Chat/Chat.component";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -199,6 +200,19 @@ class App extends Component {
                   {isMobile == true ? " Bảng xếp hạng" : ""}
                 </Link>
               </li>
+
+              <li className="nav-item" ref={this.login}>
+                <Link className="nav-link nav_link_custom " to={"/DL-Plant"}>
+                  <i className="taskbar_icon fa fa-robot"></i>
+                  {isMobile == true ? " Deep Learning" : ""}
+                </Link>
+              </li>
+              <li className="nav-item" ref={this.login}>
+                <Link className="nav-link nav_link_custom " to={"/Chat-Box"}>
+                  <i className="taskbar_icon fa fa-comments"></i>
+                  {isMobile == true ? " CHAT BOX" : ""}
+                </Link>
+              </li>
               <li className="nav-item">
                 <Link
                   className="nav-link nav_link_custom new_link"
@@ -210,12 +224,6 @@ class App extends Component {
                     <span className="unread_new color_white">17 </span>
                   </b>
                   {isMobile == true ? " Thông báo" : ""}
-                </Link>
-              </li>
-              <li className="nav-item" ref={this.login}>
-                <Link className="nav-link nav_link_custom " to={"/DL-Plant"}>
-                  <i className="taskbar_icon fa fa-robot"></i>
-                  {isMobile == true ? " Deep Learning" : ""}
                 </Link>
               </li>
               {localStorage.tooken == null || localStorage.tooken == "" ? (
@@ -287,6 +295,11 @@ class App extends Component {
           <Route exact path="/Userin4" render={(pr) => <ReadUser />} />
           <Route exact path="/Logup" render={(pr) => <Logup />} />
           <Route exact path="/Login" render={(pr) => <Login />} />
+          <Route
+            exact
+            path={`/Chat-Box`}
+            render={(pr) => <Chat user={this.state.user_current} />}
+          />
           {this.state.games.map((game, id) => {
             return (
               <Route
