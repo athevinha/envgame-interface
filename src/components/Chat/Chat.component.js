@@ -7,7 +7,11 @@ import { ToastContainer, toast } from "react-toastify";
 import ScrollToBottom from "react-scroll-to-bottom";
 import io from "socket.io-client";
 
-const socket = io("http://3.0.241.73:6969/");
+const socket = io(
+  process.env.NODE_ENV === "production"
+    ? "https://api.envgame.online/"
+    : "http://localhost:6969/"
+);
 export default class Chat extends Component {
   constructor(props) {
     super(props);
