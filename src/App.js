@@ -58,7 +58,7 @@ class App extends Component {
   };
   componentDidMount() {
     console.log(Switch);
-    window.location = "https://www.facebook.com/";
+    // window.location = "https://www.facebook.com/";
     if (window.location.href == "http://3.0.241.73:5000/") {
       window.location = "https://envgame.online/";
     }
