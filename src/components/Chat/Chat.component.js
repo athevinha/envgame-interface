@@ -10,7 +10,7 @@ import io from "socket.io-client";
 const socket = io(
   process.env.NODE_ENV === "production"
     ? "https://api.envgame.online/"
-    : "http://localhost:6969/"
+    : "http://localhost:8080/"
 );
 export default class Chat extends Component {
   constructor(props) {
@@ -69,8 +69,8 @@ export default class Chat extends Component {
           <div className="messages chat_router">
             {this.state.listchat.map((mess_obj, id) => {
               return (
-                <div className="message">
-                  <span key={id}>
+                <div className="message" key={id}>
+                  <span>
                     <img
                       src={
                         mess_obj.image == false ? avatar_unknow : mess_obj.image
