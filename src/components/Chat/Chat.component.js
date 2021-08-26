@@ -6,7 +6,9 @@ import UserService from "../../service/user.service";
 import { ToastContainer, toast } from "react-toastify";
 import ScrollToBottom from "react-scroll-to-bottom";
 import io from "socket.io-client";
-const socket = io("localhost:6969");
+const socket = io(
+  process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || "localhost:6969"
+);
 export default class Chat extends Component {
   constructor(props) {
     super(props);
