@@ -213,11 +213,10 @@ body {
   .logout_link {
     color: #fc3628 !important;
     width: 15vw !important;
-    position: relative;
-    left: 45vw;
+    position: absolute;
+    left: calc(85vw - 20px);
     margin-bottom: 5px;
     transition: 0.3s;
-    border: 1px solid deepskyblue;
   }
   .logout_link:hover {
     background-color: #fc3628;
@@ -226,12 +225,12 @@ body {
   }
   .login_link {
     transition: 0.3s;
-    position: relative;
+    position: absolute;
     width: 15vw !important;
     color: deepskyblue !important;
-    left: 45vw;
+    position: absolute;
+    left: calc(85vw - 20px);
     margin-bottom: 5px;
-    border: 1px solid deepskyblue;
   }
   .login_link:hover {
     background-color: deepskyblue;
