@@ -2,7 +2,7 @@ import "./Chat.css";
 import avatar_unknow from "./avatar.jpg";
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import UserService from "../../service/user.service";
+import ChatService from "../../service/chat.service";
 import { ToastContainer, toast } from "react-toastify";
 import ScrollToBottom from "react-scroll-to-bottom";
 import io from "socket.io-client";
@@ -20,6 +20,9 @@ export default class Chat extends Component {
       listchat: [],
       scrollPixelsY: 0,
     };
+    ChatService.getAll().then((req) => {
+      this.setState({ listchat: req.data });
+    });
     this.chat_content = React.createRef();
   }
   componentDidMount() {}
@@ -38,13 +41,17 @@ export default class Chat extends Component {
       let mess_obj = {
         username:
           this.props.user.username == null
-            ? "Unknowed"
+            ? "Unknown"
             : this.props.user.username,
         mess: this.state.chat,
-        image: this.props.user.avatar == null ? false : this.props.user.avatar,
+        image:
+          this.props.user.avatar == null
+            ? avatar_unknow
+            : this.props.user.avatar,
         time: `${d.getHours()}:${d.getMinutes()} | ${d.getDate()}/${
           d.getMonth() + 1
         }/${d.getFullYear()}`,
+        color: "",
       };
       socket.emit("send message", mess_obj);
       this.setState({ chat: "" });
@@ -52,6 +59,9 @@ export default class Chat extends Component {
   };
   componentDidMount() {
     socket.on("send message", (res) => {
+      ChatService.create(res.data).then((req, res) => {
+        console.log("database response!!!");
+      });
       let { listchat } = this.state;
       listchat.push(res.data);
       this.setState({ listchat: listchat });
@@ -71,12 +81,7 @@ export default class Chat extends Component {
               return (
                 <div className="message" key={id}>
                   <span>
-                    <img
-                      src={
-                        mess_obj.image == false ? avatar_unknow : mess_obj.image
-                      }
-                      className="image_chat"
-                    />
+                    <img src={mess_obj.image} className="image_chat" />
                     <i className="time_chat">
                       <small>{mess_obj.time}</small>
                     </i>
