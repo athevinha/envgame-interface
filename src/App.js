@@ -181,7 +181,7 @@ class App extends Component {
           ========================= *END MOBILE NAVBAR *===========================
           ========================================================================= */}
           <div className="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul className="navbar-nav">
+            <ul className="navbar-nav ">
               {/* <li className="nav-link nav_link_custom">Envgame</li> */}
               <li className="nav-item">
                 <Link id="home" className="nav-link nav_link_custom" to={"/"}>

@@ -171,7 +171,7 @@ body {
   margin-bottom: 1rem;
 }
 .nav-item {
-  margin-bottom: 1rem;
+  margin-bottom: calc(1rem + 5px);
 }
 .smaller_logo {
   width: 40px !important;
@@ -213,8 +213,8 @@ body {
   .logout_link {
     color: #fc3628 !important;
     width: 15vw !important;
-    position: relative;
-    left: 51vw;
+    position: absolute;
+    left: calc(85vw - 20px);
     margin-bottom: 5px;
     transition: 0.3s;
   }
@@ -225,11 +225,11 @@ body {
   }
   .login_link {
     transition: 0.3s;
-    position: relative;
+    position: absolute;
     width: 15vw !important;
     color: deepskyblue !important;
-    left: 51vw;
-    margin-bottom: 5px;
+    left: calc(85vw - 20px);
+    margin-top: -2px;
   }
   .login_link:hover {
     background-color: deepskyblue;
@@ -242,6 +242,9 @@ body {
 .nav_link_custom {
   padding-bottom: 5px !important;
   border-radius: 0px;
+}
+.z_index_2050 {
+  z-index: 2050;
 }
 .unread_new {
   position: absolute;
