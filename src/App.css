@@ -217,6 +217,7 @@ body {
     left: 45vw;
     margin-bottom: 5px;
     transition: 0.3s;
+    border: 1px solid deepskyblue;
   }
   .logout_link:hover {
     background-color: #fc3628;
@@ -230,6 +231,7 @@ body {
     color: deepskyblue !important;
     left: 45vw;
     margin-bottom: 5px;
+    border: 1px solid deepskyblue;
   }
   .login_link:hover {
     background-color: deepskyblue;
