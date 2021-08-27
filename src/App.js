@@ -185,46 +185,51 @@ class App extends Component {
               {/* <li className="nav-link nav_link_custom">Envgame</li> */}
               <li className="nav-item">
                 <Link id="home" className="nav-link nav_link_custom" to={"/"}>
-                  <i className="taskbar_icon fas fa-home"></i>
-                  {isMobile == true ? " Giới thiệu" : ""}
+                  {/* <i className="taskbar_icon fas fa-home"></i>
+                  {isMobile == true ? " Giới thiệu" : ""} */}
+                  Giới thiệu
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link nav_link_custom" to={"/Games"}>
-                  <i className="taskbar_icon fas fa-gamepad"></i>
-                  {isMobile == true ? " Chơi game" : ""}
+                  {/* <i className="taskbar_icon fas fa-gamepad"></i>
+                  {isMobile == true ? " Chơi game" : ""} */}
+                  Chơi game
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link nav_link_custom" to={"/Charts"}>
-                  <i className="taskbar_icon fa fa-trophy"></i>
-                  {isMobile == true ? " Bảng xếp hạng" : ""}
+                  {/* <i className="taskbar_icon fa fa-trophy"></i>
+                  {isMobile == true ? " Bảng xếp hạng" : ""} */}
+                  Bảng xếp hạng
                 </Link>
               </li>
 
               <li className="nav-item" ref={this.login}>
                 <Link className="nav-link nav_link_custom " to={"/DL-Plant"}>
-                  <i className="taskbar_icon fa fa-robot"></i>
-                  {isMobile == true ? " Deep learning" : ""}
+                  {/* <i className="taskbar_icon fa fa-robot"></i>
+                  {isMobile == true ? " Deep learning" : ""} */}
+                  Deep learning
                 </Link>
               </li>
-              <li className="nav-item" ref={this.login}>
+              {/* <li className="nav-item" ref={this.login}>
                 <Link className="nav-link nav_link_custom " to={"/Chat-Box"}>
                   <i className="taskbar_icon fa fa-comments"></i>
                   {isMobile == true ? " Chat box" : ""}
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link
                   className="nav-link nav_link_custom new_link"
                   to={"/News"}
                   onClick={this.read_new}
                 >
-                  <i className="taskbar_icon fa fa-bell"></i>
+                  {/* <i className="taskbar_icon fa fa-bell"></i>
                   <b>
                     <span className="unread_new color_white">17 </span>
                   </b>
-                  {isMobile == true ? " Thông báo" : ""}
+                  {isMobile == true ? " Thông báo" : ""} */}
+                  Thông báo
                 </Link>
               </li>
               {localStorage.tooken == null || localStorage.tooken == "" ? (
@@ -233,8 +238,8 @@ class App extends Component {
                     className="nav-link nav_link_custom login_link"
                     to={"/Login"}
                   >
-                    <i className="taskbar_icon fas fa-sign-in-alt"></i> Đăng
-                    nhập
+                    {/* <i className="taskbar_icon fas fa-sign-in-alt"></i> */}
+                    Đăng nhập
                   </Link>
                 </li>
               ) : (
@@ -244,8 +249,8 @@ class App extends Component {
                     className="nav-link nav_link_custom logout_link"
                     onClick={this.logout_click}
                   >
-                    <i className="taskbar_icon fas fa-sign-out-alt"></i> Đăng
-                    xuất
+                    {/* <i className="taskbar_icon fas fa-sign-out-alt"></i> */}
+                    Đăng xuất
                   </a>
                 </li>
               )}
