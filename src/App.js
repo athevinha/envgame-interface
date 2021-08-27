@@ -58,11 +58,7 @@ class App extends Component {
   };
   componentDidMount() {
     console.log(Switch);
-    // if (
-    //   window.location.href == "https://envgame.online/" ||
-    //   window.location.href == "http://envgame.online/"
-    // )
-    //   window.location = "https://www.facebook.com/";
+
     if (window.location.href == "http://3.0.241.73:5000/") {
       window.location = "https://envgame.online/";
     }
@@ -209,13 +205,13 @@ class App extends Component {
               <li className="nav-item" ref={this.login}>
                 <Link className="nav-link nav_link_custom " to={"/DL-Plant"}>
                   <i className="taskbar_icon fa fa-robot"></i>
-                  {isMobile == true ? " Deep Learning" : ""}
+                  {isMobile == true ? " Deep learning" : ""}
                 </Link>
               </li>
               <li className="nav-item" ref={this.login}>
                 <Link className="nav-link nav_link_custom " to={"/Chat-Box"}>
                   <i className="taskbar_icon fa fa-comments"></i>
-                  {isMobile == true ? " CHAT BOX" : ""}
+                  {isMobile == true ? " Chat box" : ""}
                 </Link>
               </li>
               <li className="nav-item">
