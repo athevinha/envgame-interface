@@ -212,9 +212,9 @@ body {
 @media (min-width: 768px) {
   .logout_link {
     color: #fc3628 !important;
-    width: 15vw !important;
+    width: 15rem !important;
     position: absolute;
-    left: calc(85vw - 20px);
+    left: calc(100vw - 15rem - 20px);
     margin-bottom: 5px;
     transition: 0.3s;
   }
@@ -226,9 +226,9 @@ body {
   .login_link {
     transition: 0.3s;
     position: absolute;
-    width: 15vw !important;
+    width: 15rem !important;
     color: deepskyblue !important;
-    left: calc(85vw - 20px);
+    left: calc(100vw - 15rem - 20px);
     margin-top: -2px;
   }
   .login_link:hover {

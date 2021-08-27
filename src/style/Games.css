@@ -99,25 +99,25 @@
 .search_nav_bar {
   margin-left: 0 !important;
   padding-left: 0 !important;
-  z-index: 2000;
-  /* /* width: 45vw !important;  */
-  left: 36vw;
-  padding: 0.9rem 1rem;
-  position: fixed;
+  text-align: center;
+  position: relative;
+  width: 98vw;
+  left: 1vw;
+  height: 10vh;
 }
 .input_N {
   background-color: rgb(0, 12, 35) !important;
   border: 1px rgb(11, 209, 123) solid !important;
   color: #79ff6c !important;
-  margin-left: 2vw;
-  width: 20vw !important;
+  width: 60vw !important;
+  height: 8vh;
+  font-size: 20px;
 }
 .input_N:focus {
   background-color: rgb(0, 12, 35) !important;
   border: 1px rgb(0, 17, 51) solid;
 }
 .btn_love_game {
-  z-index: 2000;
   margin-left: 0.5rem;
   color: #79ff6c;
   background-color: rgb(0, 17, 51);
@@ -129,6 +129,12 @@
   transition: 0.2s;
   border-radius: 5px;
   display: flex;
+  height: 8vh;
+  width: 23vw;
+}
+.search_submit {
+  width: 10vw;
+  height: 8vh;
 }
 .btn_love_game:hover {
   background-color: rgb(15, 106, 74);

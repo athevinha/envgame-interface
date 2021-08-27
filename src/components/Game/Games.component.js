@@ -98,35 +98,7 @@ export default class Games extends Component {
         <ToastContainer />
         {/* Same as */}
         <ToastContainer />
-        <form
-          className="form-inline search_nav_bar"
-          onSubmit={this.onSubmitSearch}
-        >
-          <input
-            className="form-control mr-sm-2 input_N"
-            type="search"
-            placeholder="Search game..."
-            name="search"
-            onChange={this.onSearchGame}
-            value={this.state.search}
-            aria-label="Search"
-          />
-          <button className="btn btn-outline-info my-2 my-sm-0" type="submit">
-            Search
-          </button>
-          <div class="custom-control custom-switch btn_love_game">
-            <Switch
-              value={this.state.on_love_game}
-              onChange={(on_love_game) => {
-                this.onLoveGame(on_love_game);
-              }}
-              on={true}
-              off={false}
-              className="switch_love_game"
-            />
-            <label class="">Game yêu thích</label>
-          </div>
-        </form>
+
         <div
           className="update-admin fixed hidden"
           id="login_warn"
@@ -174,6 +146,39 @@ export default class Games extends Component {
           </div>
         </div>
         <div className="enter"></div>
+        <div className="enter"></div>
+        <form
+          className="form-inline search_nav_bar"
+          onSubmit={this.onSubmitSearch}
+        >
+          <input
+            className="form-control mr-sm-2 input_N"
+            type="search"
+            placeholder="Search game..."
+            name="search"
+            onChange={this.onSearchGame}
+            value={this.state.search}
+            aria-label="Search"
+          />
+          <button
+            className="btn btn-outline-info my-2 my-sm-0 search_submit"
+            type="submit"
+          >
+            Search
+          </button>
+          <div class="custom-control custom-switch btn_love_game">
+            <Switch
+              value={this.state.on_love_game}
+              onChange={(on_love_game) => {
+                this.onLoveGame(on_love_game);
+              }}
+              on={true}
+              off={false}
+              className="switch_love_game"
+            />
+            <label class="">Game yêu thích</label>
+          </div>
+        </form>
         <div className="grid-container dark_blue">
           {this.state.games.map((game, id) => {
             return (
