@@ -152,7 +152,7 @@ export default class Games extends Component {
           onSubmit={this.onSubmitSearch}
         >
           <input
-            className="form-control mr-sm-2 input_N"
+            className="form-control mr-sm-2 input_N input_S"
             type="search"
             placeholder="Search game..."
             name="search"
