@@ -222,7 +222,7 @@ class App extends Component {
                 >
                   <i className="taskbar_icon fa fa-bell"></i>
                   <b>
-                    <span className="unread_new color_white">17 </span>
+                    <span className="unread_new color_white">18 </span>
                   </b>
                   {isMobile == true ? " Thông báo" : ""}
                 </Link>

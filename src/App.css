@@ -249,6 +249,7 @@ body {
 .unread_new {
   position: absolute;
   text-align: center;
+  padding-right: 2px;
   margin-left: -15px;
   margin-top: -5px;
   width: 24px;
