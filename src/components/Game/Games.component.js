@@ -28,12 +28,12 @@ export default class Games extends Component {
           progress: undefined,
         });
         this.setState({
-          games: res.data.reverse().filter((game) => {
+          games: res.data.filter((game) => {
             return game.mobile_game == true;
           }),
         });
       } else {
-        this.setState({ games: res.data.reverse() });
+        this.setState({ games: res.data });
       }
     });
 
@@ -62,7 +62,7 @@ export default class Games extends Component {
     this.setState({
       [e.target.name]: e.target.value,
     });
-    let games = this.props.games.reverse();
+    let games = this.props.games;
     console.log(this.state.games);
     this.setState({
       games: games.filter((game) => {
@@ -73,6 +73,7 @@ export default class Games extends Component {
   onLoveGame = (on_love_game) => {
     this.setState({ on_love_game: on_love_game });
     let { games } = this.props;
+    // games = games
     if (on_love_game == true)
       this.setState({
         games: games.filter((game) => {
@@ -180,7 +181,7 @@ export default class Games extends Component {
           </div>
         </form>
         <div className="grid-container dark_blue">
-          {this.state.games.map((game, id) => {
+          {this.state.games.reverse().map((game, id) => {
             return (
               <div className="grid-item darker_blue" key={id}>
                 <div
