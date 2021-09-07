@@ -10,8 +10,7 @@
 // const socket = io(
 //   process.env.NODE_ENV === "production"
 //     ? "https://api.envgame.online/"
-//     : "http://localhost:8080/",
-//   { transports: ["websocket"] }
+//     : "http://localhost:8080/"
 // );
 // export default class Chat extends Component {
 //   constructor(props) {
