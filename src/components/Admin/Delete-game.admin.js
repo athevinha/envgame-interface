@@ -81,7 +81,7 @@ export default class DeleteGame extends Component {
                         this.Delete(game._id);
                       }}
                     >
-                      <i className="fa fa-trash" aria-hidden="true"></i>
+                      <i class="fas fa-trash-alt"></i>
                     </button>
                   </td>
                 </tr>

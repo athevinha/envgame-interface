@@ -166,7 +166,7 @@ class App extends Component {
               className=" navbar-brand logo"
             />
           </Link>
-          {/* =============================================================================
+          {/* ============================================================================
           ============================= *MOBILE NAVBAR *===============================
           ============================================================================= */}
           <button
@@ -181,7 +181,7 @@ class App extends Component {
           ========================= *END MOBILE NAVBAR *===========================
           ========================================================================= */}
           <div className="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul className="navbar-nav">
+            <ul className="navbar-nav ">
               {/* <li className="nav-link nav_link_custom">Envgame</li> */}
               <li className="nav-item">
                 <Link id="home" className="nav-link nav_link_custom" to={"/"}>
@@ -226,7 +226,7 @@ class App extends Component {
                 >
                   {/* <i className="taskbar_icon fa fa-bell"></i>
                   <b>
-                    <span className="unread_new color_white">17 </span>
+                    <span className="unread_new color_white">18 </span>
                   </b>
                   {isMobile == true ? " Thông báo" : ""} */}
                   Thông báo

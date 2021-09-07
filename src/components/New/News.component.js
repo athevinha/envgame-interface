@@ -18,6 +18,7 @@ import New from "./New.component";
 import CN from "./03082021/CN.PNG";
 import H from "./04082021/H.png";
 import F from "./04082021/F.png";
+import chat from "./29082021/chat.png";
 import "./New.css";
 export default class News extends Component {
   constructor(props) {
@@ -126,6 +127,34 @@ export default class News extends Component {
               <div className="col-sm-12 text_center acc_loss">
                 loss: 0.2223 - <b>accuracy:</b> 0.9256 <br />
                 val_loss: 0.1486 - <b>val_accuracy:</b> 0.9513
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="counter basic-2 basic">
+          <div className="container">
+            <div className="row row_T">
+              <div className="col-lg-12">
+                <small>
+                  <i>9:36 PM | 29/08/2021 | Thành Phố Vinh, Nghệ An</i>
+                </small>
+              </div>
+              <div className="col-lg-12">
+                <h3 className="contact text-uppercase text_left title_T">
+                  Cập nhật hệ thống chat và cải tiến giao diện
+                </h3>
+                <hr className="blue_dark_hr" />
+              </div>
+              <div className="col-lg-12">
+                Hệ thống chat “real time” giúp tạo thêm sự liên kết giữa các
+                người chơi với nhau. Dữ liệu của các tin nhắn được xử lý và lưu
+                lại ở database để tiện cho việc đọc lại lịch sử tin nhắn. Hầu
+                hết các giao diện chính của Envgame đều được thay thế bằng Icon.
+              </div>
+              <div className="col-lg-12 ">
+                <div className="image-container">
+                  <img className="img-fluid " src={chat} alt="alternative" />
+                </div>
               </div>
             </div>
           </div>

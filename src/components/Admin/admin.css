@@ -37,3 +37,8 @@
   height: 10px;
   margin-left: 10px;
 }
+/* UPDATE ADMIN */
+.table_admin_update {
+  width: 100vw !important;
+  word-wrap: break-word;
+}
