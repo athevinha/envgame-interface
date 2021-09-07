@@ -55,7 +55,7 @@ export default class Chat extends Component {
       };
       //   socket.emit("send message", mess_obj);
       ChatService.create(mess_obj).then((req, res) => {
-        console.log(res);
+        console.log(req);
         // let { listchat } = this.state;
         // listchat.push(res.data);
         // this.setState({ listchat: listchat, chat: "" });
