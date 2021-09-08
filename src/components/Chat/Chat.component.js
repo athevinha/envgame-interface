@@ -5,13 +5,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ChatService from "../../service/chat.service";
 import { ToastContainer, toast } from "react-toastify";
 import ScrollToBottom from "react-scroll-to-bottom";
-// import io from "socket.io-client";
+import io from "socket.io-client";
 
-// const socket = io(
-//   process.env.NODE_ENV === "production"
-//     ? "https://api.envgame.online/"
-//     : "http://localhost:8080/"
-// );
+const socket = io("https://envgame-chat.herokuapp.com/");
 export default class Chat extends Component {
   constructor(props) {
     super(props);
@@ -28,7 +24,6 @@ export default class Chat extends Component {
   componentDidMount() {}
   componentWillUnmount() {
     let { user } = this.props;
-    console.log(user);
   }
   onChat = (e) => {
     this.setState({ chat: e.target.value });
@@ -53,17 +48,21 @@ export default class Chat extends Component {
         }/${d.getFullYear()}`,
         color: "",
       };
-      //   socket.emit("send message", mess_obj);
-      ChatService.create(mess_obj).then((res) => {
-        let { listchat } = this.state;
-        listchat.push(res.data);
-        this.setState({ listchat: listchat, chat: "" });
-      });
+      socket.emit("send message", mess_obj);
+      // let { listchat } = this.state;
+      // listchat.push(mess_obj);
+      // this.setState({ listchat: listchat, chat: "" });
+      // ChatService.create(mess_obj).then((res) => {});
     }
   };
   componentDidMount() {
-    // socket.on("send message", (res) => {
-    // });
+    socket.on("send message", (res) => {
+      let chat_content = res.data;
+      let { listchat } = this.state;
+      listchat.push(chat_content);
+      this.setState({ listchat: listchat, chat: "" });
+      ChatService.create(chat_content).then((res) => {});
+    });
   }
   render() {
     return (
