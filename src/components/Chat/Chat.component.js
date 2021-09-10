@@ -6,7 +6,6 @@ import ChatService from "../../service/chat.service";
 import { ToastContainer, toast } from "react-toastify";
 import ScrollToBottom from "react-scroll-to-bottom";
 import io from "socket.io-client";
-
 const socket = io("https://envgame-chat.herokuapp.com/");
 export default class Chat extends Component {
   constructor(props) {
@@ -20,10 +19,6 @@ export default class Chat extends Component {
       this.setState({ listchat: req.data });
     });
     this.chat_content = React.createRef();
-  }
-  componentDidMount() {}
-  componentWillUnmount() {
-    let { user } = this.props;
   }
   onChat = (e) => {
     this.setState({ chat: e.target.value });
@@ -48,19 +43,24 @@ export default class Chat extends Component {
         }/${d.getFullYear()}`,
         color: "",
       };
-      let { listchat } = this.state;
-      listchat.push(mess_obj);
-      this.setState({ listchat: listchat, chat: "" });
       socket.emit("send message", mess_obj);
-      // let { listchat } = this.state;
-      // listchat.push(mess_obj);
-      // this.setState({ listchat: listchat, chat: "" });
-      // ChatService.create(mess_obj).then((res) => {});
     }
   };
   componentDidMount() {
     socket.on("send message", (res) => {
+      toast.success("Send message successfully! ", {
+        position: "top-right",
+        autoClose: 500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
       let chat_content = res.data;
+      let { listchat } = this.state;
+      listchat.push(chat_content);
+      this.setState({ listchat: listchat, chat: "" });
       ChatService.create(chat_content).then((res) => {});
     });
   }
