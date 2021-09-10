@@ -48,6 +48,9 @@ export default class Chat extends Component {
         }/${d.getFullYear()}`,
         color: "",
       };
+      let { listchat } = this.state;
+      listchat.push(mess_obj);
+      this.setState({ listchat: listchat, chat: "" });
       socket.emit("send message", mess_obj);
       // let { listchat } = this.state;
       // listchat.push(mess_obj);
@@ -58,9 +61,6 @@ export default class Chat extends Component {
   componentDidMount() {
     socket.on("send message", (res) => {
       let chat_content = res.data;
-      let { listchat } = this.state;
-      listchat.push(chat_content);
-      this.setState({ listchat: listchat, chat: "" });
       ChatService.create(chat_content).then((res) => {});
     });
   }
