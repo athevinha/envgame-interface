@@ -114,6 +114,7 @@ h-name .center {
   background: white;
 }
 .playButton {
+  width: 50%;
   transition: 0.5s;
   font-size: 2.5em;
   text-decoration: none;
@@ -129,8 +130,8 @@ h-name .center {
 }
 .playButton:hover {
   color: black;
+  width: 60%;
   background: linear-gradient(to right, #830bac, #06dee1, #79ff6c, #fc3628);
-  padding-right: 50%;
 }
 .p-small {
   font-size: 0.875rem;
