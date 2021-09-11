@@ -114,7 +114,6 @@ h-name .center {
   background: white;
 }
 .playButton {
-  width: 50%;
   transition: 0.5s;
   font-size: 2.5em;
   text-decoration: none;
@@ -272,6 +271,9 @@ h-name .center {
 
 /* Min-width 992px */
 @media (min-width: 992px) {
+  .playButton{
+    width: 50%;
+  }
   /* General Styles */
   .h2-heading {
     width: 35.25rem;
