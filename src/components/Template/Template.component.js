@@ -223,6 +223,22 @@ export default class Template extends Component {
               <hr className="blue_dark_hr" />
             </div>
             <div className="col-lg-4 text_center">
+              {/* <img src={The_Vinh} className="image_team" />
+              <p className="light_blue type_T">
+                <b>Đội trưởng</b>
+              </p>
+              <p className="white_color">
+                <b>Nguyễn Thế Vinh</b>
+              </p>
+              <p className="white_color ">THPT chuyên Đại Học Vinh</p> */}
+            </div>
+            <div className="col-lg-4 text_center">
+              {/* <img src={Quynh_Nhu} className="image_team" />
+              <p className="light_blue type_T">Thành viên</p>
+              <p className="white_color">
+                <b>Đậu Quỳnh Như</b>
+              </p>
+              <p className="white_color">THPT chuyên Đại Học Vinh</p> */}
               <img src={The_Vinh} className="image_team" />
               <p className="light_blue type_T">
                 <b>Đội trưởng</b>
@@ -233,20 +249,12 @@ export default class Template extends Component {
               <p className="white_color ">THPT chuyên Đại Học Vinh</p>
             </div>
             <div className="col-lg-4 text_center">
-              <img src={Quynh_Nhu} className="image_team" />
-              <p className="light_blue type_T">Thành viên</p>
-              <p className="white_color">
-                <b>Đậu Quỳnh Như</b>
-              </p>
-              <p className="white_color">THPT chuyên Đại Học Vinh</p>
-            </div>
-            <div className="col-lg-4 text_center">
-              <img src={Quan_Ngo} className="image_team" />
+              {/* <img src={Quan_Ngo} className="image_team" />
               <p className="light_blue type_T">Thành viên</p>
               <p className="white_color">
                 <b>Ngô Minh Quân</b>
               </p>
-              <p className="white_color">THPT Thái Lão</p>
+              <p className="white_color">THPT Thái Lão</p> */}
             </div>
           </div>
         </div>

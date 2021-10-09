@@ -41,11 +41,11 @@ export default class Copyright extends Component {
                     Contact
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="https://www.rmit.edu.vn/vi" className="light_blue">
                     Rmit University Competition
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a href="https://hackathon.tiki.vn/" className="light_blue">
                     Tiki Hackathon
@@ -68,11 +68,11 @@ export default class Copyright extends Component {
                     Tech Genius
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="https://hackathon.tiki.vn/" className="light_blue">
                     Tini App
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="col-lg-3">
