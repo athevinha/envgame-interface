@@ -150,7 +150,7 @@ class App extends Component {
           <p className="w3-bar-item break_word">
             <b>User ID: </b>
             <Link to={`./users/${this.state.user_current._id}`}>
-              {this.state.user_current._id}
+              {this.state.user_current.username}
             </Link>
           </p>
         </div>
