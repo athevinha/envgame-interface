@@ -143,7 +143,7 @@ class App extends Component {
           </p>
           <hr className="blue_dark_hr" />
           <p className="w3-bar-item break_word">
-            <b>Description: </b>
+            <b>Lời giới thiệu: </b>
             {this.state.user_current.description}
           </p>
           <hr className="blue_dark_hr" />
