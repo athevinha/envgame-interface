@@ -148,7 +148,7 @@ class App extends Component {
           </p>
           <hr className="blue_dark_hr" />
           <p className="w3-bar-item break_word">
-            <b>Trang cá nhân </b>
+            <b>Trang cá nhân: </b>
             <Link to={`./users/${this.state.user_current._id}`}>
               {this.state.user_current.username}
             </Link>
