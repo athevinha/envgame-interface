@@ -41,50 +41,50 @@ export default class OnTop extends Component {
   render() {
     return (
       <div className="dark_blue light_blue">
-        <div className="enter"></div>
-        <div className="enter"></div>
-        <div className="container">
-          <h2 className="text_center">Bảng xếp hạng người chơi</h2>
-          <table className="table table_admin_read onTopTable">
-            <thead>
-              <tr>
-                <th scope="col">STT</th>
-                <th scope="col">Tên</th>
-                {window.innerWidth >= 600 ? <th scope="col">Gmail</th> : ""}
-                {window.innerWidth >= 600 ? (
-                  <th scope="col">Tổng Thời Gian Chơi (phút)</th>
-                ) : (
-                  <th scope="col">Thời Gian(Phút)</th>
-                )}
-              </tr>
-            </thead>
-            <tbody>
-              {this.state.users.map((user, id) => {
-                if (id < this.state.top_limit) {
-                  console.log(window.innerWidth);
-                  return (
-                    <tr key={id} className={id < 3 ? "top3" : ""}>
-                      <td>{id + 1}</td>
-                      <td>
-                        <Link
-                          className={id < 3 ? "top3" : ""}
-                          to={"/users/" + user._id}
-                        >
-                          {user.username}{" "}
-                        </Link>
-                      </td>
-                      {window.innerWidth >= 600 ? <td>{user.gmail}</td> : ""}
-                      <td>
-                        {Math.round((user.sum_time * 100) / 1000 / 60) / 100}
-                      </td>
-                    </tr>
-                  );
-                }
-              })}
-            </tbody>
-          </table>
-        </div>
+      <div className="enter"></div>
+      <div className="enter"></div>
+      <div className="container">
+        <h2 className="text_center">Player Ranking</h2>
+        <table className="table table_admin_read onTopTable">
+          <thead>
+            <tr>
+              <th scope="col">STT</th>
+              <th scope="col">Name</th>
+              {window.innerWidth >= 600 ? <th scope="col">Gmail</th> : ""}
+              {window.innerWidth >= 600 ? (
+                <th scope="col">Total Play Time (minutes)</th>
+              ) : (
+                <th scope="col">Time(Minute)</th>
+              )}
+            </tr>
+          </thead>
+          <tbody>
+            {this.state.users.map((user, id) => {
+              if (id < this.state.top_limit) {
+                console.log(window.innerWidth);
+                return (
+                  <tr key={id} className={id < 3 ? "top3" : ""}>
+                    <td>{id + 1}</td>
+                    <td>
+                      <Link
+                        className={id < 3 ? "top3" : ""}
+                        to={"/users/" + user._id}
+                      >
+                        {user.username}{" "}
+                      </Link>
+                    </td>
+                    {window.innerWidth >= 600 ? <td>{user.gmail}</td> : ""}
+                    <td>
+                      {Math.round((user.sum_time * 100) / 1000 / 60) / 100}
+                    </td>
+                  </tr>
+                );
+              }
+            })}
+          </tbody>
+        </table>
       </div>
+    </div>
     );
   }
 }

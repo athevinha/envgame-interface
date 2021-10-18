@@ -72,7 +72,7 @@ export default class Logup extends Component {
       finalUser.avatar = finalUser.avatar == "" ? avatar : finalUser.avatar;
       finalUser.tooken = this.GenerateTooken();
       UserService.create(finalUser).then((req, res) => {
-        toast.success("Đăng ký thành công!", {
+        toast.success("Registration successful!", {
           position: "top-right",
           autoClose: 1500,
           hideProgressBar: false,
@@ -93,7 +93,7 @@ export default class Logup extends Component {
         }, 2000);
       });
     } else {
-      toast.error("Tên bạn nhập không phải tên thật!", {
+      toast.error("The name you entered is not your real name!", {
         position: "top-right",
         autoClose: 1500,
         hideProgressBar: false,
@@ -112,12 +112,12 @@ export default class Logup extends Component {
         <ToastContainer />
         <body
           className="img fullheight dark_blue"
-          //   style="background-image: url(images/bg.jpg);"
+          // style="background-image: url(images/bg.jpg);"
         >
           <div className="container login_form">
             <div className="row border_radius darker_blue logup_row">
               <div className="col-lg-12 text_center">
-                <h3 className="light_blue glx_fold_T">Đăng ký</h3>
+                <h3 className="light_blue glx_fold_T">Register</h3>
                 <hr className="blue_dark_hr" />
               </div>
               <div className="col-lg-12">

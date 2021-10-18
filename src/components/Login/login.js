@@ -38,7 +38,7 @@ export default class Login extends Component {
         user.gmail == this.state.gmail &&
         user.password == this.state.password
       ) {
-        toast.info("Đăng nhập thành công!", {
+        toast.info("Login successful!", {
           position: "top-right",
           autoClose: 1500,
           hideProgressBar: false,
@@ -55,7 +55,7 @@ export default class Login extends Component {
       } else {
         not_one++;
         if (not_one == this.state.users.length) {
-          toast.error("Đăng nhập thất bại, gmail hoặc mật khẩu không đúng!", {
+          toast.error("Login failed, gmail or password is incorrect!", {
             position: "top-right",
             autoClose: 1500,
             hideProgressBar: false,
@@ -81,7 +81,7 @@ export default class Login extends Component {
           <div className="container login_form text_center">
             <div className="row text_center border_radius darker_blue login_row">
               <div className="col-lg-12 text_center">
-                <h3 className="light_blue glx_fold_T">Đăng nhập </h3>
+                <h3 className="light_blue glx_fold_T">Log in</h3>
                 <hr className="blue_dark_hr" />
               </div>
               <div className="col-lg-12 text_center">

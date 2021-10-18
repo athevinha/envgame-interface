@@ -122,7 +122,7 @@ class App extends Component {
           <h3 className="text_center break_word name_in4_side">
             {localStorage.tooken != null
               ? this.state.user_current.username
-              : "Hãy đăng nhập"}
+              : "Please login"}
           </h3>
           <hr className="blue_dark_hr" />
           <div className="width20 text_center">
@@ -143,12 +143,12 @@ class App extends Component {
           </p>
           <hr className="blue_dark_hr" />
           <p className="w3-bar-item break_word">
-            <b>Lời giới thiệu: </b>
+            <b>Introduction: </b>
             {this.state.user_current.description}
           </p>
           <hr className="blue_dark_hr" />
           <p className="w3-bar-item break_word">
-            <b>Trang cá nhân: </b>
+            <b>Personal Page: </b>
             <Link to={`./users/${this.state.user_current._id}`}>
               {this.state.user_current.username}
             </Link>
@@ -166,9 +166,9 @@ class App extends Component {
               className=" navbar-brand logo"
             />
           </Link>
-          {/* ============================================================================
-          ============================= *MOBILE NAVBAR *===============================
-          ============================================================================= */}
+          {/* =============================================== ==========================================
+          ================================= *MOBILE NAVBAR *================= ==========
+          ================================================== =========================== */}
           <button
             className="navbar-toggler"
             type="button"
@@ -177,28 +177,28 @@ class App extends Component {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          {/* =====================================================================
-          ========================= *END MOBILE NAVBAR *===========================
-          ========================================================================= */}
+          {/* =============================================== ======================
+          ========================= *END MOBILE NAVBAR *==================== =======
+          ======================================================= =========================== */}
           <div className="collapse navbar-collapse" id="collapsibleNavbar">
             <ul className="navbar-nav ">
               {/* <li className="nav-link nav_link_custom">Envgame</li> */}
               <li className="nav-item">
                 <Link id="home" className="nav-link nav_link_custom" to={"/"}>
                   <i className="taskbar_icon fas fa-home"></i>
-                  {isMobile == true ? " Giới thiệu" : ""}
+                  {isMobile == true ? " Introduce" : ""}
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link nav_link_custom" to={"/Games"}>
                   <i className="taskbar_icon fas fa-gamepad"></i>
-                  {isMobile == true ? " Chơi game" : ""}
+                  {isMobile == true ? " Gaming" : ""}
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link nav_link_custom" to={"/Charts"}>
                   <i className="taskbar_icon fa fa-trophy"></i>
-                  {isMobile == true ? " Bảng xếp hạng" : ""}
+                  {isMobile == true ? " Charts" : ""}
                 </Link>
               </li>
 
@@ -224,7 +224,7 @@ class App extends Component {
                   <b>
                     <span className="unread_new color_white">18 </span>
                   </b>
-                  {isMobile == true ? " Thông báo" : ""}
+                  {isMobile == true ? " Notify" : ""}
                 </Link>
               </li>
               {localStorage.tooken == null || localStorage.tooken == "" ? (
@@ -233,8 +233,7 @@ class App extends Component {
                     className="nav-link nav_link_custom login_link"
                     to={"/Login"}
                   >
-                    <i className="taskbar_icon fas fa-sign-in-alt"></i> Đăng
-                    nhập
+                    <i className="taskbar_icon fas fa-sign-in-alt"></i> <b>Sign in</b>
                   </Link>
                 </li>
               ) : (
@@ -244,8 +243,7 @@ class App extends Component {
                     className="nav-link nav_link_custom logout_link"
                     onClick={this.logout_click}
                   >
-                    <i className="taskbar_icon fas fa-sign-out-alt"></i> Đăng
-                    xuất
+                    <i className="taskbar_icon fas fa-sign-out-alt"></i> <b>Log out</b>
                   </a>
                 </li>
               )}

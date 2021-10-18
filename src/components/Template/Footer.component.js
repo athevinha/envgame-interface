@@ -23,7 +23,7 @@ export default class Footer extends Component {
         onSubmit={(e) => {
           e.preventDefault();
           Feedback.create(this.state).then((req, res) => {
-            toast.dark(`Cảm ơn đã ${req.data.name} phản hồi 😁😍!`, {
+            toast.dark(`Thanks for the response ${req.data.name} 😁😍!`, {
               position: "top-right",
               autoClose: 3000,
               hideProgressBar: false,
@@ -46,7 +46,7 @@ export default class Footer extends Component {
         <div className="row row_T text_left">
           <div className="col-lg-12">
             <h3 className="contact text-uppercase text_center title_T PC_left">
-              Phản hồi
+              Feedback
             </h3>
             <hr className="blue_dark_hr" />
           </div>
@@ -56,7 +56,7 @@ export default class Footer extends Component {
                 type="text"
                 className="form-control input_T"
                 aria-describedby="helpId"
-                placeholder="Tên của bạn..."
+                placeholder="Your name..."
                 onChange={this.onFeedback}
                 value={this.state.name}
                 name="name"
@@ -69,7 +69,7 @@ export default class Footer extends Component {
                 type="text"
                 className="form-control input_T"
                 aria-describedby="helpId"
-                placeholder="Gmail của bạn..."
+                placeholder="Your Gmail..."
                 onChange={this.onFeedback}
                 value={this.state.gmail}
                 name="gmail"
@@ -83,7 +83,7 @@ export default class Footer extends Component {
                 name=""
                 id=""
                 rows="5"
-                placeholder="Nội dung thư..."
+                placeholder="Message body..."
                 onChange={this.onFeedback}
                 value={this.state.feedback}
                 name="feedback"
@@ -91,7 +91,7 @@ export default class Footer extends Component {
             </h3>
           </div>
           <div className="col-lg-12 text_center PC_left">
-            <button className="btn btn-info more_in4">Gửi phản hồi</button>
+            <button className="btn btn-info more_in4">Send Feedback</button>
           </div>
         </div>
       </form>

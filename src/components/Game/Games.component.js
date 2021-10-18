@@ -18,7 +18,7 @@ export default class Games extends Component {
     };
     GameService.getAll().then((res) => {
       if (isMobile == true) {
-        toast.info("Vào bằng máy tính để chơi nhiều game hay hơn nhé!", {
+        toast.info("Log in with your computer to play more great games!", {
           position: "top-right",
           autoClose: 3000,
           hideProgressBar: false,
@@ -107,24 +107,24 @@ export default class Games extends Component {
         >
           <div className="black-back z_index_3000"></div>
           <div className="login_warn z_index_4000">
-            <p className="login_warn_1 ">
-              <b>Đăng nhập</b> rùi chơi game nhé! 3 phút thui mà 😀
-            </p>
-            <p className="color_green text_center">
-              <p className="margin_3">
-                <b>Lợi ích của việc đăng nhập:</b>
-              </p>
-              <p className="margin_3">
-                Có thể tranh đua bảng xếp hạng cùng bạn bè
-              </p>
-              <p className="margin_3">
-                Tìm lại những trò chơi bạn đã chơi trước đây và rất nhiều dịch
-                vụ khác
-              </p>
-              <p className="margin_3">
-                Bạn có thể tự hào rằng bạn đã góp phần bảo vệ môi trường
-              </p>
-            </p>
+          <p className="login_warn_1 ">
+               <b>Login</b> to play the game! 3 minutes
+             </p>
+             <p className="color_green text_center">
+               <p className="margin_3">
+                 <b>Benefits of logging in:</b>
+               </p>
+               <p className="margin_3">
+                 You can compete with your friends on the leaderboard
+               </p>
+               <p className="margin_3">
+                 Find games you've played before and lots of translations
+                 other service
+               </p>
+               <p className="margin_3">
+                 You can be proud that you have done your part to protect the environment
+               </p>
+             </p>
             <button
               className="btn btn-outline-danger login_warn_2 close_button_game"
               onClick={this.not_login}
@@ -140,9 +140,9 @@ export default class Games extends Component {
                 className="check_box_not_show_notfication_input"
                 onClick={this.checkBox}
               />
-              <span className="color_white">
-                <i>Sẽ không hiển thị thông báo này nữa</i>
-              </span>
+           <span className="color_white">
+                 <i>This message will no longer be displayed</i>
+               </span>
             </div>
           </div>
         </div>
@@ -177,7 +177,7 @@ export default class Games extends Component {
               off={false}
               className="switch_love_game"
             />
-            <label class="">Game yêu thích</label>
+       <label class="">Favorite game</label>
           </div>
         </form>
         <div className="grid-container dark_blue">
@@ -202,7 +202,7 @@ export default class Games extends Component {
                         to={`/Games/${game.title}`}
                         onClick={() => this.Get_Played_Game(game)}
                       >
-                        Chơi ngay
+                        Play now
                       </Link>
                     </div>
                   </div>

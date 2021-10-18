@@ -258,19 +258,19 @@ export default class UpdateGame extends Component {
                   <td>{game.title}</td>
                   <td>{game.description}</td>
                   <td className="width40">
-                    {game.url && game.url.length >= 60 ? (
-                      <i>(Nội dung quá dài)</i>
-                    ) : (
-                      game.url
-                    )}
-                  </td>
-                  <td className="width40">
-                    {game.iframe.length >= 60 ? (
-                      <i>(Nội dung quá dài)</i>
-                    ) : (
-                      game.iframe
-                    )}
-                  </td>
+                     {game.url && game.url.length >= 60 ? (
+                       <i>(The content is too long)</i>
+                     ) : (
+                       game.url
+                     )}
+                   </td>
+                   <td className="width40">
+                     {game.iframe.length >= 60 ? (
+                       <i>(The content is too long)</i>
+                     ) : (
+                       game.iframe
+                     )}
+                   </td>
                   <td>{game.mobile_game == true ? "MOBILE" : "PC"}</td>
                   <td>
                     <button

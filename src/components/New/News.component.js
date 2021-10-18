@@ -46,36 +46,36 @@ export default class News extends Component {
             <div className="row row_T">
               <div className="col-lg-11">
                 <small>
-                  <i>4:06 AM | 31/07/2021 | Thành Phố Vinh, Nghệ An</i>
+                  <i>4:06 AM | 31/07/2021 | Vinh City, Nghe An</i>
                 </small>
               </div>
               <div className="col-lg-1 pin">
                 {/* <small> */}{" "}
                 <i>
                   {" "}
-                  Ghim <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+                  Pin <i class="fa fa-thumb-tack" aria-hidden="true"></i>
                 </i>
                 {/* </small> */}
               </div>
               <div className="col-lg-12">
                 <h3 className="contact text-uppercase text_left title_T">
-                  Ứng dụng Deep Learning vào chăm sóc cây trồng (thử model)
+                  Apply Deep Learning to plant care (try the model)
                 </h3>
                 <hr className="blue_dark_hr" />
               </div>
               <div className="col-lg-12">
                 <p>
-                  Hiện nay Envgame đang trong quá trình phát triển và thu hút
-                  khách hàng. Vì nguồn nhân lực dùng để trồng cây chủ yếu là con
-                  người làm, nên quá trình chăm sóc cây trồng rất tốn chi phí.
-                  Thế nên mình quyết định thử ứng dụng <b>Deep Learning</b> vào
-                  trong việc chăm sóc cây trồng xem có tiến triển gì không và
-                  kết quả cũng khá bất ngờ. Xác suất ở mỗi mô hình của mình đều
-                  đạt trên 90%.
+                  Currently Envgame is in the process of developing and attracting
+                  client. Because the human resources used to plant trees are mainly children
+                  workers, so the process of taking care of plants is very expensive.
+                  So I decided to try the <b>Deep Learning</b> app on
+                  in the care of plants see if there is any progress and
+                  The results were also quite surprising. The probability in each of our models is
+                  over 90%.
                 </p>
               </div>
               <div className="col-sm-12 text_center">
-                <h4>InceptionV3 và Resnet Inception</h4>
+                <h4>InceptionV3 and Resnet Inception</h4>
               </div>
               <div className="col-lg-6 back_white">
                 <div className="image-container">
@@ -136,20 +136,20 @@ export default class News extends Component {
             <div className="row row_T">
               <div className="col-lg-12">
                 <small>
-                  <i>9:36 PM | 29/08/2021 | Thành Phố Vinh, Nghệ An</i>
+                  <i>9:36 PM | August 29, 2021 | Vinh City, Nghe An</i>
                 </small>
               </div>
               <div className="col-lg-12">
                 <h3 className="contact text-uppercase text_left title_T">
-                  Cập nhật hệ thống chat và cải tiến giao diện
+                  Update chat system and improve interface
                 </h3>
                 <hr className="blue_dark_hr" />
               </div>
               <div className="col-lg-12">
-                Hệ thống chat “real time” giúp tạo thêm sự liên kết giữa các
-                người chơi với nhau. Dữ liệu của các tin nhắn được xử lý và lưu
-                lại ở database để tiện cho việc đọc lại lịch sử tin nhắn. Hầu
-                hết các giao diện chính của Envgame đều được thay thế bằng Icon.
+                The "real time" chat system helps to create more connections between
+                players together. The data of the messages is processed and saved
+                in the database to facilitate re-reading the message history. Almost
+                Most of Envgame's main interfaces have been replaced by Icons.
               </div>
               <div className="col-lg-12 ">
                 <div className="image-container">
@@ -161,27 +161,27 @@ export default class News extends Component {
         </div>
         <div className="counter basic-2 basic">
           <div className="container">
-            <div className="row row_T">
+          <div className="row row_T">
               <div className="col-lg-12">
                 <small>
-                  <i>11:36 PM | 04/08/2021 | Thành Phố Vinh, Nghệ An</i>
+                  <i>11:36 PM | 04/08/2021 | Vinh City, Nghe An</i>
                 </small>
               </div>
               <div className="col-lg-12">
                 <h3 className="contact text-uppercase text_left title_T">
-                  Cập nhật bảng xếp hạng của game <i>Flappy Bird</i> và{" "}
+                  Updated rankings for <i>Flappy Bird</i> and {" "} games
                   <i>Hextris</i>
                 </h3>
                 <hr className="blue_dark_hr" />
               </div>
               <div className="col-lg-12">
                 <p>
-                  Chỉ có 5 người chơi xuất sắc có điểm số cao được lọt vào hệ
-                  thống rank của game. Các game được áp dụng bảng xếp hạng vào
-                  gồm: <br />
+                  Only 5 excellent players with high scores will enter the system
+                  rank system of the game. Games for which the rankings are applied
+                  include: <br />
                   - Flappy Bird <br />
                   - Hextris <br />
-                  <i> Cả 2 game này đều được hỗ trợ ở cả Mobile và PC. </i>
+                  <i> Both these games are supported on both Mobile and PC. </i>
                 </p>
               </div>
               <div className="col-lg-6 ">
@@ -200,21 +200,21 @@ export default class News extends Component {
         <div className="counter basic-2 basic">
           <div className="container">
             <div className="row row_T">
-              <div className="col-lg-12">
-                <small>
-                  <i>1:07 PM | 03/08/2021 | Thành Phố Vinh, Nghệ An</i>
-                </small>
-              </div>
-              <div className="col-lg-12">
-                <h3 className="contact text-uppercase text_left title_T">
-                  Cập nhật: Demo ứng dụng Deep Learning vào chăm sóc cây trồng.
-                </h3>
-                <hr className="blue_dark_hr" />
-              </div>
-              <div className="col-lg-12">
-                Hệ thống đã có ở phần <b>Công Nghệ</b> trên website của envgame.
-                Model có các classes sau:
-                <hr />
+            <div className="col-lg-12">
+                 <small>
+                   <i>1:07 PM | 03/08/2021 | Vinh City, Nghe An</i>
+                 </small>
+               </div>
+               <div className="col-lg-12">
+                 <h3 className="contact text-uppercase text_left title_T">
+                   Update: Demo application of Deep Learning to plant care.
+                 </h3>
+                 <hr className="blue_dark_hr" />
+               </div>
+               <div className="col-lg-12">
+                 The system is available in the <b>Technology</b> section of envgame's website.
+                 The model has the following classes:
+                 <hr />
                 <table className="table table table_admin_delete color_white">
                   <thead>
                     <tr>
@@ -228,126 +228,126 @@ export default class News extends Component {
                   </thead>
 
                   <tbody>
-                    <tr>
-                      <td className="text_center">Táo - bệnh nấm</td>
-                      <td className="text_center">Táo - bệnh thối đen nho</td>
+                  <tr>
+                      <td className="text_center">Apple - fungal disease</td>
+                      <td className="text_center">Apple - grape black rot</td>
                     </tr>
                     <tr>
-                      <td className="text_center">Táo - bệnh gỉ lá</td>
-                      <td className="text_center">Táo - phát triển tốt</td>
-                    </tr>
-                    <tr>
-                      <td className="text_center">
-                        Anh đào - bệnh phấn trắng (chua)
-                      </td>
-                      <td className="text_center">
-                        Anh đào - phát triển tốt (chua)
-                      </td>
+                      <td className="text_center">Apple - leaf rust</td>
+                      <td className="text_center">Apple - good development</td>
                     </tr>
                     <tr>
                       <td className="text_center">
-                        Ngô & bắp - bệnh đốm lá xám
+                        Cherries - powdery mildew (sour)
                       </td>
                       <td className="text_center">
-                        Ngô & bắp - bệnh 'gỉ sắt' nâu sẫm
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="text_center">Ngô & bắp - bệnh bạc lá</td>
-                      <td className="text_center">
-                        Ngô & bắp - phát triển tốt
+                        Cherries - well grown (sour)
                       </td>
                     </tr>
                     <tr>
-                      <td className="text_center">Nho - bệnh thối đen nho</td>
-                      <td className="text_center">Nho - bệnh sởi đen</td>
+                      <td className="text_center">
+                        Maize & maize - gray leaf spot disease
+                      </td>
+                      <td className="text_center">
+                        Maize & corn - dark brown 'rust' disease
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text_center">Maize & maize - blight</td>
+                      <td className="text_center">
+                        Corn & corn - growing well
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text_center">Grape - black rot of grapes</td>
+                      <td className="text_center">Grape - black measles</td>
                     </tr>
                     <tr>
                       <td className="text_center">
-                        Nho - bệnh bạc lá (Bệnh thán thư)
+                        Grapes - blight (Anthracnose)
                       </td>
-                      <td className="text_center">Nho - phát triển tốt</td>
+                      <td className="text_center">Grape - growing well</td>
                     </tr>
                     <tr>
                       <td className="text_center">
-                        Cam - bệnh vàng lá gân xanh
+                        Orange - yellow leaf disease with green veins
                       </td>
                       <td className="text_center">
-                        Đào - bệnh đốm lá do vi khuẩn Bacterial Leaf Spot
+                        Peach - Bacterial Leaf Spot
                         Disease
                       </td>
                     </tr>
                     <tr>
-                      <td className="text_center">Đào - phát triển tốt</td>
+                      <td className="text_center">Digging - well developed</td>
                       <td className="text_center">
-                        Ớt chuông- bệnh đốm lá do vi khuẩn Bacterial Leaf Spot
+                        Bell peppers - Bacterial Leaf Spot
                         Disease
                       </td>
                     </tr>
                     <tr>
                       <td className="text_center">
-                        Ớt chuông - phát triển tốt
+                        Bell peppers - grow well
                       </td>
-                      <td className="text_center">Khoai tây - bệnh bạc lá</td>
+                      <td className="text_center">Potato - blight</td>
                     </tr>
                     <tr>
                       <td className="text_center">
-                        Khoai tây - bệnh mốc sương
+                        Potato - late blight disease
                       </td>
                       <td className="text_center">
-                        Khoai tây - phát triển tốt
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="text_center">Dâu rừng - phát triển tốt</td>
-                      <td className="text_center">
-                        Đậu tương - phát triển tốt
+                        Potatoes - grow well
                       </td>
                     </tr>
                     <tr>
-                      <td className="text_center">Bí đao - bệnh phấn trắng</td>
+                      <td className="text_center">Raspberry - growing well</td>
                       <td className="text_center">
-                        Dâu - bệnh lá cháy sém (rụng, héo)
+                        Soybeans - grow well
                       </td>
                     </tr>
                     <tr>
-                      <td className="text_center">Dâu - phát triển tốt</td>
+                      <td className="text_center">Pumpkin - powdery mildew</td>
                       <td className="text_center">
-                        Việt quất - phát triển tốt
+                        Strawberry - leaf scorch disease (drop, wilt)
                       </td>
                     </tr>
                     <tr>
-                      <td className="text_center">Cà chua - bệnh bạc lá</td>
-                      <td className="text_center">Cà chua - bệnh mốc sương</td>
-                    </tr>
-                    <tr>
+                      <td className="text_center">Strawberry - good development</td>
                       <td className="text_center">
-                        Cà chua - bệnh mốc lá Passalora fulva
-                      </td>
-                      <td className="text_center">
-                        Cà chua - bệnh đốm lá Septoria
+                        Blueberries - grow well
                       </td>
                     </tr>
                     <tr>
-                      <td className="text_center">
-                        Cà chua - bệnh đốm vi khuẩn
-                      </td>
-                      <td className="text_center">Cà chua - bệnh thán thư</td>
+                      <td className="text_center">Tomato - blight</td>
+                      <td className="text_center">Tomato - late blight</td>
                     </tr>
                     <tr>
                       <td className="text_center">
-                        Cà chua - bệnh vi rút vàng xoăn (xoăn lá)
+                        Tomato - leaf mold Passalora fulva
                       </td>
                       <td className="text_center">
-                        Cà chua - bệnh xoăn lá (bệnh khảm)
+                        Tomato - Septoria leaf spot disease
                       </td>
                     </tr>
                     <tr>
                       <td className="text_center">
-                        Cà chua - bệnh đốm lá do vi khuẩn Bacterial Leaf Spot
+                        Tomato - bacterial spot disease
                       </td>
-                      <td className="text_center">Cà chua - phát triển tốt</td>
+                      <td className="text_center">Tomato - anthracnose</td>
                     </tr>
+                    <tr>
+                       <td className="text_center">
+                         Tomato - yellow curl virus disease (leaf curl)
+                       </td>
+                       <td className="text_center">
+                         Tomato - leaf curl disease (mosaic disease)
+                       </td>
+                     </tr>
+                     <tr>
+                       <td className="text_center">
+                         Tomato - Bacterial Leaf Spot
+                       </td>
+                       <td className="text_center">Tomato - growing well</td>
+                     </tr>
                   </tbody>
                 </table>
               </div>
@@ -365,9 +365,9 @@ export default class News extends Component {
         </div>
         {/* END 31072021 */}
         <New
-          time="7:21 PM | 30/07/2021 | Thành Phố Vinh, Nghệ An"
-          title="Thêm bảng xếp hạng vào hệ thống"
-          description=" Bảng xếp hạng gồm 10 bạn có thời gian chơi nhiều nhất. Chúc mừng 10 bạn đã lọt vào top 10 người chơi trong tháng 5-6/2021😁🥳"
+          time="7:21 PM | 07/30/2021 | Vinh City, Nghe An"
+          title="Add the chart to the system"
+          description=" The ranking consists of the 10 players with the most playing time. Congratulations to the 10 players who made it to the top 10 players in May-June 2021😁🥳"
           img={BXH}
         />
         <div className="counter basic-2 basic">
@@ -375,24 +375,24 @@ export default class News extends Component {
             <div className="row row_T">
               <div className="col-lg-12">
                 <small>
-                  <i> 11:43 PM | 28/07/2021 | Thành Phố Vinh, Nghệ An</i>
+                  <i> 11:43 PM | July 28, 2021 | Vinh City, Nghe An</i>
                 </small>
               </div>
               <div className="col-lg-12">
                 <h3 className="contact text-uppercase text_left title_T">
-                  Thêm các chức năng lọc, tìm kiếm game
+                  Add filter functions, game search
                 </h3>
                 <hr className="blue_dark_hr" />
               </div>
               <div className="col-lg-12">
                 <p>
-                  Bổ sung thêm tính năng game được ưa thích và tìm kiếm game
-                  theo tên <br />
-                  Bổ sung thêm tính năng lọc game: <br />
-                  - Khi vào bằng điện thoại thì chỉ có game điện thoại mới được
-                  hiển thị.
-                  <br />- Khi vào bằng máy tính thì chỉ có game chơi được trên
-                  máy tính mới hiển thị.
+                  Add the feature of favorite games and search for games
+                  by name <br />
+                  Add more game filtering features: <br />
+                  - Only mobile games can be entered when entering by phone
+                  display.
+                  <br />- When entering by computer, only the game can be played on
+                  The new calculator displays.
                 </p>
               </div>
               <div className="col-lg-12">
@@ -407,25 +407,24 @@ export default class News extends Component {
             </div>
           </div>
         </div>
-
         <div className="counter basic-2 basic">
           <div className="container">
             <div className="row row_T">
               <div className="col-lg-12">
                 <small>
-                  <i> 11:21 AM | 26/07/2021 | Thành Phố Vinh, Nghệ An</i>
+                  <i> 11:21 AM | 26/07/2021 | Vinh City, Nghe An</i>
                 </small>
               </div>
               <div className="col-lg-12">
                 <h3 className="contact text-uppercase text_left title_T">
-                  Thêm game
+                  More games
                 </h3>
                 <hr className="blue_dark_hr" />
               </div>
               <div className="col-lg-12">
                 <p>
-                  Thêm game League Of Legends, 404 Laundry Not Found, Evil
-                  Glitch vào hệ thống
+                  More games League Of Legends, 404 Laundry Not Found, Evil
+                  Glitch into the system
                 </p>
               </div>
             </div>
@@ -436,19 +435,19 @@ export default class News extends Component {
             <div className="row row_T">
               <div className="col-lg-12">
                 <small>
-                  <i> 2:54 AM | 12/07/2021 | Thành Phố Vinh, Nghệ An</i>
+                  <i> 2:54 AM | 12/07/2021 | Vinh City, Nghe An</i>
                 </small>
               </div>
               <div className="col-lg-12">
                 <h3 className="contact text-uppercase text_left title_T">
-                  Làm giao diện cho điện thoại
+                  Make the interface for the phone
                 </h3>
                 <hr className="blue_dark_hr" />
               </div>
               <div className="col-lg-12">
                 <p>
-                  Hầu hết các điện thoại hiện nay đều đã có giao diện riêng khi
-                  vào web
+                  Most phones today have their own interface when
+                  go to the web
                 </p>
               </div>
               <div className="col-lg-12">
@@ -469,17 +468,17 @@ export default class News extends Component {
             <div className="row row_T">
               <div className="col-lg-12">
                 <small>
-                  <i> 4:53 AM | 08/07/2021 | Thành Phố Vinh, Nghệ An</i>
+                  <i> 4:53 AM | 08/07/2021 | Vinh City, Nghe An</i>
                 </small>
               </div>
               <div className="col-lg-12">
                 <h3 className="contact text-uppercase text_left title_T">
-                  Thêm game
+                  More games
                 </h3>
                 <hr className="blue_dark_hr" />
               </div>
               <div className="col-lg-12">
-                <p>Thêm được một lượng game nhất định vào hệ thống.</p>
+                <p>A certain amount of games can be added to the system.</p>
               </div>
               <div className="col-lg-12">
                 <div className="image-container">
@@ -499,17 +498,17 @@ export default class News extends Component {
             <div className="row row_T">
               <div className="col-lg-12">
                 <small>
-                  <i> 0:23 AM | 21/06/2021 | Thành Phố Vinh, Nghệ An</i>
+                  <i> 0:23 AM | June 21, 2021 | Vinh City, Nghe An</i>
                 </small>
               </div>
               <div className="col-lg-12">
                 <h3 className="contact text-uppercase text_left title_T">
-                  Hoàn thiện Fontend và Backend
+                  Complete Fontend and Backend
                 </h3>
                 <hr className="blue_dark_hr" />
               </div>
               <div className="col-lg-12">
-                <p>Trang web đã có thể bắt đầu hoạt động và phát triển.</p>
+                <p>The site is up and running.</p>
               </div>
               <div className="col-lg-12">
                 <div className="image-container">
@@ -523,27 +522,26 @@ export default class News extends Component {
             </div>
           </div>
         </div>
-
         <div className="counter basic-2 basic">
           <div className="container">
             <div className="row row_T">
               <div className="col-lg-12">
                 <small>
-                  <i> 1:34 AM | 03/06/2021 | Thành Phố Vinh, Nghệ An</i>
+                  <i> 1:34 AM | 03/06/2021 | Vinh City, Nghe An</i>
                 </small>
               </div>
               <div className="col-lg-12">
                 <h3 className="contact text-uppercase text_left title_T">
-                  Hoàn thiện trang cá nhân.
+                  Complete your personal page.
                 </h3>
                 <hr className="blue_dark_hr" />
               </div>
               <div className="col-lg-12">
                 <p>
-                  Trang cá nhân hiển thị rất nhiều thông tin của người dùng như
-                  là: lịch sử chơi, thời gian chơi của từng game, tên, gmail,
-                  tooken... Các dữ liệu có nhiều tham số như là thời gian chơi
-                  hay là số trồng cây đều được vẽ biểu đồ ra
+                  The profile page displays a lot of user information such as
+                  are: play history, playing time of each game, name, gmail,
+                  tooken... The data has many parameters such as playing time
+                  Or is the number of trees planted on a graph?
                 </p>
               </div>
               <div className="col-lg-12">
@@ -558,75 +556,74 @@ export default class News extends Component {
             </div>
           </div>
         </div>
-
         {/* ==================================================== */}
         <div className="counter basic-2 basic">
           <div className="container">
             <div className="row row_T">
               <div className="col-lg-12">
                 <small>
-                  <i> 4:07 AM | 30/05/2021 | Thành Phố Vinh, Nghệ An</i>
+                  <i> 4:07 AM | May 30, 2021 | Vinh City, Nghe An</i>
                 </small>
               </div>
               <div className="col-lg-12">
                 <h3 className="contact text-uppercase text_left title_T">
-                  Hoàn thiện thanh Side Bar
+                  Finishing the Side Bar
                 </h3>
                 <hr className="blue_dark_hr" />
               </div>
               <div className="col-lg-12">
                 <p>
-                  Thanh Side Bar dùng để hiển thị thông tin của người dùng như
-                  là username, gmail, avatar...
+                  The Side Bar is used to display user information such as
+                  is username, gmail, avatar...
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* ==================================================== */}
+        {/* =============================================== ===== */}
         <div className="counter basic-2 basic">
           <div className="container">
             <div className="row row_T">
               <div className="col-lg-12">
                 <small>
-                  <i> 11:34 AM | 29/05/2021 | Thành Phố Vinh, Nghệ An</i>
+                  <i> 11:34 AM | May 29, 2021 | Vinh City, Nghe An</i>
                 </small>
               </div>
               <div className="col-lg-12">
                 <h3 className="contact text-uppercase text_left title_T">
-                  Hoàn thiện đăng nhập và đăng ký.
+                  Complete login and registration.
                 </h3>
                 <hr className="blue_dark_hr" />
               </div>
               <div className="col-lg-12">
                 <p>
-                  Trang web có đã có thể đăng nhập, đăng ký. Bổ sung thêm hệ
-                  thống nhớ người dùng
+                  The site has already been able to login, register. Add more system
+                  User memory system
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* ==================================================== */}
+        {/* =============================================== ===== */}
         <div className="counter basic-2 basic">
           <div className="container">
             <div className="row row_T">
               <div className="col-lg-12">
                 <small>
-                  <i> 11:23 PM | 25/05/2021 | Thành Phố Vinh, Nghệ An</i>
+                  <i> 11:23 PM | May 25, 2021 | Vinh City, Nghe An</i>
                 </small>
               </div>
               <div className="col-lg-12">
                 <h3 className="contact text-uppercase text_left title_T">
-                  Làm phần Backend cho hệ thống
+                  Making Backend for the system
                 </h3>
                 <hr className="blue_dark_hr" />
               </div>
               <div className="col-lg-12">
                 <p>
-                  Kết nối đến MongoDB Database. Thiết lập các Schema, function
+                  Connect to MongoDB Database. Set up Schema, function
                   API
                 </p>
               </div>
@@ -634,49 +631,49 @@ export default class News extends Component {
           </div>
         </div>
 
-        {/* ==================================================== */}
+        {/* =============================================== ===== */}
         <div className="counter basic-2 basic">
           <div className="container">
             <div className="row row_T">
               <div className="col-lg-12">
                 <small>
-                  <i> 3:42 PM | 06/05/2021 | Thành Phố Vinh, Nghệ An</i>
+                  <i> 3:42 PM | 06/05/2021 | Vinh City, Nghe An</i>
                 </small>
               </div>
               <div className="col-lg-12">
                 <h3 className="contact text-uppercase text_left title_T">
-                  Build Teamplate Website và Frontend bằng ReactJS
+                  Build Teamplate Website and Frontend with ReactJS
                 </h3>
                 <hr className="blue_dark_hr" />
               </div>
               <div className="col-lg-12">
-                <p>Tạo router cho website. Làm Landing Page cho website.</p>
+                <p>Create a router for the website. Make Landing Page for website.</p>
               </div>
             </div>
           </div>
         </div>
         {/* ==================================================== */}
         <div className="counter basic-2 basic">
-          <div className="container">
-            <div className="row row_T">
-              <div className="col-lg-12">
-                <small>
-                  <i> 2:23 PM | 02/05/2021 | Thành Phố Vinh, Nghệ An</i>
-                </small>
-              </div>
-              <div className="col-lg-12">
-                <h3 className="contact text-uppercase text_left title_T">
-                  Bắt đầu thực hiện ý tưởng
-                </h3>
-                <hr className="blue_dark_hr" />
-              </div>
-              <div className="col-lg-12">
-                <p>Tìm hiểu về tình hình hiện tại của mỗi chủ đề ở Việt Nam.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
+           <div className="container">
+             <div className="row row_T">
+               <div className="col-lg-12">
+                 <small>
+                   <i> 2:23 PM | 02/05/2021 | Vinh City, Nghe An</i>
+                 </small>
+               </div>
+               <div className="col-lg-12">
+                 <h3 className="contact text-uppercase text_left title_T">
+                   Start implementing ideas
+                 </h3>
+                 <hr className="blue_dark_hr" />
+               </div>
+               <div className="col-lg-12">
+                 <p>Learn about the current situation of each topic in Vietnam.</p>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     );
+   }
 }

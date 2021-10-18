@@ -29,7 +29,7 @@ export default class UserPage extends Component {
         <div className="enter"></div>
         <div className="enter"></div>
         <div className="container">
-          <h2>Trang cá nhân </h2>
+        <h2>Personal Page </h2>
           <hr className="green_dark_hr block_hr" />
           <div className="row">
             <div className="col-sm-6 text_left">
@@ -67,7 +67,7 @@ export default class UserPage extends Component {
           <div className="row">
             <div className="col-sm-6 text_left">
               <p>
-                <b>Lịch sử chơi:</b>{" "}
+                <b>Play History:</b>{" "}
                 {this.CheckArrNone(user.played_games) == 0
                   ? user.played_games.map((game, id) => {
                       if (id % 2 == 0)
@@ -80,7 +80,7 @@ export default class UserPage extends Component {
                           </div>
                         );
                     })
-                  : "Bạn chưa chơi game nào"}
+                  : "You haven't played any games yet"}
               </p>
             </div>
             <div className="col-sm-6 text_left">
@@ -105,13 +105,13 @@ export default class UserPage extends Component {
         </div>
         <div className="container">
           <p>
-            <b>Thời gian chơi game:</b>{" "}
+            <b>Game Time:</b>{" "}
             <hr className="green_dark_hr block_hr" />
             <UserPageGraphTime time_gaming={user.time_gaming} />
           </p>
 
           <p>
-            <b>Số tiền trồng cây:</b> <hr className="green_dark_hr block_hr" />
+            <b>Amount to plant trees:</b> <hr className="green_dark_hr block_hr" />
             {this.CheckArrNone(user.earned_money) == 0 ? (
               <UserPageGraph earned_money={user.earned_money}></UserPageGraph>
             ) : (

@@ -30,10 +30,10 @@ export default class Template extends Component {
             <div className="text-container text_left row">
               <h1 className="h1-large h-name">Enviroment Games</h1>
               <p className="p-large p-name">
-                Bảo vệ môi trường bằng những giờ giải trí của chính bạn!
+                Protect the environment with hours of your own entertainment!
               </p>
               <Link className="btn playButton text_center" to={"/Games"}>
-                <i className="fa fa-gamepad"></i> Chơi game ngay
+                <i className="fa fa-gamepad"></i> Play the game now
               </Link>
 
               {/* end of col */}
@@ -48,33 +48,34 @@ export default class Template extends Component {
             <div className="row row_T">
               <div className="col-lg-5">
                 <div className="text-container">
-                  <h2 className=" text-uppercase title_T">Thực trạng</h2>
+                  <h2 className=" text-uppercase title_T">Status</h2>
                   <hr className="blue_dark_hr" />
                   <ul className="list-unstyled li-space-lg">
                     <li className="media">
                       <div className="media-body">
                         {" "}
-                        <spam className="circle_blue_small"></spam>Diện tích
-                        rừng bị thiệt hại giảm 270ha/năm Trong 4 năm từ
-                        2016-2019, diện tích rừng bị thiệt hại đã lên tới
-                        7.283ha.
+                        <spam className="circle_blue_small"></spam>Area damaged
+                        forest reduced by 270ha/year In 4 years from 2016-2019,
+                        the damaged forest area has reached 7,283ha.
                       </div>
                     </li>
                     <li className="media">
                       <div className="media-body">
-                        <spam className="circle_blue_small"></spam>Tây Nguyên có
-                        tổng diện tích tự nhiên 5.459.785ha, chiếm 16,8% diện
-                        tích cả nước. Kết quả công bố hiện trạng rừng năm 2019
-                        chỉ ra rằng, toàn khu vực Tây Nguyên có 3.239.600ha đất
-                        lâm nghiệp, trong đó diện tích có rừng 2.559.596ha.
+                        <spam className="circle_blue_small"></spam>Highland has
+                        the total natural area is 5,459,785ha, accounting for
+                        16.8% of the total area nationwide. Results of
+                        announcing the current state of forests in 2019
+                        indicated that, the whole Central Highlands region has
+                        3,239,600 ha of land forestry, in which the forest area
+                        is 2,559,596 ha.
                       </div>
                     </li>
                   </ul>
                   <a
                     className="btn btn-info more_in4"
-                    href="https://laodong.vn/xa-hoi/nhung-he-luy-tu-mat-rung-ngay-cang-nghiem-trong-817416.ldo#:~:text=H%E1%BA%ADu%20qu%E1%BA%A3%20c%E1%BB%A7a%20vi%E1%BB%87c%20ph%C3%A1,Trung%20b%E1%BB%99%2C%20T%C3%A2y%20Nguy%C3%AAn%20v%C3%A0"
+                    href="https://laodong.vn/xa-hoi/nhung-he-luy-tu-mat-rung-ngay-cang-nghiem-trong-817416.ldo#:~:text=H%E1%BA% ADu%20qu%E1%BA%A3%20c%E1%BB%A7a%20vi%E1%BB%87c%20ph%C3%A1,Middle%20b%E1%BB%99%2C%20T%C3%A2y% 20Nguyen%C3%AAn%20v%C3%A0"
                   >
-                    Chi tiết
+                    Details
                   </a>
                 </div>{" "}
                 {/* end of text-container */}
@@ -109,42 +110,40 @@ export default class Template extends Component {
               <div className="col-lg-5">
                 <div className="text-container">
                   <h2 className="text-uppercase title_T">
-                    Rừng là lá phổi của trái đất
+                    Forests are the lungs of the earth
                   </h2>
                   <hr className="blue_dark_hr" />
                   <ul className="list-unstyled li-space-lg">
                     <li className="media">
                       <spam className="circle_blue_small"> </spam>
-                      <div className="media-body">Chống biển đổi khí hậu.</div>
+                      <div className="media-body">Anti-climate change.</div>
                     </li>
                     <li className="media">
                       <spam className="circle_blue_small"></spam>
-                      <div className="media-body">Làm sạch không khí</div>
+                      <div className="media-body">Clean the air</div>
                     </li>
                     <li className="media">
                       <spam className="circle_blue_small"></spam>
-                      <div className="media-body">
-                        Cung cấp Oxy cho con người.
-                      </div>
+                      <div className="media-body">Supply oxygen to humans.</div>
                     </li>
                     <li className="media">
                       <spam className="circle_blue_small"></spam>
-                      <div className="media-body">Tạo bóng mát.</div>
+                      <div className="media-body">Shadow.</div>
                     </li>
                     <li className="media">
                       <spam className="circle_blue_small"></spam>
-                      <div className="media-body">Bảo tồn năng lượng.</div>
+                      <div className="media-body">Conserves energy.</div>
                     </li>
                     <li className="media">
                       <spam className="circle_blue_small"></spam>
-                      <div className="media-body">Chống xói mòn đất</div>
+                      <div className="media-body">Soil erosion control</div>
                     </li>
                   </ul>
                   <a
                     className="btn btn-info more_in4"
                     href="https://jadiny.vn/blog/21-loi-ich-cua-viec-trong-cay-xanh-ma-ban-thay-ro_n507.html"
                   >
-                    Chi tiết
+                    Details
                   </a>
                 </div>{" "}
                 {/* end of text-container */}
@@ -161,23 +160,24 @@ export default class Template extends Component {
               <h3 className="title_T">MINI GAME</h3>
               <hr className="blue_dark_hr" />
               <p className="light_blue">
-                <spam className="circle_blue_small"></spam> MINI GAME Đang là xu
-                hướng thế giới để thu hút được nhiều khách hàng
+                <spam className="circle_blue_small"></spam> MINI GAME is
+                trending world direction to attract more customers
               </p>
-              <h3 className="text-uppercase title_T">Cây xanh</h3>
+              <h3 className="text-uppercase title_T">Green tree</h3>
               <hr className="blue_dark_hr" />
               <p className="light_blue">
-                <spam className="circle_blue_small"></spam> Một phần doanh thu
-                của <b>Envgame </b>được trích ra để góp phần bảo vệ môi trường
-                như là: Trồng cây, Sử dụng các biện pháp hóa học, tăng độ màu mỡ
-                của đất đai, huy động các đội/nhóm tình nguyện viên bảo vệ môi
-                trường, chi phí chăm sóc và duy trì cây trồng.
+                <spam className="circle_blue_small"></spam> Part of revenue
+                <b>Envgame</b> is extracted to contribute to environmental
+                protection such as: Planting trees, Using chemical methods,
+                increasing fertility of the land, mobilizing teams/groups of
+                volunteers to protect the environment field, cost of care and
+                maintenance of plants.
               </p>
               <a
                 className="btn btn-info more_in4"
-                href="https://harafunnel.com/blogs/thu-hut-khach-hang-moi/5-mini-game-tao-duoc-nhieu-tuong-tac-nhat-tu-cac-thuong-hieu-noi-tieng"
+                href="https://harafunnel.com/blogs/thu-hut-khach-hang-moi/5-mini-game-tao-duoc-nhieu-tuong-tac-nhat-tu-cac-thuong-hieu-noi -tieng"
               >
-                Chi tiết
+                Details
               </a>{" "}
             </div>{" "}
             <div className="col-lg-8">
@@ -196,7 +196,7 @@ export default class Template extends Component {
             <div className="row row_T">
               <div className="col-lg-12">
                 <h3 className="contact text-uppercase text_left title_T">
-                  Doanh thu và doanh thu đầu tư vào cây xanh
+                  Revenue and revenue from investment in trees
                 </h3>
                 <hr className="blue_dark_hr" />
               </div>
@@ -215,46 +215,40 @@ export default class Template extends Component {
         </div>{" "}
         {/* Footer */}
         <div className="container basic-5 basic">
-          <div className="row row_T">
+        <div className="row row_T">
             <div className="col-lg-12">
               <h3 className="contact text-uppercase text_left title_T">
-                Thông tin về nhóm
+                Information about the group
               </h3>
               <hr className="blue_dark_hr" />
             </div>
+           
             <div className="col-lg-4 text_center">
-              {/* <img src={The_Vinh} className="image_team" />
-              <p className="light_blue type_T">
-                <b>Đội trưởng</b>
-              </p>
+              <img src={Quynh_Nhu} className="image_team" />
+              <p className="light_blue type_T">Member</p>
               <p className="white_color">
-                <b>Nguyễn Thế Vinh</b>
+                <b>Dau Quynh Nhu</b>
               </p>
-              <p className="white_color ">THPT chuyên Đại Học Vinh</p> */}
+              <p className="white_color">Vinh University for Gifted Students</p>
+             
             </div>
             <div className="col-lg-4 text_center">
-              {/* <img src={Quynh_Nhu} className="image_team" />
-              <p className="light_blue type_T">Thành viên</p>
-              <p className="white_color">
-                <b>Đậu Quỳnh Như</b>
-              </p>
-              <p className="white_color">THPT chuyên Đại Học Vinh</p> */}
               <img src={The_Vinh} className="image_team" />
               <p className="light_blue type_T">
-                <b>Đội trưởng</b>
+                <b>Captain</b>
               </p>
               <p className="white_color">
-                <b>Nguyễn Thế Vinh</b>
+                <b>Nguyen The Vinh</b>
               </p>
-              <p className="white_color ">THPT chuyên Đại Học Vinh</p>
+              <p className="white_color ">Vinh University for Gifted Students</p>
             </div>
             <div className="col-lg-4 text_center">
-              {/* <img src={Quan_Ngo} className="image_team" />
-              <p className="light_blue type_T">Thành viên</p>
+              <img src={Quan_Ngo} className="image_team" />
+              <p className="light_blue type_T">Member</p>
               <p className="white_color">
-                <b>Ngô Minh Quân</b>
+                <b>Ngo Minh Quan</b>
               </p>
-              <p className="white_color">THPT Thái Lão</p> */}
+              <p className="white_color">Thai Lao High School</p>
             </div>
           </div>
         </div>
@@ -264,7 +258,7 @@ export default class Template extends Component {
             <div className="row row_T">
               <div className="col-lg-12">
                 <h3 className="contact text-uppercase text_center title_T">
-                  Thông tin liên hệ
+                Contact Info
                 </h3>
                 <div className="social-container text_center">
                   <a
