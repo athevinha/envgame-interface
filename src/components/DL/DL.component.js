@@ -13,7 +13,7 @@ export default class DL extends Component {
   render() {
     return (
       <div>
-        <div className="enter_AI"></div>
+           <div className="enter_AI"></div>
         <div className="enter"></div>
         <Iframe
           url="https://envgame-leaf-disease.netlify.app/"
