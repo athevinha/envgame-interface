@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
 import GameService from "../../service/game.service";
 import "../../App.css";
+import { Link, Route, Switch } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import home_route from "../http_route/http-common";
@@ -45,6 +46,20 @@ export default class DeleteGame extends Component {
         {/* Same as */}
         <ToastContainer />
         <div className="enter_admin"></div>
+        <hr/>
+          <Link className="btn btn-success" style={{marginRight: "20px"}} to={"/admin/games/create"}>
+           Create
+          </Link>
+          <Link className="btn btn-primary" style={{marginRight: "20px"}} to={"/admin/games/update"}>
+           Update
+          </Link>
+          <Link className="btn btn-danger" style={{marginRight: "20px"}} to={"/admin/games/delete"}>
+           Delete
+          </Link>
+          <Link className="btn btn-light" style={{marginRight: "20px"}} to={"/admin/games/read"}>
+           Read
+          </Link>
+          <hr/>
         <table className="table table table_admin_delete">
           <thead>
             <tr>

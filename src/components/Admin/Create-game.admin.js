@@ -75,6 +75,18 @@ export default class CreateGame extends Component {
         {/* Same as */}
         <ToastContainer />
         <form onSubmit={this.CreateGame} className="form">
+          <Link className="btn btn-success" style={{marginRight: "20px"}} to={"/admin/games/create"}>
+           Create
+          </Link>
+          <Link className="btn btn-primary" style={{marginRight: "20px"}} to={"/admin/games/update"}>
+           Update
+          </Link>
+          <Link className="btn btn-danger" style={{marginRight: "20px"}} to={"/admin/games/delete"}>
+           Delete
+          </Link>
+          <Link className="btn btn-light" style={{marginRight: "20px"}} to={"/admin/games/read"}>
+           Read
+          </Link>
           <input
             onChange={this.onCreateGame}
             value={this.state.title}

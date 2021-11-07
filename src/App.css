@@ -278,7 +278,7 @@ body {
 }
 .nav_link_custom:hover {
   transition: 0.3s;
-  background-color: deepskyblue !important ;
+  background-color:aquamarine !important ;
   border-radius: 15px;
 }
 .nav_link_custom:focus {
@@ -287,3 +287,11 @@ body {
   border-radius: 15px;
 }
 /* xxz */
+.create_model{
+  color: violet;
+}
+.create_model:hover{
+  color: violet;
+  
+}.create_model_link:hover{
+}

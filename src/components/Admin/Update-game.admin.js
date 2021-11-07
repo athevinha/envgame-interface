@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import GameService from "../../service/game.service";
+import { Link, Route, Switch } from "react-router-dom";
 import "../../App.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -232,6 +233,22 @@ export default class UpdateGame extends Component {
           </form>
         </div>
         <div className="enter_admin"></div>
+        {/* <button className="btn btn-primary"> */}
+        <hr/>
+          <Link className="btn btn-success" style={{marginRight: "20px"}} to={"/admin/games/create"}>
+           Create
+          </Link>
+          <Link className="btn btn-primary" style={{marginRight: "20px"}} to={"/admin/games/update"}>
+           Update
+          </Link>
+          <Link className="btn btn-danger" style={{marginRight: "20px"}} to={"/admin/games/delete"}>
+           Delete
+          </Link>
+          <Link className="btn btn-light" style={{marginRight: "20px"}} to={"/admin/games/read"}>
+           Read
+          </Link>
+          <hr/>
+        {/* </button> */}
         <table className="table table_admin_update">
           <thead>
             <tr>
@@ -258,19 +275,19 @@ export default class UpdateGame extends Component {
                   <td>{game.title}</td>
                   <td>{game.description}</td>
                   <td className="width40">
-                     {game.url && game.url.length >= 60 ? (
-                       <i>(The content is too long)</i>
-                     ) : (
-                       game.url
-                     )}
-                   </td>
-                   <td className="width40">
-                     {game.iframe.length >= 60 ? (
-                       <i>(The content is too long)</i>
-                     ) : (
-                       game.iframe
-                     )}
-                   </td>
+                    {game.url && game.url.length >= 60 ? (
+                      <i>(The content is too long)</i>
+                    ) : (
+                      game.url
+                    )}
+                  </td>
+                  <td className="width40">
+                    {game.iframe.length >= 60 ? (
+                      <i>(The content is too long)</i>
+                    ) : (
+                      game.iframe
+                    )}
+                  </td>
                   <td>{game.mobile_game == true ? "MOBILE" : "PC"}</td>
                   <td>
                     <button

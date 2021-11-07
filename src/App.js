@@ -24,6 +24,7 @@ import OnTop from "./components/onTop/onTop.js";
 import News from "./components/New/News.component.js";
 import DL from "./components/DL/DL.component";
 import DL_classes from "./components/DL/Dl_classes.component";
+import CRDL from "./components/Create_model/CRDL.component"
 import NF_404 from "./components/404_error/404.component";
 import Chat from "./components/Chat/Chat.component";
 class App extends Component {
@@ -201,11 +202,29 @@ class App extends Component {
                   {isMobile == true ? " Charts" : ""}
                 </Link>
               </li>
-
-              <li className="nav-item" ref={this.login}>
-                <Link className="nav-link nav_link_custom " to={"/DL-Plant"}>
-                  <i className="taskbar_icon fa fa-robot"></i>
+              {this.state.user_current.type == 0 ?  <li className="nav-item">
+               <Link
+                 className="nav-link nav_link_custom new_link"
+                 to={"/admin/games/update"}
+                 onClick={this.read_new}
+               >
+                 <i class="taskbar_icon fa fa-user-shield"></i>
+                
+                 {isMobile == true ? " Admin" : ""}
+               </Link>
+             </li> : ""
+             
+              }
+              <li className="nav-item">
+                <Link className="nav-link nav_link_custom create_model_link " to={"/DL-Plant"}>
+                  <i className="taskbar_icon create_model fa fa-robot"></i>
                   {isMobile == true ? " Deep learning" : ""}
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link nav_link_custom create_model_link" to={"/Create-Model-Plant"}>
+                  <i class="taskbar_icon create_model fa fa-folder-plus"></i>
+                  {isMobile == true ? "Create model" : ""}
                 </Link>
               </li>
               <li className="nav-item" ref={this.login}>
@@ -222,11 +241,12 @@ class App extends Component {
                 >
                   <i className="taskbar_icon fa fa-bell"></i>
                   <b>
-                    <span className="unread_new color_white">18 </span>
+                    <span className="unread_new color_white">21 </span>
                   </b>
                   {isMobile == true ? " Notify" : ""}
                 </Link>
               </li>
+              
               {localStorage.tooken == null || localStorage.tooken == "" ? (
                 <li className="nav-item" ref={this.login}>
                   <Link
@@ -285,6 +305,7 @@ class App extends Component {
           />
           <Route exact path="/News" render={(pr) => <News />} />
           <Route exact path="/DL-Plant" render={(pr) => <DL />} />
+          <Route exact path="/Create-Model-Plant" render={(pr) => <CRDL />} />
           <Route
             exact
             path="/DL-Plant/Classes"

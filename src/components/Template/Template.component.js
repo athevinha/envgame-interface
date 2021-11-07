@@ -46,12 +46,11 @@ export default class Template extends Component {
         <div id="details" className="basic-2 basic">
           <div className="container">
             <div className="row row_T">
-              <div className="col-lg-5">
+              <div className="col-lg-12">
                 <div className="text-container">
-                  <h2 className=" text-uppercase title_T">Status</h2>
+                  <h2 className=" text-uppercase title_T">ABOUT ENVGAME</h2>
                   <hr className="blue_dark_hr" />
-                  <ul className="list-unstyled li-space-lg">
-                    <li className="media">
+                    {/* <li className="media">
                       <div className="media-body">
                         {" "}
                         <spam className="circle_blue_small"></spam>Area damaged
@@ -69,24 +68,19 @@ export default class Template extends Component {
                         3,239,600 ha of land forestry, in which the forest area
                         is 2,559,596 ha.
                       </div>
-                    </li>
-                  </ul>
-                  <a
-                    className="btn btn-info more_in4"
-                    href="https://laodong.vn/xa-hoi/nhung-he-luy-tu-mat-rung-ngay-cang-nghiem-trong-817416.ldo#:~:text=H%E1%BA% ADu%20qu%E1%BA%A3%20c%E1%BB%A7a%20vi%E1%BB%87c%20ph%C3%A1,Middle%20b%E1%BB%99%2C%20T%C3%A2y% 20Nguyen%C3%AAn%20v%C3%A0"
-                  >
-                    Details
-                  </a>
+                    </li> */}
+                    <Iframe
+          url="https://www.youtube.com/embed/eXSEPX1Odxg"
+          width="100%"
+          height="500px"
+          style={{border:"none"}}
+        />
+                 
                 </div>{" "}
                 {/* end of text-container */}
               </div>{" "}
               {/* end of col */}
-              <div className="col-lg-7">
-                <div className="image-container">
-                  <img className="img-fluid" src={content1} alt="alternative" />
-                </div>{" "}
-                {/* end of image-container */}
-              </div>{" "}
+             
               {/* end of col */}
             </div>{" "}
             {/* end of row row_T */}
@@ -215,14 +209,14 @@ export default class Template extends Component {
         </div>{" "}
         {/* Footer */}
         <div className="container basic-5 basic">
-        <div className="row row_T">
+          <div className="row row_T">
             <div className="col-lg-12">
               <h3 className="contact text-uppercase text_left title_T">
                 Information about the group
               </h3>
               <hr className="blue_dark_hr" />
             </div>
-           
+
             <div className="col-lg-4 text_center">
               <img src={Quynh_Nhu} className="image_team" />
               <p className="light_blue type_T">Member</p>
@@ -230,7 +224,6 @@ export default class Template extends Component {
                 <b>Dau Quynh Nhu</b>
               </p>
               <p className="white_color">Vinh University for Gifted Students</p>
-             
             </div>
             <div className="col-lg-4 text_center">
               <img src={The_Vinh} className="image_team" />
@@ -240,7 +233,9 @@ export default class Template extends Component {
               <p className="white_color">
                 <b>Nguyen The Vinh</b>
               </p>
-              <p className="white_color ">Vinh University for Gifted Students</p>
+              <p className="white_color ">
+                Vinh University for Gifted Students
+              </p>
             </div>
             <div className="col-lg-4 text_center">
               <img src={Quan_Ngo} className="image_team" />
@@ -258,7 +253,7 @@ export default class Template extends Component {
             <div className="row row_T">
               <div className="col-lg-12">
                 <h3 className="contact text-uppercase text_center title_T">
-                Contact Info
+                  Contact Info
                 </h3>
                 <div className="social-container text_center">
                   <a

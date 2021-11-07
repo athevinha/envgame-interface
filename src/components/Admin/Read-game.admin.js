@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import GameService from "../../service/game.service";
 import "../../App.css";
 import home_route from "../http_route/http-common";
+import { Link, Route, Switch } from "react-router-dom";
 export default class ReadGame extends Component {
   constructor(props) {
     super(props);
@@ -23,6 +24,20 @@ export default class ReadGame extends Component {
     return (
       <div>
         <div className="enter_admin"></div>
+        <hr/>
+          <Link className="btn btn-success" style={{marginRight: "20px"}} to={"/admin/games/create"}>
+           Create
+          </Link>
+          <Link className="btn btn-primary" style={{marginRight: "20px"}} to={"/admin/games/update"}>
+           Update
+          </Link>
+          <Link className="btn btn-danger" style={{marginRight: "20px"}} to={"/admin/games/delete"}>
+           Delete
+          </Link>
+          <Link className="btn btn-light" style={{marginRight: "20px"}} to={"/admin/games/read"}>
+           Read
+          </Link>
+          <hr/>
         <table className="table table_admin_read">
           <thead>
             <tr>
