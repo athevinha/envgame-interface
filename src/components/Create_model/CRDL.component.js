@@ -14,15 +14,15 @@ export default class CRDL extends Component {
       <div>
            <div className="enter_AI"></div>
         <div className="enter"></div>
-        {/* <Iframe
-          url="https://envgame-leaf-disease.netlify.app/"
+        <Iframe
+          url="https://create-model.envgame.online/"
           id="myId"
           className="myClassname AI"
           display="initial"
           position="relative"
           width="100vw"
           height="100vh"
-        /> */}
+        />
         <h1>Create your Model</h1>
       </div>
     );
