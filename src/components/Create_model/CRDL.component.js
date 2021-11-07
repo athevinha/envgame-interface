@@ -13,6 +13,7 @@ export default class CRDL extends Component {
     return (
       <div>
            <div className="enter_AI"></div>
+           <div className="enter_AI"></div>
         <div className="enter"></div>
         <Iframe
           url="https://create-model.envgame.online/"
@@ -23,7 +24,7 @@ export default class CRDL extends Component {
           width="100vw"
           height="100vh"
         />
-        <h1>Create your Model</h1>
+        <h1>CREATE LEAF MODEL</h1>
       </div>
     );
   }
