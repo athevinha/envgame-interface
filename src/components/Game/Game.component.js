@@ -94,6 +94,7 @@ export default class Game extends Component {
           id="myId"
           className="myClassname"
           display="initial"
+          allow="camera;microphone"
           position="relative"
         />
         <RankGame ranks={this.state.game.rank} />
