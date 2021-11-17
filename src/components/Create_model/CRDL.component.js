@@ -24,7 +24,7 @@ export default class CRDL extends Component {
           width="100vw"
           height="100vh"
         />
-        <h1>CREATE LEAF MODEL</h1>
+        {/* <h1>CREATE LEAF MODEL</h1> */}
       </div>
     );
   }
