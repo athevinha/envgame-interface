@@ -218,12 +218,12 @@ export default class Template extends Component {
             </div>
 
             <div className="col-lg-4 text_center">
-              <img src={Quynh_Nhu} className="image_team" />
+              {/* <img src={Quynh_Nhu} className="image_team" />
               <p className="light_blue type_T">Member</p>
               <p className="white_color">
                 <b>Dau Quynh Nhu</b>
               </p>
-              <p className="white_color">Vinh University for Gifted Students</p>
+              <p className="white_color">Vinh University for Gifted Students</p> */}
             </div>
             <div className="col-lg-4 text_center">
               <img src={The_Vinh} className="image_team" />
@@ -238,12 +238,12 @@ export default class Template extends Component {
               </p>
             </div>
             <div className="col-lg-4 text_center">
-              <img src={Quan_Ngo} className="image_team" />
+              {/* <img src={Quan_Ngo} className="image_team" />
               <p className="light_blue type_T">Member</p>
               <p className="white_color">
                 <b>Ngo Minh Quan</b>
               </p>
-              <p className="white_color">Thai Lao High School</p>
+              <p className="white_color">Thai Lao High School</p> */}
             </div>
           </div>
         </div>
