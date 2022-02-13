@@ -90,6 +90,7 @@ export default class Game extends Component {
         <ToastContainer />
         <div className="enter_game"></div>
         <Iframe
+          onkeydown={() => console.log("keydow")}
           url={this.state.game.iframe}
           id="myId"
           className="myClassname"

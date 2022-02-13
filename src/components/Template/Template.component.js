@@ -230,6 +230,7 @@ export default class Template extends Component {
               <p className="light_blue type_T">
                 <b>Captain</b>
               </p>
+          
               <p className="white_color">
                 <b>Nguyen The Vinh</b>
               </p>

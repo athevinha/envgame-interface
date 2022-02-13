@@ -32,6 +32,7 @@ let person_name = [
   "thị",
   "khánh",
   "quỳnh",
+  "Vinh",
 ];
 
 export default person_name;

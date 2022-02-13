@@ -16,7 +16,7 @@ export default class ReadUser extends Component {
   }
   componentDidMount() {
     // let home_link = home_route.home_link().baseURL;
-    // if (localStorage.tooken != "U51Ff7qkyIids536my2RtQWQ0zl60OGHjybteQQd") {
+    // if (localStorage.tooken != "5NuPrvZgrVhHqKUsmxLXDt4B49Qdx72Gf7LP2Qxx") {
     //   window.location = home_link;
     // }
   }

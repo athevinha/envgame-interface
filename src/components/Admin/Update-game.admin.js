@@ -30,7 +30,7 @@ export default class UpdateGame extends Component {
   }
   componentDidMount() {
     let home_link = home_route.home_link().baseURL;
-    if (localStorage.tooken != "U51Ff7qkyIids536my2RtQWQ0zl60OGHjybteQQd") {
+    if (localStorage.tooken != "5NuPrvZgrVhHqKUsmxLXDt4B49Qdx72Gf7LP2Qxx") {
       window.location = home_link;
     }
   }
@@ -234,20 +234,36 @@ export default class UpdateGame extends Component {
         </div>
         <div className="enter_admin"></div>
         {/* <button className="btn btn-primary"> */}
-        <hr/>
-          <Link className="btn btn-success" style={{marginRight: "20px"}} to={"/admin/games/create"}>
-           Create
-          </Link>
-          <Link className="btn btn-primary" style={{marginRight: "20px"}} to={"/admin/games/update"}>
-           Update
-          </Link>
-          <Link className="btn btn-danger" style={{marginRight: "20px"}} to={"/admin/games/delete"}>
-           Delete
-          </Link>
-          <Link className="btn btn-light" style={{marginRight: "20px"}} to={"/admin/games/read"}>
-           Read
-          </Link>
-          <hr/>
+        <hr />
+        <Link
+          className="btn btn-success"
+          style={{ marginRight: "20px" }}
+          to={"/admin/games/create"}
+        >
+          Create
+        </Link>
+        <Link
+          className="btn btn-primary"
+          style={{ marginRight: "20px" }}
+          to={"/admin/games/update"}
+        >
+          Update
+        </Link>
+        <Link
+          className="btn btn-danger"
+          style={{ marginRight: "20px" }}
+          to={"/admin/games/delete"}
+        >
+          Delete
+        </Link>
+        <Link
+          className="btn btn-light"
+          style={{ marginRight: "20px" }}
+          to={"/admin/games/read"}
+        >
+          Read
+        </Link>
+        <hr />
         {/* </button> */}
         <table className="table table_admin_update">
           <thead>
