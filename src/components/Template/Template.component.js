@@ -50,7 +50,7 @@ export default class Template extends Component {
                 <div className="text-container">
                   <h2 className=" text-uppercase title_T">ABOUT ENVGAME</h2>
                   <hr className="blue_dark_hr" />
-                    {/* <li className="media">
+                  {/* <li className="media">
                       <div className="media-body">
                         {" "}
                         <spam className="circle_blue_small"></spam>Area damaged
@@ -69,18 +69,16 @@ export default class Template extends Component {
                         is 2,559,596 ha.
                       </div>
                     </li> */}
-                    <Iframe
-          url="https://www.youtube.com/embed/eXSEPX1Odxg"
-          width="100%"
-          height="500px"
-          style={{border:"none"}}
-        />
-                 
+                  <Iframe
+                    url="https://www.youtube.com/embed/dzYdvgIVwzA"
+                    width="100%"
+                    height="500px"
+                    style={{ border: "none" }}
+                  />
                 </div>{" "}
                 {/* end of text-container */}
               </div>{" "}
               {/* end of col */}
-             
               {/* end of col */}
             </div>{" "}
             {/* end of row row_T */}
@@ -90,6 +88,52 @@ export default class Template extends Component {
         {/* end of basic-2 basic */}
         {/* end of details 1 */}
         {/* Details 2 */}
+        <div className="container basic-5 basic">
+          <div className="row row_T">
+            <div className="col-lg-12">
+              <h3 className="contact text-uppercase text_left title_T">
+                Information about the group
+              </h3>
+              <hr className="blue_dark_hr" />
+            </div>
+
+            <div className="col-lg-4 text_center">
+              {/* <img src={Quynh_Nhu} className="image_team" />
+              <p className="light_blue type_T">Member</p>
+              <p className="white_color">
+                <b>Dau Quynh Nhu</b>
+              </p>
+              <p className="white_color">Vinh University for Gifted Students</p> */}
+            </div>
+            <div className="col-lg-4 text_center">
+              <img
+                src={The_Vinh}
+                width="224"
+                height="224"
+                alt="vinh"
+                className="image_team"
+              />
+              <p className="light_blue type_T">
+                <b>Captain</b>
+              </p>
+
+              <p className="white_color">
+                <b>Nguyen The Vinh</b>
+              </p>
+              <p className="white_color ">
+                Vinh University for Gifted Students
+              </p>
+            </div>
+            <div className="col-lg-4 text_center">
+              {/* <img src={Quan_Ngo} className="image_team" />
+              <p className="light_blue type_T">Member</p>
+              <p className="white_color">
+                <b>Ngo Minh Quan</b>
+              </p>
+              <p className="white_color">Thai Lao High School</p> */}
+            </div>
+          </div>
+        </div>
         <div className="basic-3 basic">
           <div className="black-background"></div>
           <div className="container">
@@ -208,46 +252,6 @@ export default class Template extends Component {
           {/* end of container */}
         </div>{" "}
         {/* Footer */}
-        <div className="container basic-5 basic">
-          <div className="row row_T">
-            <div className="col-lg-12">
-              <h3 className="contact text-uppercase text_left title_T">
-                Information about the group
-              </h3>
-              <hr className="blue_dark_hr" />
-            </div>
-
-            <div className="col-lg-4 text_center">
-              {/* <img src={Quynh_Nhu} className="image_team" />
-              <p className="light_blue type_T">Member</p>
-              <p className="white_color">
-                <b>Dau Quynh Nhu</b>
-              </p>
-              <p className="white_color">Vinh University for Gifted Students</p> */}
-            </div>
-            <div className="col-lg-4 text_center">
-              <img src={The_Vinh} className="image_team" />
-              <p className="light_blue type_T">
-                <b>Captain</b>
-              </p>
-          
-              <p className="white_color">
-                <b>Nguyen The Vinh</b>
-              </p>
-              <p className="white_color ">
-                Vinh University for Gifted Students
-              </p>
-            </div>
-            <div className="col-lg-4 text_center">
-              {/* <img src={Quan_Ngo} className="image_team" />
-              <p className="light_blue type_T">Member</p>
-              <p className="white_color">
-                <b>Ngo Minh Quan</b>
-              </p>
-              <p className="white_color">Thai Lao High School</p> */}
-            </div>
-          </div>
-        </div>
         <Footer></Footer>
         <div className="footer basic">
           <div className="container">
