@@ -17,6 +17,11 @@ export default class Game extends Component {
     this.iframe_ref = React.createRef();
   }
   componentDidMount() {
+    if (this.state.game.iframe === "https://fes.envgame.online") {
+      // window.location = "http://3.0.241.73:3001/";
+      window.open("http://3.0.241.73:3001/", "_blank");
+    }
+
     window.addEventListener("message", this.receiveMessage, false);
     toast.info(this.props.game.how2play, {
       position: "top-right",
