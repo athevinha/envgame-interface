@@ -46,7 +46,7 @@ export default class News extends Component {
             <div className="row row_T">
               <div className="col-lg-11">
                 <small>
-                  <i>4:06 AM | 31/07/2021 | Vinh City, Nghe An</i>
+                  <i>4:06 AM | 28/11/2021 | Vinh City, Nghe An</i>
                 </small>
               </div>
               <div className="col-lg-1 pin">
@@ -65,13 +65,13 @@ export default class News extends Component {
               </div>
               <div className="col-lg-12">
                 <p>
-                  Currently Envgame is in the process of developing and attracting
-                  client. Because the human resources used to plant trees are mainly children
-                  workers, so the process of taking care of plants is very expensive.
-                  So I decided to try the <b>Deep Learning</b> app on
-                  in the care of plants see if there is any progress and
-                  The results were also quite surprising. The probability in each of our models is
-                  over 90%.
+                  Currently Envgame is in the process of developing and
+                  attracting client. Because the human resources used to plant
+                  trees are mainly children workers, so the process of taking
+                  care of plants is very expensive. So I decided to try the{" "}
+                  <b>Deep Learning</b> app on in the care of plants see if there
+                  is any progress and The results were also quite surprising.
+                  The probability in each of our models is over 90%.
                 </p>
               </div>
               <div className="col-sm-12 text_center">
@@ -146,10 +146,11 @@ export default class News extends Component {
                 <hr className="blue_dark_hr" />
               </div>
               <div className="col-lg-12">
-                The "real time" chat system helps to create more connections between
-                players together. The data of the messages is processed and saved
-                in the database to facilitate re-reading the message history. Almost
-                Most of Envgame's main interfaces have been replaced by Icons.
+                The "real time" chat system helps to create more connections
+                between players together. The data of the messages is processed
+                and saved in the database to facilitate re-reading the message
+                history. Almost Most of Envgame's main interfaces have been
+                replaced by Icons.
               </div>
               <div className="col-lg-12 ">
                 <div className="image-container">
@@ -161,7 +162,7 @@ export default class News extends Component {
         </div>
         <div className="counter basic-2 basic">
           <div className="container">
-          <div className="row row_T">
+            <div className="row row_T">
               <div className="col-lg-12">
                 <small>
                   <i>11:36 PM | 04/08/2021 | Vinh City, Nghe An</i>
@@ -169,16 +170,16 @@ export default class News extends Component {
               </div>
               <div className="col-lg-12">
                 <h3 className="contact text-uppercase text_left title_T">
-                  Updated rankings for <i>Flappy Bird</i> and {" "} games
+                  Updated rankings for <i>Flappy Bird</i> and games
                   <i>Hextris</i>
                 </h3>
                 <hr className="blue_dark_hr" />
               </div>
               <div className="col-lg-12">
                 <p>
-                  Only 5 excellent players with high scores will enter the system
-                  rank system of the game. Games for which the rankings are applied
-                  include: <br />
+                  Only 5 excellent players with high scores will enter the
+                  system rank system of the game. Games for which the rankings
+                  are applied include: <br />
                   - Flappy Bird <br />
                   - Hextris <br />
                   <i> Both these games are supported on both Mobile and PC. </i>
@@ -200,21 +201,21 @@ export default class News extends Component {
         <div className="counter basic-2 basic">
           <div className="container">
             <div className="row row_T">
-            <div className="col-lg-12">
-                 <small>
-                   <i>1:07 PM | 03/08/2021 | Vinh City, Nghe An</i>
-                 </small>
-               </div>
-               <div className="col-lg-12">
-                 <h3 className="contact text-uppercase text_left title_T">
-                   Update: Demo application of Deep Learning to plant care.
-                 </h3>
-                 <hr className="blue_dark_hr" />
-               </div>
-               <div className="col-lg-12">
-                 The system is available in the <b>Technology</b> section of envgame's website.
-                 The model has the following classes:
-                 <hr />
+              <div className="col-lg-12">
+                <small>
+                  <i>1:07 PM | 03/08/2021 | Vinh City, Nghe An</i>
+                </small>
+              </div>
+              <div className="col-lg-12">
+                <h3 className="contact text-uppercase text_left title_T">
+                  Update: Demo application of Deep Learning to plant care.
+                </h3>
+                <hr className="blue_dark_hr" />
+              </div>
+              <div className="col-lg-12">
+                The system is available in the <b>Technology</b> section of
+                envgame's website. The model has the following classes:
+                <hr />
                 <table className="table table table_admin_delete color_white">
                   <thead>
                     <tr>
@@ -228,7 +229,7 @@ export default class News extends Component {
                   </thead>
 
                   <tbody>
-                  <tr>
+                    <tr>
                       <td className="text_center">Apple - fungal disease</td>
                       <td className="text_center">Apple - grape black rot</td>
                     </tr>
@@ -259,7 +260,9 @@ export default class News extends Component {
                       </td>
                     </tr>
                     <tr>
-                      <td className="text_center">Grape - black rot of grapes</td>
+                      <td className="text_center">
+                        Grape - black rot of grapes
+                      </td>
                       <td className="text_center">Grape - black measles</td>
                     </tr>
                     <tr>
@@ -273,36 +276,28 @@ export default class News extends Component {
                         Orange - yellow leaf disease with green veins
                       </td>
                       <td className="text_center">
-                        Peach - Bacterial Leaf Spot
-                        Disease
+                        Peach - Bacterial Leaf Spot Disease
                       </td>
                     </tr>
                     <tr>
                       <td className="text_center">Digging - well developed</td>
                       <td className="text_center">
-                        Bell peppers - Bacterial Leaf Spot
-                        Disease
+                        Bell peppers - Bacterial Leaf Spot Disease
                       </td>
                     </tr>
                     <tr>
-                      <td className="text_center">
-                        Bell peppers - grow well
-                      </td>
+                      <td className="text_center">Bell peppers - grow well</td>
                       <td className="text_center">Potato - blight</td>
                     </tr>
                     <tr>
                       <td className="text_center">
                         Potato - late blight disease
                       </td>
-                      <td className="text_center">
-                        Potatoes - grow well
-                      </td>
+                      <td className="text_center">Potatoes - grow well</td>
                     </tr>
                     <tr>
                       <td className="text_center">Raspberry - growing well</td>
-                      <td className="text_center">
-                        Soybeans - grow well
-                      </td>
+                      <td className="text_center">Soybeans - grow well</td>
                     </tr>
                     <tr>
                       <td className="text_center">Pumpkin - powdery mildew</td>
@@ -311,10 +306,10 @@ export default class News extends Component {
                       </td>
                     </tr>
                     <tr>
-                      <td className="text_center">Strawberry - good development</td>
                       <td className="text_center">
-                        Blueberries - grow well
+                        Strawberry - good development
                       </td>
+                      <td className="text_center">Blueberries - grow well</td>
                     </tr>
                     <tr>
                       <td className="text_center">Tomato - blight</td>
@@ -335,19 +330,19 @@ export default class News extends Component {
                       <td className="text_center">Tomato - anthracnose</td>
                     </tr>
                     <tr>
-                       <td className="text_center">
-                         Tomato - yellow curl virus disease (leaf curl)
-                       </td>
-                       <td className="text_center">
-                         Tomato - leaf curl disease (mosaic disease)
-                       </td>
-                     </tr>
-                     <tr>
-                       <td className="text_center">
-                         Tomato - Bacterial Leaf Spot
-                       </td>
-                       <td className="text_center">Tomato - growing well</td>
-                     </tr>
+                      <td className="text_center">
+                        Tomato - yellow curl virus disease (leaf curl)
+                      </td>
+                      <td className="text_center">
+                        Tomato - leaf curl disease (mosaic disease)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text_center">
+                        Tomato - Bacterial Leaf Spot
+                      </td>
+                      <td className="text_center">Tomato - growing well</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -386,13 +381,13 @@ export default class News extends Component {
               </div>
               <div className="col-lg-12">
                 <p>
-                  Add the feature of favorite games and search for games
-                  by name <br />
+                  Add the feature of favorite games and search for games by name{" "}
+                  <br />
                   Add more game filtering features: <br />
                   - Only mobile games can be entered when entering by phone
                   display.
-                  <br />- When entering by computer, only the game can be played on
-                  The new calculator displays.
+                  <br />- When entering by computer, only the game can be played
+                  on The new calculator displays.
                 </p>
               </div>
               <div className="col-lg-12">
@@ -446,8 +441,7 @@ export default class News extends Component {
               </div>
               <div className="col-lg-12">
                 <p>
-                  Most phones today have their own interface when
-                  go to the web
+                  Most phones today have their own interface when go to the web
                 </p>
               </div>
               <div className="col-lg-12">
@@ -540,8 +534,8 @@ export default class News extends Component {
                 <p>
                   The profile page displays a lot of user information such as
                   are: play history, playing time of each game, name, gmail,
-                  tooken... The data has many parameters such as playing time
-                  Or is the number of trees planted on a graph?
+                  tooken... The data has many parameters such as playing time Or
+                  is the number of trees planted on a graph?
                 </p>
               </div>
               <div className="col-lg-12">
@@ -573,8 +567,8 @@ export default class News extends Component {
               </div>
               <div className="col-lg-12">
                 <p>
-                  The Side Bar is used to display user information such as
-                  is username, gmail, avatar...
+                  The Side Bar is used to display user information such as is
+                  username, gmail, avatar...
                 </p>
               </div>
             </div>
@@ -598,8 +592,8 @@ export default class News extends Component {
               </div>
               <div className="col-lg-12">
                 <p>
-                  The site has already been able to login, register. Add more system
-                  User memory system
+                  The site has already been able to login, register. Add more
+                  system User memory system
                 </p>
               </div>
             </div>
@@ -622,10 +616,7 @@ export default class News extends Component {
                 <hr className="blue_dark_hr" />
               </div>
               <div className="col-lg-12">
-                <p>
-                  Connect to MongoDB Database. Set up Schema, function
-                  API
-                </p>
+                <p>Connect to MongoDB Database. Set up Schema, function API</p>
               </div>
             </div>
           </div>
@@ -647,33 +638,38 @@ export default class News extends Component {
                 <hr className="blue_dark_hr" />
               </div>
               <div className="col-lg-12">
-                <p>Create a router for the website. Make Landing Page for website.</p>
+                <p>
+                  Create a router for the website. Make Landing Page for
+                  website.
+                </p>
               </div>
             </div>
           </div>
         </div>
         {/* ==================================================== */}
         <div className="counter basic-2 basic">
-           <div className="container">
-             <div className="row row_T">
-               <div className="col-lg-12">
-                 <small>
-                   <i> 2:23 PM | 02/05/2021 | Vinh City, Nghe An</i>
-                 </small>
-               </div>
-               <div className="col-lg-12">
-                 <h3 className="contact text-uppercase text_left title_T">
-                   Start implementing ideas
-                 </h3>
-                 <hr className="blue_dark_hr" />
-               </div>
-               <div className="col-lg-12">
-                 <p>Learn about the current situation of each topic in Vietnam.</p>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     );
-   }
+          <div className="container">
+            <div className="row row_T">
+              <div className="col-lg-12">
+                <small>
+                  <i> 2:23 PM | 02/05/2021 | Vinh City, Nghe An</i>
+                </small>
+              </div>
+              <div className="col-lg-12">
+                <h3 className="contact text-uppercase text_left title_T">
+                  Start implementing ideas
+                </h3>
+                <hr className="blue_dark_hr" />
+              </div>
+              <div className="col-lg-12">
+                <p>
+                  Learn about the current situation of each topic in Vietnam.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
