@@ -158,7 +158,10 @@ export default class Template extends Component {
                 height="224"
                 style={{ background: "white" }}
               />
-              <p className="light_blue type_T">Compony</p>
+              <p className="light_blue type_T">
+                {" "}
+                <b>Company</b>
+              </p>
               <p className="white_color">
                 <b>Envgame</b>
               </p>
