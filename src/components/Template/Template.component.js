@@ -16,9 +16,9 @@ import ReactStoreIndicator from "react-score-indicator";
 import { Link, Route, Switch } from "react-router-dom";
 import Footer from "./Footer.component";
 import Chart from "./Chart.component";
-import Quynh_Nhu from "./images/Quynh_Nhu.jpg";
+import Quynh_Nhu from "./images/favicon.jpg";
 import The_Vinh from "./images/The_Vinh.jpg";
-import Quan_Ngo from "./images/Quan_Ngo.jpg";
+import Quan_Ngo from "./images/quan_ngo.png";
 import Copyright from "./Copyright.component";
 export default class Template extends Component {
   render() {
@@ -43,6 +43,131 @@ export default class Template extends Component {
           </div>{" "}
           {/* end of container */}
         </header>{" "}
+        <div className="container basic-4 basic">
+          <div className="row row_T">
+            <div className="col-lg-4">
+              <h3 className="title_T">GoldenGate & MiniGame</h3>
+              <hr className="blue_dark_hr" />
+              <p className="light_blue">
+                <spam className="circle_blue_small"></spam> MINI GAME is
+                trending world direction to attract more customers
+              </p>
+              <h3 className="text-uppercase title_T"></h3>
+              <hr className="blue_dark_hr" />
+              <p className="light_blue">
+                <spam className="circle_blue_small"></spam> Part of revenue{" "}
+                <b>Envgame</b> is extracted to contribute to environmental
+                protection such as: Planting trees, Using chemical methods,
+                increasing fertility of the land, mobilizing teams/groups of
+                volunteers to protect the environment field, cost of care and
+                maintenance of plants.
+              </p>
+              <a
+                className="btn btn-info more_in4"
+                href="https://harafunnel.com/blogs/thu-hut-khach-hang-moi/5-mini-game-tao-duoc-nhieu-tuong-tac-nhat-tu-cac-thuong-hieu-noi -tieng"
+              >
+                Details
+              </a>{" "}
+            </div>{" "}
+            <div className="col-lg-8">
+              <div className="image-container">
+                <img className="img-fluid" src={content3} alt="alternative" />
+              </div>{" "}
+              {/* end of image-container */}
+            </div>{" "}
+            {/* end of col */}
+            {/* end of col */}
+          </div>{" "}
+          {/* end of row row_T */}
+        </div>{" "}
+        <div className="counter">
+          <div className="container">
+            <div className="row row_T">
+              <div className="col-lg-12">
+                <h3 className="contact text-uppercase text_left title_T">
+                  Revenue and revenue from investment in trees
+                </h3>
+                <hr className="blue_dark_hr" />
+              </div>
+              <div className="col-lg-12">
+                {/* Counter */}
+                <div id="counter">
+                  <Chart></Chart>
+                </div>
+                {/* end of counter */}
+              </div>{" "}
+              {/* end of col */}
+            </div>{" "}
+            {/* end of row row_T */}
+          </div>{" "}
+          {/* end of container */}
+        </div>{" "}
+        {/* Footer */}
+        <div className="container basic-5 basic">
+          <div className="row row_T">
+            <div className="col-lg-12">
+              <h3 className="contact text-uppercase text_left title_T">
+                Information about the group
+              </h3>
+              <hr className="blue_dark_hr" />
+            </div>
+
+            <div className="col-lg-4 text_center">
+              <img
+                src={The_Vinh}
+                width="224"
+                height="224"
+                alt="vinh"
+                className="image_team"
+              />
+              <p className="light_blue type_T">
+                <b>Member</b>
+              </p>
+
+              <p className="white_color">
+                <b>Nguyen The Vinh</b>
+              </p>
+              <p className="white_color ">
+                Vinh University for Gifted Students
+              </p>
+            </div>
+            <div className="col-lg-4 text_center">
+              <img
+                src={Quan_Ngo}
+                className="image_team"
+                width="224"
+                height="224"
+                style={{ background: "white" }}
+              />
+              <p className="light_blue type_T">
+                {" "}
+                <b>Company</b>
+              </p>
+              <p className="white_color">
+                <b>Yitec</b>
+              </p>
+              <a className="white_color" href="https://yitec.net/">
+                https://yitec.net/
+              </a>
+            </div>
+            <div className="col-lg-4 text_center">
+              <img
+                src={Quynh_Nhu}
+                className="image_team"
+                width="224"
+                height="224"
+                style={{ background: "white" }}
+              />
+              <p className="light_blue type_T">Compony</p>
+              <p className="white_color">
+                <b>Envgame</b>
+              </p>
+              <a className="white_color" href="https://envgame.online/">
+                https://envgame.online/
+              </a>
+            </div>
+          </div>
+        </div>
         <div id="details" className="basic-2 basic">
           <div className="container">
             <div className="row row_T">
@@ -88,52 +213,6 @@ export default class Template extends Component {
         {/* end of basic-2 basic */}
         {/* end of details 1 */}
         {/* Details 2 */}
-        <div className="container basic-5 basic">
-          <div className="row row_T">
-            <div className="col-lg-12">
-              <h3 className="contact text-uppercase text_left title_T">
-                Information about the group
-              </h3>
-              <hr className="blue_dark_hr" />
-            </div>
-
-            <div className="col-lg-4 text_center">
-              {/* <img src={Quynh_Nhu} className="image_team" />
-              <p className="light_blue type_T">Member</p>
-              <p className="white_color">
-                <b>Dau Quynh Nhu</b>
-              </p>
-              <p className="white_color">Vinh University for Gifted Students</p> */}
-            </div>
-            <div className="col-lg-4 text_center">
-              <img
-                src={The_Vinh}
-                width="224"
-                height="224"
-                alt="vinh"
-                className="image_team"
-              />
-              <p className="light_blue type_T">
-                <b>Captain</b>
-              </p>
-
-              <p className="white_color">
-                <b>Nguyen The Vinh</b>
-              </p>
-              <p className="white_color ">
-                Vinh University for Gifted Students
-              </p>
-            </div>
-            <div className="col-lg-4 text_center">
-              {/* <img src={Quan_Ngo} className="image_team" />
-              <p className="light_blue type_T">Member</p>
-              <p className="white_color">
-                <b>Ngo Minh Quan</b>
-              </p>
-              <p className="white_color">Thai Lao High School</p> */}
-            </div>
-          </div>
-        </div>
         <div className="basic-3 basic">
           <div className="black-background"></div>
           <div className="container">
@@ -192,66 +271,6 @@ export default class Template extends Component {
           </div>{" "}
           {/* end of container */}
         </div>{" "}
-        <div className="container basic-4 basic">
-          <div className="row row_T">
-            <div className="col-lg-4">
-              <h3 className="title_T">MINI GAME</h3>
-              <hr className="blue_dark_hr" />
-              <p className="light_blue">
-                <spam className="circle_blue_small"></spam> MINI GAME is
-                trending world direction to attract more customers
-              </p>
-              <h3 className="text-uppercase title_T">Green tree</h3>
-              <hr className="blue_dark_hr" />
-              <p className="light_blue">
-                <spam className="circle_blue_small"></spam> Part of revenue
-                <b>Envgame</b> is extracted to contribute to environmental
-                protection such as: Planting trees, Using chemical methods,
-                increasing fertility of the land, mobilizing teams/groups of
-                volunteers to protect the environment field, cost of care and
-                maintenance of plants.
-              </p>
-              <a
-                className="btn btn-info more_in4"
-                href="https://harafunnel.com/blogs/thu-hut-khach-hang-moi/5-mini-game-tao-duoc-nhieu-tuong-tac-nhat-tu-cac-thuong-hieu-noi -tieng"
-              >
-                Details
-              </a>{" "}
-            </div>{" "}
-            <div className="col-lg-8">
-              <div className="image-container">
-                <img className="img-fluid" src={content3} alt="alternative" />
-              </div>{" "}
-              {/* end of image-container */}
-            </div>{" "}
-            {/* end of col */}
-            {/* end of col */}
-          </div>{" "}
-          {/* end of row row_T */}
-        </div>{" "}
-        <div className="counter">
-          <div className="container">
-            <div className="row row_T">
-              <div className="col-lg-12">
-                <h3 className="contact text-uppercase text_left title_T">
-                  Revenue and revenue from investment in trees
-                </h3>
-                <hr className="blue_dark_hr" />
-              </div>
-              <div className="col-lg-12">
-                {/* Counter */}
-                <div id="counter">
-                  <Chart></Chart>
-                </div>
-                {/* end of counter */}
-              </div>{" "}
-              {/* end of col */}
-            </div>{" "}
-            {/* end of row row_T */}
-          </div>{" "}
-          {/* end of container */}
-        </div>{" "}
-        {/* Footer */}
         <Footer></Footer>
         <div className="footer basic">
           <div className="container">
