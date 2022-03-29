@@ -121,7 +121,7 @@ export default class Template extends Component {
                 className="image_team"
               />
               <p className="light_blue type_T">
-                <b>Member</b>
+                <b>Project Manager</b>
               </p>
 
               <p className="white_color">
@@ -163,7 +163,7 @@ export default class Template extends Component {
                 <b>Company</b>
               </p>
               <p className="white_color">
-                <b>Envgame</b>
+                <b>GoldenGate</b>
               </p>
               <a className="white_color" href="https://envgame.online/">
                 https://envgame.online/
