@@ -46,7 +46,7 @@ export default class Template extends Component {
         <div className="container basic-4 basic">
           <div className="row row_T">
             <div className="col-lg-4">
-              <h3 className="title_T">GoldenGate & MiniGame</h3>
+              <h3 className="title_T">GoldenGate</h3>
               <hr className="blue_dark_hr" />
               <p className="light_blue">
                 <spam className="circle_blue_small"></spam> MINI GAME is
